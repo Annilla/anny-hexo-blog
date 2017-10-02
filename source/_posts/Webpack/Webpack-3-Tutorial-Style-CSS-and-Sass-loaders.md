@@ -2,15 +2,14 @@
 title: 'Webpack 3 Tutorial - Style, CSS, Sass and Postcss loaders'
 categories:
   - Webpack
-thumbnail: https://cdn-images-1.medium.com/max/1920/1*gdoQ1_5OID90wf1eLTFvWw.png
+thumbnailImage: https://camo.githubusercontent.com/d18f4a7a64244f703efcb322bf298dcb4ca38856/68747470733a2f2f7765627061636b2e6a732e6f72672f6173736574732f69636f6e2d7371756172652d6269672e737667
+thumbnailImagePosition: left
+coverImage: https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/01/1484692838webpack-dependency-tree.png
+coverMeta: out
 tags: [Webpack]
 date: 2017/08/01
 updated: 2017/08/01
 ---
-
-![](https://cdn-images-1.medium.com/max/1920/1*gdoQ1_5OID90wf1eLTFvWw.png)
-
-作者：Anny Chang
 
 此篇介紹如何將 `CSS` 、 `SASS` 引入 `Webpack` 專案中，並使用 `postcss` 的 `autoprefixer` 自動將 `CSS` 加入相對的瀏覽器前綴。
 <!--more-->
