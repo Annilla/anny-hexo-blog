@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://annilla.github.io/"/>
-  <updated>2017-09-30T16:00:00.000Z</updated>
+  <updated>2017-10-31T16:00:00.000Z</updated>
   <id>http://annilla.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Webpack 3 Tutorial - add PUG templates to write html</title>
+    <link href="http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/"/>
+    <id>http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/</id>
+    <published>2017-10-31T16:00:00.000Z</published>
+    <updated>2017-10-31T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>此篇介紹如何加入並使用 <code>pug-loader</code>，並使用 <code>PUG</code> 語法測試撰寫 <code>html</code>。<br><a id="more"></a></p><h2 id="安裝-pug-loader"><a href="#安裝-pug-loader" class="headerlink" title="安裝 pug-loader"></a>安裝 <code>pug-loader</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -D pug pug-loader</div></pre></td></tr></table></figure><h2 id="設定-webpack-config-js"><a href="#設定-webpack-config-js" class="headerlink" title="設定 webpack.config.js"></a>設定 <code>webpack.config.js</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">......</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  ......</div><div class="line">  <span class="built_in">module</span>: &#123;</div><div class="line">    rules: [</div><div class="line">      ......</div><div class="line">      &#123;</div><div class="line">        test: <span class="regexp">/\.pug$/</span>,</div><div class="line">        use: <span class="string">'pug-loader'</span></div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  ......</div><div class="line">&#125;</div></pre></td></tr></table></figure><h2 id="撰寫-index-pug"><a href="#撰寫-index-pug" class="headerlink" title="撰寫 index.pug"></a>撰寫 <code>index.pug</code></h2><p>接著我們嘗試把 <code>index.html</code> 改檔名為 <code>index.pug</code>，並把內容換成以下 <code>Pug</code> 範例。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">doctype html</div><div class="line">html(lang=&quot;en&quot;)</div><div class="line">  head</div><div class="line">    title= pageTitle</div><div class="line">    script(type=&apos;text/javascript&apos;).</div><div class="line">      if (foo) bar(1 + 5)</div><div class="line">  body</div><div class="line">    h1 Pug - node template engine</div><div class="line">    #container.col</div><div class="line">      if youAreUsingPug</div><div class="line">        p You are amazing</div><div class="line">      else</div><div class="line">        p Get on it!</div><div class="line">      p.</div><div class="line">        Pug is a terse and simple templating language with a</div><div class="line">        strong focus on performance and powerful features.</div></pre></td></tr></table></figure><p>接著記得把 <code>webpack.config.js</code> plugin 中的 <code>HtmlWebpackPlugin</code> 設定換成現在新的 <code>Pug</code> 檔案。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  ......</div><div class="line">  plugins: [</div><div class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">      template: <span class="string">'./src/index.pug'</span></div><div class="line">    &#125;),</div><div class="line">    ......</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>執行 <code>npm run dev</code>，就可以看到 <code>Pug</code> 執行出來的畫面囉。</p><p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-10-28_1131.png" alt="執行 npm run dev 後畫面" title="dist/index.pug"></p><p>今天的範例 <a href="https://github.com/Annilla/webpack_practice/tree/v1.5.0" target="_blank" rel="external">Github</a> 在此，下次見～</p><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul><li><a href="https://github.com/pugjs/pug-loader" target="_blank" rel="external">pug-loader</a></li><li><a href="https://github.com/pugjs/pug" target="_blank" rel="external">Pug</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;此篇介紹如何加入並使用 &lt;code&gt;pug-loader&lt;/code&gt;，並使用 &lt;code&gt;PUG&lt;/code&gt; 語法測試撰寫 &lt;code&gt;html&lt;/code&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Webpack" scheme="http://annilla.github.io/categories/Webpack/"/>
+    
+    
+      <category term="Webpack" scheme="http://annilla.github.io/tags/Webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack 3 Tutorial - add Babel loader to write js use ES6</title>
