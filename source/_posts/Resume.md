@@ -1,16 +1,15 @@
 ---
-title: Anny Chang's Resume
+title: Anny Chang's Resume - 履歷
 categories:
   - Resume
-thumbnailImage: http://annilla.github.io/assets/images/icon144.png
-thumbnailImagePosition: left
-coverImage: http://i965.photobucket.com/albums/ae138/anny09117011/Blog/cover.jpg
-tags: [Resume]
-date: 2017/09/30
-updated: 2017/09/30
+thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&h=200&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
+thumbnailImagePosition: bottom
+coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
+date: 3017/09/30
+updated: 2017/12/03
 ---
 
-我的履歷。
+My resume.
 
 <!--more-->
 
@@ -36,6 +35,8 @@ updated: 2017/09/30
 | 2012.11 | 國際 ACA Photoshop CS6 證照 |
 | 2011.12 | Adobe Digital Graphic Design Courses 證書 |
 | 高中 | 全民英檢中級 證書 |
+
+### [Adobe Badges (國際ACA認證獎章)](https://www.youracclaim.com/users/chiao-ni-chang)
 
 ## 受訓
 
