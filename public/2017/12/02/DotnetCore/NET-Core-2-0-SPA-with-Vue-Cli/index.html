@@ -18,7 +18,7 @@
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
     <meta name="description" content=".Net Core 可以不用開啟慢吞吞的 IDE，即可快速建立專案。本篇全程使用 VScode，手把手教你如何用 .NET Core 2.0 MVC + vue-cli 起始一個 SPA 專案。當然， HMR (Hot Module Replacement) 神器也會一併附上啦。">
-<meta name="keywords" content="Webpack,.NET Core,dotnet,Vue,SPA,MVC">
+<meta name="keywords" content=".NET Core,dotnet,Vue,Webpack,SPA,MVC,VScode">
 <meta property="og:type" content="blog">
 <meta property="og:title" content=".NET Core 2.0 SPA with Vue-Cli - Start New Project">
 <meta property="og:url" content="http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/index.html">
@@ -55,9 +55,10 @@
     
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-sxklfps8ywgfyyjcowvnb4gxdgt0zjts3hsguljmv9uqanxjbnitrovtbrek.min.css">
+    <link rel="stylesheet" href="/assets/css/style-pz4cc6y13wt2trzqa8l3n9v0yykr0sstdaheem7qj628nhjmhp9pfawvqawz.min.css">
     <!--STYLES END-->
     
+
     
 </head>
 
@@ -114,9 +115,10 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
+                            title="首頁"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">首頁</span>
                     </a>
             </li>
@@ -126,9 +128,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
+                            title="分類"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">分類</span>
                     </a>
             </li>
@@ -138,9 +141,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
+                            title="標籤"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">標籤</span>
                     </a>
             </li>
@@ -150,9 +154,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
+                            title="所有文章"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">所有文章</span>
                     </a>
             </li>
@@ -162,9 +167,10 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
+                            title="搜尋"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">搜尋</span>
                     </a>
             </li>
@@ -174,9 +180,10 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
+                            title="關於"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">關於</span>
                     </a>
             </li>
@@ -187,27 +194,27 @@
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener" title="GitHub">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener" title="Facebook">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener" title="Google Plus">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-google-plus"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-google-plus" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Google Plus</span>
                     </a>
             </li>
@@ -221,9 +228,10 @@
                         <a  class="sidebar-button-link "
                              href="/atom.xml"
                             
+                            title="Atom"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Atom</span>
                     </a>
             </li>
@@ -282,12 +290,12 @@
 <p>首先，這裡先澄清一點，就是 <code>.NET Core</code> 的 <code>template</code> 內建有 <code>ASP.NET Core with Vue.js</code>。因為是套裝，裡面還包含 <code>Bootstrap</code>, <code>Typescript</code> 等等，畢竟不是每個專案都會用到這些，所以本篇專注在如何結合 <code>.NET Core</code> 和 <code>Vue</code> ，那些依專案選用的項目就不會在這裡提到。</p>
 </blockquote>
 <h2 id="起始-NET-Core-2-0-MVC-專案"><a href="#起始-NET-Core-2-0-MVC-專案" class="headerlink" title="起始 .NET Core 2.0 MVC 專案"></a>起始 <code>.NET Core 2.0 MVC</code> 專案</h2><ol>
-<li><p>安裝 <a href="https://github.com/dotnet/cli" target="_blank" rel="external">.NET Command Line Interface</a></p>
+<li><p>安裝 <a href="https://github.com/dotnet/cli" target="_blank" rel="noopener">.NET Command Line Interface</a></p>
 </li>
 <li><p>新增一個 Core MVC 專案</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dotnet new &apos;ASP.NET Core Web App (Model-View-Controller)&apos;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet new &apos;ASP.NET Core Web App (Model-View-Controller)&apos;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>刪除不必要的檔案</li>
 </ol>
@@ -296,34 +304,34 @@
 <ul>
 <li><code>HomeController.cs</code> 刪除多餘的 Controller，只保留 <code>Index</code> 和 <code>Error</code></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">using System;</div><div class="line">using System.Collections.Generic;</div><div class="line">using System.Diagnostics;</div><div class="line">using System.Linq;</div><div class="line">using System.Threading.Tasks;</div><div class="line">using Microsoft.AspNetCore.Mvc;</div><div class="line">using dotnet_core_vue_cli.Models;</div><div class="line"></div><div class="line">namespace dotnet_core_vue_cli.Controllers</div><div class="line">&#123;</div><div class="line">  public class HomeController : Controller</div><div class="line">  &#123;</div><div class="line">    public IActionResult Index()</div><div class="line">    &#123;</div><div class="line">      return View();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public IActionResult Error()</div><div class="line">    &#123;</div><div class="line">      return View(new ErrorViewModel &#123; RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier &#125;);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line">using System.Collections.Generic;</span><br><span class="line">using System.Diagnostics;</span><br><span class="line">using System.Linq;</span><br><span class="line">using System.Threading.Tasks;</span><br><span class="line">using Microsoft.AspNetCore.Mvc;</span><br><span class="line">using dotnet_core_vue_cli.Models;</span><br><span class="line"></span><br><span class="line">namespace dotnet_core_vue_cli.Controllers</span><br><span class="line">&#123;</span><br><span class="line">  public class HomeController : Controller</span><br><span class="line">  &#123;</span><br><span class="line">    public IActionResult Index()</span><br><span class="line">    &#123;</span><br><span class="line">      return View();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public IActionResult Error()</span><br><span class="line">    &#123;</span><br><span class="line">      return View(new ErrorViewModel &#123; RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>Index.cshtml</code> 多餘的 HTML 刪除</li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@&#123;</div><div class="line">    ViewData["Title"] = "Home Page";</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>TEST<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@&#123;</span><br><span class="line">    ViewData["Title"] = "Home Page";</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>TEST<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><code>_Layout.cshtml</code> 修改內容如下</li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>@ViewData["Title"] - dotnet_core_vue_cli<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 CSS --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- &lt;link rel="stylesheet" href="~/css/xxx.css" asp-append-version="true"/&gt; --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 CSS --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    @RenderBody()</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 JS --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- &lt;script src="~/js/xxx.js" asp-append-version="true"&gt;&lt;/script&gt; --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 JS --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line"></div><div class="line">    @RenderSection("Scripts", required: false)</div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>@ViewData["Title"] - dotnet_core_vue_cli<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 CSS --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- &lt;link rel="stylesheet" href="~/css/xxx.css" asp-append-version="true"/&gt; --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 CSS --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    @RenderBody()</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 JS --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- &lt;script src="~/js/xxx.js" asp-append-version="true"&gt;&lt;/script&gt; --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 JS --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    @RenderSection("Scripts", required: false)</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>現在來測試跑看看專案有沒有成功～</p>
 <p>執行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dotnet run</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet run</span><br></pre></td></tr></table></figure>
 <p>用瀏覽器看 <code>http://localhost:5000</code> 就會跑出剛剛在 <code>Index.cshtml</code> 改寫的 TEST 字樣囉～</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1011.png" alt="http://localhost:5000" title="首頁"></p>
 <h2 id="安裝-vue-cli-模板"><a href="#安裝-vue-cli-模板" class="headerlink" title="安裝 vue-cli 模板"></a>安裝 <code>vue-cli</code> 模板</h2><ol>
 <li>安裝全域 <code>vue-cli</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g vue-cli</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
 <ol>
 <li>起始一個簡易的 <code>vue</code> + <code>webpack</code> 專案</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vue init webpack-simple</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack-simple</span><br></pre></td></tr></table></figure>
 <p>按照 <code>vue-cli</code> 的指示回覆操作如下圖。</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1018.png" alt="vue-cli" title="vue-cli"></p>
 <p>執行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <p>測試 <code>Node</code> 有沒有安裝成功 <code>Vue</code> 專案</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
 <p>用瀏覽器看 <code>http://localhost:8080</code> 如果有成功出現如下面畫面就是安裝成功 <code>vue</code> 的專案囉～</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1024.png" alt="http://localhost:8080" title="首頁"></p>
 <blockquote>
@@ -332,23 +340,23 @@
 <h2 id="結合-NET-Core-和-Vue"><a href="#結合-NET-Core-和-Vue" class="headerlink" title="結合 .NET Core 和 Vue"></a>結合 <code>.NET Core</code> 和 <code>Vue</code></h2><ol>
 <li>修改 <code>webpack.config.js</code>，將靜態檔案產生在 <code>wwwroot</code> 資料夾中</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">......</div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  entry: &#123;</div><div class="line">    main: <span class="string">'./src/main.js'</span></div><div class="line">  &#125;,</div><div class="line">  output: &#123;</div><div class="line">    path: path.resolve(__dirname, <span class="string">'./wwwroot'</span>),</div><div class="line">    publicPath: <span class="string">'/wwwroot/'</span>,</div><div class="line">    filename: <span class="string">'js/build.js'</span></div><div class="line">  &#125;,</div><div class="line">  <span class="built_in">module</span>: &#123;</div><div class="line">    rules: [</div><div class="line">      ......</div><div class="line">      &#123;</div><div class="line">        test: <span class="regexp">/\.(png|jpg|gif|svg)$/</span>,</div><div class="line">        loader: <span class="string">'file-loader'</span>,</div><div class="line">        options: &#123;</div><div class="line">          publicPath: <span class="string">'/'</span>,</div><div class="line">          outputPath: <span class="string">'imgs/'</span>,</div><div class="line">          name: <span class="string">'[name].[ext]?[hash]'</span></div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  ......</div><div class="line">&#125;</div><div class="line">......</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">......</span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: &#123;</span><br><span class="line">    main: <span class="string">'./src/main.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  output: &#123;</span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'./wwwroot'</span>),</span><br><span class="line">    publicPath: <span class="string">'/wwwroot/'</span>,</span><br><span class="line">    filename: <span class="string">'js/build.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      ......</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.(png|jpg|gif|svg)$/</span>,</span><br><span class="line">        loader: <span class="string">'file-loader'</span>,</span><br><span class="line">        options: &#123;</span><br><span class="line">          publicPath: <span class="string">'/'</span>,</span><br><span class="line">          outputPath: <span class="string">'imgs/'</span>,</span><br><span class="line">          name: <span class="string">'[name].[ext]?[hash]'</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  ......</span><br><span class="line">&#125;</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 <ol>
 <li>修改 <code>cshtml</code> 加入對應的 <code>js</code> 和 <code>html</code></li>
 </ol>
 <ul>
 <li><code>_Layout.cshtml</code> 修改內容如下</li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>@ViewData["Title"] - dotnet_core_vue_cli<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 CSS --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- &lt;link rel="stylesheet" href="~/css/xxx.css" asp-append-version="true"/&gt; --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 CSS --&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    @RenderBody()</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 JS --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"~/js/build.js"</span> <span class="attr">asp-append-version</span>=<span class="string">"true"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 JS --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"~/js/build.js"</span> <span class="attr">asp-append-version</span>=<span class="string">"true"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></div><div class="line"></div><div class="line">    @RenderSection("Scripts", required: false)</div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>@ViewData["Title"] - dotnet_core_vue_cli<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 CSS --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- &lt;link rel="stylesheet" href="~/css/xxx.css" asp-append-version="true"/&gt; --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 CSS --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    @RenderBody()</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">include</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Development 的 JS --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"~/js/build.js"</span> <span class="attr">asp-append-version</span>=<span class="string">"true"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environment</span> <span class="attr">exclude</span>=<span class="string">"Development"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 這邊放 Production 的 JS --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"~/js/build.js"</span> <span class="attr">asp-append-version</span>=<span class="string">"true"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    @RenderSection("Scripts", required: false)</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>接著修改 <code>Index.cshtml</code></li>
 </ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">@&#123;</div><div class="line">    ViewData["Title"] = "Home Page";</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@&#123;</span><br><span class="line">    ViewData["Title"] = "Home Page";</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>測試跑跑看 <code>.NET server</code> 有沒有成功？</p>
 <p>先產生靜態檔案</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run build</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
 <p>再啟動伺服器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dotnet run</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet run</span><br></pre></td></tr></table></figure>
 <p>成功就會出現之前一樣的畫面囉～</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1110.png" alt="http://localhost:5000" title="首頁"></p>
 <h2 id="設定-HMR-和-vue-router-的-fallback"><a href="#設定-HMR-和-vue-router-的-fallback" class="headerlink" title="設定 HMR 和 vue router 的 fallback"></a>設定 <code>HMR</code> 和 <code>vue router</code> 的 fallback</h2><p>接著才是重頭戲～如魔法般的 <code>HMR</code> 功能登場!!!</p>
@@ -356,32 +364,33 @@
 <ol>
 <li>安裝 <code>aspnet-webpack</code>, <code>webpack-hot-middleware</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -D aspnet-webpack</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -D webpack-hot-middleware</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D aspnet-webpack</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D webpack-hot-middleware</span><br></pre></td></tr></table></figure>
 <ol>
 <li>新增 <code>ASP.NET Core SPA Services</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dotnet add package Microsoft.AspNetCore.SpaServices --version 2.0.1</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet add package Microsoft.AspNetCore.SpaServices --version 2.0.1</span><br></pre></td></tr></table></figure>
 <ol>
 <li>修改 <code>Startup.cs</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">using Microsoft.AspNetCore.SpaServices.Webpack;</div><div class="line"></div><div class="line">......</div><div class="line">  // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.</div><div class="line">  public void Configure(IApplicationBuilder app, IHostingEnvironment env)</div><div class="line">  &#123;</div><div class="line">    // [HMR] http://www.c-sharpcorner.com/article/using-hot-module-replacement-feature-of-webpack-in-asp-net-core/</div><div class="line">    if (env.IsDevelopment())</div><div class="line">    &#123;</div><div class="line">      app.UseDeveloperExceptionPage();</div><div class="line">      app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions</div><div class="line">      &#123;</div><div class="line">        HotModuleReplacement = true</div><div class="line">      &#125;);</div><div class="line">    &#125;</div><div class="line">    ......</div><div class="line">    app.UseMvc(routes =&gt;</div><div class="line">    &#123;</div><div class="line">      routes.MapRoute(</div><div class="line">        name: &quot;default&quot;,</div><div class="line">        template: &quot;&#123;controller=Home&#125;/&#123;action=Index&#125;/&#123;id?&#125;&quot;);</div><div class="line"></div><div class="line">      // Use Vue Router must add fallback route</div><div class="line">      // Help to navigate directly</div><div class="line">      // https://stu.ratcliffe.io/2017/07/20/vuejs-serverside-rendering-with-aspnet-core</div><div class="line">      routes.MapSpaFallbackRoute(&quot;spa-fallback&quot;, new &#123; controller = &quot;Home&quot;, action = &quot;Index&quot; &#125;);</div><div class="line">    &#125;);</div><div class="line">  &#125;</div><div class="line">......</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">using Microsoft.AspNetCore.SpaServices.Webpack;</span><br><span class="line"></span><br><span class="line">......</span><br><span class="line">  // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.</span><br><span class="line">  public void Configure(IApplicationBuilder app, IHostingEnvironment env)</span><br><span class="line">  &#123;</span><br><span class="line">    // [HMR] http://www.c-sharpcorner.com/article/using-hot-module-replacement-feature-of-webpack-in-asp-net-core/</span><br><span class="line">    if (env.IsDevelopment())</span><br><span class="line">    &#123;</span><br><span class="line">      app.UseDeveloperExceptionPage();</span><br><span class="line">      app.UseWebpackDevMiddleware(new WebpackDevMiddlewareOptions</span><br><span class="line">      &#123;</span><br><span class="line">        HotModuleReplacement = true</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">    ......</span><br><span class="line">    app.UseMvc(routes =&gt;</span><br><span class="line">    &#123;</span><br><span class="line">      routes.MapRoute(</span><br><span class="line">        name: &quot;default&quot;,</span><br><span class="line">        template: &quot;&#123;controller=Home&#125;/&#123;action=Index&#125;/&#123;id?&#125;&quot;);</span><br><span class="line"></span><br><span class="line">      // Use Vue Router must add fallback route</span><br><span class="line">      // Help to navigate directly</span><br><span class="line">      // https://stu.ratcliffe.io/2017/07/20/vuejs-serverside-rendering-with-aspnet-core</span><br><span class="line">      routes.MapSpaFallbackRoute(&quot;spa-fallback&quot;, new &#123; controller = &quot;Home&quot;, action = &quot;Index&quot; &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
 <ol>
 <li><code>package.json</code> 指令加上 HMR</li>
 </ol>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  ......</div><div class="line">  "scripts": &#123;</div><div class="line">    "hmr": "cross-env ASPNETCORE_ENVIRONMENT=Development NODE_ENV=development dotnet run",</div><div class="line">    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",</div><div class="line">    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"</div><div class="line">  &#125;,</div><div class="line">  ......</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ......</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "hmr": "cross-env ASPNETCORE_ENVIRONMENT=Development NODE_ENV=development dotnet run",</span><br><span class="line">    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",</span><br><span class="line">    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"</span><br><span class="line">  &#125;,</span><br><span class="line">  ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>執行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run hmr</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run hmr</span><br></pre></td></tr></table></figure>
 <p>成功的話就會從 <code>Chrome</code> 開發者工具看到 <code>HMR</code> 連結成功囉～</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1249.png" alt="http://localhost:5000" title="首頁"></p>
-<p>今天的範例在 <a href="https://github.com/Annilla/dotnet-core-vue-cli/tree/v1.0.0" target="_blank" rel="external">github</a>，下回見～</p>
+<p>今天的範例在 <a href="https://github.com/Annilla/dotnet-core-vue-cli/tree/v1.0.0" target="_blank" rel="noopener">github</a>，下回見～</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a href="http://www.dotnetcurry.com/aspnet/1383/modern-web-dev-aspnet-core-webpack-vuejs" target="_blank" rel="external">Modern Web Development using ASP.NET Core template, Vue.js and Webpack</a></li>
-<li><a href="http://www.c-sharpcorner.com/article/using-hot-module-replacement-feature-of-webpack-in-asp-net-core/" target="_blank" rel="external">Using Hot Module Replacement Feature Of Webpack In ASP.NET Core</a></li>
-<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.SpaServices/" target="_blank" rel="external">Microsoft.AspNetCore.SpaServices</a></li>
+<li><a href="http://www.dotnetcurry.com/aspnet/1383/modern-web-dev-aspnet-core-webpack-vuejs" target="_blank" rel="noopener">Modern Web Development using ASP.NET Core template, Vue.js and Webpack</a></li>
+<li><a href="http://www.c-sharpcorner.com/article/using-hot-module-replacement-feature-of-webpack-in-asp-net-core/" target="_blank" rel="noopener">Using Hot Module Replacement Feature Of Webpack In ASP.NET Core</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.SpaServices/" target="_blank" rel="noopener">Microsoft.AspNetCore.SpaServices</a></li>
 </ul>
 
             
+
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
@@ -389,7 +398,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">標籤</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/NET-Core/">.NET Core</a> <a class="tag tag--primary tag--small t-link" href="/tags/MVC/">MVC</a> <a class="tag tag--primary tag--small t-link" href="/tags/SPA/">SPA</a> <a class="tag tag--primary tag--small t-link" href="/tags/Vue/">Vue</a> <a class="tag tag--primary tag--small t-link" href="/tags/Webpack/">Webpack</a> <a class="tag tag--primary tag--small t-link" href="/tags/dotnet/">dotnet</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/NET-Core/">.NET Core</a> <a class="tag tag--primary tag--small t-link" href="/tags/MVC/">MVC</a> <a class="tag tag--primary tag--small t-link" href="/tags/SPA/">SPA</a> <a class="tag tag--primary tag--small t-link" href="/tags/VScode/">VScode</a> <a class="tag tag--primary tag--small t-link" href="/tags/Vue/">Vue</a> <a class="tag tag--primary tag--small t-link" href="/tags/Webpack/">Webpack</a> <a class="tag tag--primary tag--small t-link" href="/tags/dotnet/">dotnet</a>
 
             </div>
         
@@ -399,65 +408,69 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/3017/09/30/Resume/"  data-tooltip="Anny Chang&#39;s Resume - 履歷">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/" data-tooltip=".NET Core 2.0 Debug with VScode" aria-label="上一篇: .NET Core 2.0 Debug with VScode">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" data-tooltip="Webpack 3 Tutorial - add PUG templates to write html">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" data-tooltip="Webpack 3 Tutorial - add PUG templates to write html" aria-label="下一篇: Webpack 3 Tutorial - add PUG templates to write html">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -491,65 +504,69 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/3017/09/30/Resume/"  data-tooltip="Anny Chang&#39;s Resume - 履歷">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/" data-tooltip=".NET Core 2.0 Debug with VScode" aria-label="上一篇: .NET Core 2.0 Debug with VScode">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" data-tooltip="Webpack 3 Tutorial - add PUG templates to write html">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" data-tooltip="Webpack 3 Tutorial - add PUG templates to write html" aria-label="下一篇: Webpack 3 Tutorial - add PUG templates to write html">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -565,7 +582,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>分享到 Facebook</span>
                 </a>
             </li>
         
@@ -573,7 +590,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
                 </a>
             </li>
         
@@ -581,7 +598,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/">
-                    <i class="fa fa-google-plus"></i><span>分享到 Google+</span>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>分享到 Google+</span>
                 </a>
             </li>
         
@@ -626,7 +643,8 @@
     </div>
 </div>
 
-        <div id="algolia-search-modal" class="modal-container">
+        
+            <div id="algolia-search-modal" class="modal-container">
     <div class="modal">
         <div class="modal-header">
             <span class="close-button"><i class="fa fa-close"></i></span>
@@ -823,6 +841,31 @@
                 <div class="media">
                     
                     <div class="media-left">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <img class="media-image" src="http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <h3 class="media-heading">.NET Core 2.0 Debug with VScode</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2017年12月25日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>這次要教大家如何使用 <code>VScode</code> debug <code>.Net Core</code> 的專案喔～<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
                         <a class="link-unstyled" href="http://annilla.github.io/3017/09/30/Resume/">
                             <img class="media-image" src="https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&amp;fit=crop&amp;w=1360&amp;h=200&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="90" height="90"/>
                         </a>
@@ -877,16 +920,17 @@
                 data-message-zero="沒有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 9 篇文章
+                找到 10 篇文章
             </p>
         </div>
     </div>
 </div>
 
         
+        
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
-<script src="/assets/js/script-ivwiy10zeb8fifc4swnhkwneuk64y53w2scmdmtp8thi9cqfxh31aowtroaz.min.js"></script>
+<script src="/assets/js/script-peofhqjkzcghmndknakluequy1y6owxdwpaqyju9ntl9zxnk7rdolb3rjjoj.min.js"></script>
 <!--SCRIPTS END-->
 
     
@@ -915,6 +959,7 @@
         var algoliaClient = algoliasearch('LCYI2MVFA7', '653a1c55a785578623b2c89180d87cf8');
         var algoliaIndex = algoliaClient.initIndex('Anny-Chang-blog');
     </script>
+
 
     </body>
 </html>

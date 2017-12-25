@@ -50,9 +50,10 @@
     
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-sxklfps8ywgfyyjcowvnb4gxdgt0zjts3hsguljmv9uqanxjbnitrovtbrek.min.css">
+    <link rel="stylesheet" href="/assets/css/style-pz4cc6y13wt2trzqa8l3n9v0yykr0sstdaheem7qj628nhjmhp9pfawvqawz.min.css">
     <!--STYLES END-->
     
+
     
 </head>
 
@@ -109,9 +110,10 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
+                            title="首頁"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">首頁</span>
                     </a>
             </li>
@@ -121,9 +123,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
+                            title="分類"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">分類</span>
                     </a>
             </li>
@@ -133,9 +136,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
+                            title="標籤"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">標籤</span>
                     </a>
             </li>
@@ -145,9 +149,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
+                            title="所有文章"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">所有文章</span>
                     </a>
             </li>
@@ -157,9 +162,10 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
+                            title="搜尋"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">搜尋</span>
                     </a>
             </li>
@@ -169,9 +175,10 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
+                            title="關於"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">關於</span>
                     </a>
             </li>
@@ -182,27 +189,27 @@
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener" title="GitHub">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener" title="Facebook">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener" title="Google Plus">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-google-plus"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-google-plus" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Google Plus</span>
                     </a>
             </li>
@@ -216,9 +223,10 @@
                         <a  class="sidebar-button-link "
                              href="/atom.xml"
                             
+                            title="Atom"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Atom</span>
                     </a>
             </li>
@@ -273,21 +281,22 @@
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
             <p>此篇介紹如何加入並使用 <code>pug-loader</code>，並使用 <code>PUG</code> 語法測試撰寫 <code>html</code>。<br><a id="more"></a></p>
-<h2 id="安裝-pug-loader"><a href="#安裝-pug-loader" class="headerlink" title="安裝 pug-loader"></a>安裝 <code>pug-loader</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -D pug pug-loader</div></pre></td></tr></table></figure>
-<h2 id="設定-webpack-config-js"><a href="#設定-webpack-config-js" class="headerlink" title="設定 webpack.config.js"></a>設定 <code>webpack.config.js</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">......</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  ......</div><div class="line">  <span class="built_in">module</span>: &#123;</div><div class="line">    rules: [</div><div class="line">      ......</div><div class="line">      &#123;</div><div class="line">        test: <span class="regexp">/\.pug$/</span>,</div><div class="line">        use: <span class="string">'pug-loader'</span></div><div class="line">      &#125;</div><div class="line">    ]</div><div class="line">  &#125;,</div><div class="line">  ......</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="安裝-pug-loader"><a href="#安裝-pug-loader" class="headerlink" title="安裝 pug-loader"></a>安裝 <code>pug-loader</code></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D pug pug-loader</span><br></pre></td></tr></table></figure>
+<h2 id="設定-webpack-config-js"><a href="#設定-webpack-config-js" class="headerlink" title="設定 webpack.config.js"></a>設定 <code>webpack.config.js</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">......</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  ......</span><br><span class="line">  <span class="built_in">module</span>: &#123;</span><br><span class="line">    rules: [</span><br><span class="line">      ......</span><br><span class="line">      &#123;</span><br><span class="line">        test: <span class="regexp">/\.pug$/</span>,</span><br><span class="line">        use: <span class="string">'pug-loader'</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;,</span><br><span class="line">  ......</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="撰寫-index-pug"><a href="#撰寫-index-pug" class="headerlink" title="撰寫 index.pug"></a>撰寫 <code>index.pug</code></h2><p>接著我們嘗試把 <code>index.html</code> 改檔名為 <code>index.pug</code>，並把內容換成以下 <code>Pug</code> 範例。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">doctype html</div><div class="line">html(lang=&quot;en&quot;)</div><div class="line">  head</div><div class="line">    title= pageTitle</div><div class="line">    script(type=&apos;text/javascript&apos;).</div><div class="line">      if (foo) bar(1 + 5)</div><div class="line">  body</div><div class="line">    h1 Pug - node template engine</div><div class="line">    #container.col</div><div class="line">      if youAreUsingPug</div><div class="line">        p You are amazing</div><div class="line">      else</div><div class="line">        p Get on it!</div><div class="line">      p.</div><div class="line">        Pug is a terse and simple templating language with a</div><div class="line">        strong focus on performance and powerful features.</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">doctype html</span><br><span class="line">html(lang=&quot;en&quot;)</span><br><span class="line">  head</span><br><span class="line">    title= pageTitle</span><br><span class="line">    script(type=&apos;text/javascript&apos;).</span><br><span class="line">      if (foo) bar(1 + 5)</span><br><span class="line">  body</span><br><span class="line">    h1 Pug - node template engine</span><br><span class="line">    #container.col</span><br><span class="line">      if youAreUsingPug</span><br><span class="line">        p You are amazing</span><br><span class="line">      else</span><br><span class="line">        p Get on it!</span><br><span class="line">      p.</span><br><span class="line">        Pug is a terse and simple templating language with a</span><br><span class="line">        strong focus on performance and powerful features.</span><br></pre></td></tr></table></figure>
 <p>接著記得把 <code>webpack.config.js</code> plugin 中的 <code>HtmlWebpackPlugin</code> 設定換成現在新的 <code>Pug</code> 檔案。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  ......</div><div class="line">  plugins: [</div><div class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</div><div class="line">      template: <span class="string">'./src/index.pug'</span></div><div class="line">    &#125;),</div><div class="line">    ......</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  ......</span><br><span class="line">  plugins: [</span><br><span class="line">    <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">      template: <span class="string">'./src/index.pug'</span></span><br><span class="line">    &#125;),</span><br><span class="line">    ......</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>執行 <code>npm run dev</code>，就可以看到 <code>Pug</code> 執行出來的畫面囉。</p>
 <p><img src="http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-10-28_1131.png" alt="執行 npm run dev 後畫面" title="dist/index.pug"></p>
-<p>今天的範例 <a href="https://github.com/Annilla/webpack_practice/tree/v1.5.0" target="_blank" rel="external">Github</a> 在此，下次見～</p>
+<p>今天的範例 <a href="https://github.com/Annilla/webpack_practice/tree/v1.5.0" target="_blank" rel="noopener">Github</a> 在此，下次見～</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a href="https://github.com/pugjs/pug-loader" target="_blank" rel="external">pug-loader</a></li>
-<li><a href="https://github.com/pugjs/pug" target="_blank" rel="external">Pug</a></li>
+<li><a href="https://github.com/pugjs/pug-loader" target="_blank" rel="noopener">pug-loader</a></li>
+<li><a href="https://github.com/pugjs/pug" target="_blank" rel="noopener">Pug</a></li>
 </ul>
 
             
+
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
@@ -305,65 +314,69 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/"  data-tooltip=".NET Core 2.0 SPA with Vue-Cli - Start New Project">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" data-tooltip=".NET Core 2.0 SPA with Vue-Cli - Start New Project" aria-label="上一篇: .NET Core 2.0 SPA with Vue-Cli - Start New Project">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/Webpack/Webpack-3-Tutorial-add-Babel-loader-to-write-js-use-ES6/" data-tooltip="Webpack 3 Tutorial - add Babel loader to write js use ES6">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/Webpack/Webpack-3-Tutorial-add-Babel-loader-to-write-js-use-ES6/" data-tooltip="Webpack 3 Tutorial - add Babel loader to write js use ES6" aria-label="下一篇: Webpack 3 Tutorial - add Babel loader to write js use ES6">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -397,65 +410,69 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/"  data-tooltip=".NET Core 2.0 SPA with Vue-Cli - Start New Project">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/" data-tooltip=".NET Core 2.0 SPA with Vue-Cli - Start New Project" aria-label="上一篇: .NET Core 2.0 SPA with Vue-Cli - Start New Project">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/Webpack/Webpack-3-Tutorial-add-Babel-loader-to-write-js-use-ES6/" data-tooltip="Webpack 3 Tutorial - add Babel loader to write js use ES6">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/01/Webpack/Webpack-3-Tutorial-add-Babel-loader-to-write-js-use-ES6/" data-tooltip="Webpack 3 Tutorial - add Babel loader to write js use ES6" aria-label="下一篇: Webpack 3 Tutorial - add Babel loader to write js use ES6">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -471,7 +488,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>分享到 Facebook</span>
                 </a>
             </li>
         
@@ -479,7 +496,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
                 </a>
             </li>
         
@@ -487,7 +504,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/11/01/Webpack/Webpack-3-Tutorial-add-PUG-templates-to-write-html/">
-                    <i class="fa fa-google-plus"></i><span>分享到 Google+</span>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>分享到 Google+</span>
                 </a>
             </li>
         
@@ -532,7 +549,8 @@
     </div>
 </div>
 
-        <div id="algolia-search-modal" class="modal-container">
+        
+            <div id="algolia-search-modal" class="modal-container">
     <div class="modal">
         <div class="modal-header">
             <span class="close-button"><i class="fa fa-close"></i></span>
@@ -729,6 +747,31 @@
                 <div class="media">
                     
                     <div class="media-left">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <img class="media-image" src="http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <h3 class="media-heading">.NET Core 2.0 Debug with VScode</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2017年12月25日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>這次要教大家如何使用 <code>VScode</code> debug <code>.Net Core</code> 的專案喔～<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
                         <a class="link-unstyled" href="http://annilla.github.io/3017/09/30/Resume/">
                             <img class="media-image" src="https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&amp;fit=crop&amp;w=1360&amp;h=200&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="90" height="90"/>
                         </a>
@@ -783,16 +826,17 @@
                 data-message-zero="沒有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 9 篇文章
+                找到 10 篇文章
             </p>
         </div>
     </div>
 </div>
 
         
+        
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
-<script src="/assets/js/script-ivwiy10zeb8fifc4swnhkwneuk64y53w2scmdmtp8thi9cqfxh31aowtroaz.min.js"></script>
+<script src="/assets/js/script-peofhqjkzcghmndknakluequy1y6owxdwpaqyju9ntl9zxnk7rdolb3rjjoj.min.js"></script>
 <!--SCRIPTS END-->
 
     
@@ -821,6 +865,7 @@
         var algoliaClient = algoliasearch('LCYI2MVFA7', '653a1c55a785578623b2c89180d87cf8');
         var algoliaIndex = algoliaClient.initIndex('Anny-Chang-blog');
     </script>
+
 
     </body>
 </html>

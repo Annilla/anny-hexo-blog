@@ -48,9 +48,10 @@
     
     
     <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-sxklfps8ywgfyyjcowvnb4gxdgt0zjts3hsguljmv9uqanxjbnitrovtbrek.min.css">
+    <link rel="stylesheet" href="/assets/css/style-pz4cc6y13wt2trzqa8l3n9v0yykr0sstdaheem7qj628nhjmhp9pfawvqawz.min.css">
     <!--STYLES END-->
     
+
     
 </head>
 
@@ -107,9 +108,10 @@
                         <a  class="sidebar-button-link "
                              href="/ "
                             
+                            title="首頁"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">首頁</span>
                     </a>
             </li>
@@ -119,9 +121,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-categories"
                             
+                            title="分類"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">分類</span>
                     </a>
             </li>
@@ -131,9 +134,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-tags"
                             
+                            title="標籤"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">標籤</span>
                     </a>
             </li>
@@ -143,9 +147,10 @@
                         <a  class="sidebar-button-link "
                              href="/all-archives"
                             
+                            title="所有文章"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">所有文章</span>
                     </a>
             </li>
@@ -155,9 +160,10 @@
                         <a  class="sidebar-button-link open-algolia-search"
                              href="#search"
                             
+                            title="搜尋"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-search" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">搜尋</span>
                     </a>
             </li>
@@ -167,9 +173,10 @@
                         <a  class="sidebar-button-link "
                              href="#about"
                             
+                            title="關於"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">關於</span>
                     </a>
             </li>
@@ -180,27 +187,27 @@
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://github.com/Annilla" target="_blank" rel="noopener" title="GitHub">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">GitHub</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002453201106" target="_blank" rel="noopener" title="Facebook">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-facebook" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Facebook</span>
                     </a>
             </li>
             
                 <li class="sidebar-button">
                     
-                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener">
+                        <a  class="sidebar-button-link " href="https://plus.google.com/u/0/+%E5%BC%B5%E5%B7%A7%E5%80%AA" target="_blank" rel="noopener" title="Google Plus">
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-google-plus"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-google-plus" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Google Plus</span>
                     </a>
             </li>
@@ -214,9 +221,10 @@
                         <a  class="sidebar-button-link "
                              href="/atom.xml"
                             
+                            title="Atom"
                         >
                     
-                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
                         <span class="sidebar-button-desc">Atom</span>
                     </a>
             </li>
@@ -272,23 +280,23 @@
         <div class="main-content-wrap">
             <h1 id="什麼是-Webpack"><a href="#什麼是-Webpack" class="headerlink" title="什麼是 Webpack ?"></a>什麼是 Webpack ?</h1><p><code>Webpack</code> 是針對所有前端程式的管理整合工具。工程師編寫程式模組（<code>html</code>, <code>css</code>, <code>js</code>, <code>sass</code>, <code>pug</code>, <code>babel</code>, … etc.），使用 <code>webpack</code> 打包輸出靜態資產（assets）,配合<code>Babel</code>, <code>ES6</code>使用，可以寫出乾淨可復用的代碼，做到更好的前端程式管理。這一篇先示範基礎安裝和設定基本描述檔。<br><a id="more"></a></p>
 <h2 id="安裝環境"><a href="#安裝環境" class="headerlink" title="安裝環境"></a>安裝環境</h2><ol>
-<li><p>安裝 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></p>
+<li><p>安裝 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
 </li>
 <li><p>開一個專案資料夾，建置 <code>npm</code> 專案</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
 <p>設定 package.json</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"name"</span>: <span class="string">"Your Project Name"</span>,</div><div class="line">  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</div><div class="line">  <span class="string">"description"</span>: <span class="string">"Webpack project."</span>,</div><div class="line">  <span class="string">"main"</span>: <span class="string">"index.js"</span>,</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>,</div><div class="line">  &#125;,</div><div class="line">  <span class="string">"author"</span>: <span class="string">"Your Name"</span>,</div><div class="line">  <span class="string">"license"</span>: <span class="string">"ISC"</span>,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"Your Project Name"</span>,</span><br><span class="line">  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,</span><br><span class="line">  <span class="string">"description"</span>: <span class="string">"Webpack project."</span>,</span><br><span class="line">  <span class="string">"main"</span>: <span class="string">"index.js"</span>,</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"author"</span>: <span class="string">"Your Name"</span>,</span><br><span class="line">  <span class="string">"license"</span>: <span class="string">"ISC"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>安裝開發端套件 Webpack<br>安裝全域(global)</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g i webpack</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -g i webpack</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>只有第一次使用<code>webpack</code>需要安裝全域，裝過一次之後就可以不用再安裝global</p>
 </blockquote>
 <p>專案開發端安裝套件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i -D webpack</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D webpack</span><br></pre></td></tr></table></figure>
 <h2 id="組織專案架構"><a href="#組織專案架構" class="headerlink" title="組織專案架構"></a>組織專案架構</h2><p>在專案建立 src 和 dist 資料夾。</p>
 <ul>
 <li>src: 工程師寫的程式放這裡。</li>
@@ -296,11 +304,11 @@
 <li>src/app.js: 建立一支 <code>js</code> 檔案，等會要來測試 <code>webpack</code> 自動打包的功能用。</li>
 </ul>
 <p>app.js 內可以隨意寫 console 來測試</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">'Hello World!'</span>);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'Hello World!'</span>);</span><br></pre></td></tr></table></figure>
 <h2 id="設定描述檔"><a href="#設定描述檔" class="headerlink" title="設定描述檔"></a>設定描述檔</h2><ol>
 <li>在專案下新增<code>webpack.config.js</code>檔案。</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports = &#123;</div><div class="line">  entry: <span class="string">'./src/app.js'</span>,</div><div class="line">  output: &#123;</div><div class="line">    filename: <span class="string">'./dist/app.bundle.js'</span></div><div class="line">  &#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  entry: <span class="string">'./src/app.js'</span>,</span><br><span class="line">  output: &#123;</span><br><span class="line">    filename: <span class="string">'./dist/app.bundle.js'</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>entry: 開始執行打包的入口</li>
 <li>output: 輸出結果設定<ul>
@@ -311,7 +319,7 @@
 <ol>
 <li>修改<code>package.json</code>檔案 <code>scripts</code></li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  ...</div><div class="line">  <span class="string">"scripts"</span>: &#123;</div><div class="line">    <span class="string">"dev"</span>: <span class="string">"webpack -d --watch"</span>,</div><div class="line">    <span class="string">"prod"</span>: <span class="string">"webpack -p"</span></div><div class="line">  &#125;,</div><div class="line">  ...</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  ...</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"dev"</span>: <span class="string">"webpack -d --watch"</span>,</span><br><span class="line">    <span class="string">"prod"</span>: <span class="string">"webpack -p"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>-d: 開發模式輸出，不會 minify js</li>
 <li>–watch: 監聽程式碼修改，支援即時輸出</li>
@@ -320,27 +328,28 @@
 <h2 id="執行-webpack-打包測試"><a href="#執行-webpack-打包測試" class="headerlink" title="執行 webpack 打包測試"></a>執行 webpack 打包測試</h2><ol>
 <li>執行<code>package.json</code>內<code>script</code>設定的 dev</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
 <ul>
 <li>結果：會在 <code>dist</code> 資料夾內產<code>app.bundle.js</code>，沒有 minify</li>
 </ul>
 <ol>
 <li>執行<code>package.json</code>內<code>script</code>設定的 prod</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run prod</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run prod</span><br></pre></td></tr></table></figure>
 <ul>
 <li>結果：會在 <code>dist</code> 資料夾內產<code>app.bundle.js</code>，有 minify</li>
 </ul>
-<p>基本 webpack 練習完成囉～實際操作影片可觀賞 Ihatetomatoes 大大的 YOUTUBE 教學<a href="https://www.youtube.com/watch?v=JdGnYNtuEtE&amp;index=1&amp;list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY" target="_blank" rel="external">Webpack 2 Tutorial - Installation and Config</a>，感謝觀看 :)</p>
+<p>基本 webpack 練習完成囉～實際操作影片可觀賞 Ihatetomatoes 大大的 YOUTUBE 教學<a href="https://www.youtube.com/watch?v=JdGnYNtuEtE&amp;index=1&amp;list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY" target="_blank" rel="noopener">Webpack 2 Tutorial - Installation and Config</a>，感謝觀看 :)</p>
 <blockquote>
-<p>更新：2017/06/30 Webpack 版本更新到 3 囉 ！所以直接測試 3，發現無痛接軌沒問題，實作在 <a href="https://github.com/Annilla/webpack_practice/tree/v1.0.0" target="_blank" rel="external">github</a>，之後就直接都用 3 版實作囉。</p>
+<p>更新：2017/06/30 Webpack 版本更新到 3 囉 ！所以直接測試 3，發現無痛接軌沒問題，實作在 <a href="https://github.com/Annilla/webpack_practice/tree/v1.0.0" target="_blank" rel="noopener">github</a>，之後就直接都用 3 版實作囉。</p>
 </blockquote>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a href="https://llp0574.github.io/2016/11/29/getting-started-with-webpack2/" target="_blank" rel="external">Webpack 2 入門教程</a></li>
-<li><a href="https://www.youtube.com/watch?v=JdGnYNtuEtE&amp;index=1&amp;list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY" target="_blank" rel="external">Webpack 2 Tutorial - Installation and Config</a></li>
+<li><a href="https://llp0574.github.io/2016/11/29/getting-started-with-webpack2/" target="_blank" rel="noopener">Webpack 2 入門教程</a></li>
+<li><a href="https://www.youtube.com/watch?v=JdGnYNtuEtE&amp;index=1&amp;list=PLkEZWD8wbltnRp6nRR8kv97RbpcUdNawY" target="_blank" rel="noopener">Webpack 2 Tutorial - Installation and Config</a></li>
 </ul>
 
             
+
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
@@ -358,9 +367,10 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/30/Webpack/Webpack-3-Tutorial-HTML-Webpack-Plugin/"  data-tooltip="Webpack 3 Tutorial - HTML Webpack Plugin">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/30/Webpack/Webpack-3-Tutorial-HTML-Webpack-Plugin/" data-tooltip="Webpack 3 Tutorial - HTML Webpack Plugin" aria-label="上一篇: Webpack 3 Tutorial - HTML Webpack Plugin">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
@@ -369,54 +379,56 @@
                     <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -450,9 +462,10 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/30/Webpack/Webpack-3-Tutorial-HTML-Webpack-Plugin/"  data-tooltip="Webpack 3 Tutorial - HTML Webpack Plugin">
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/30/Webpack/Webpack-3-Tutorial-HTML-Webpack-Plugin/" data-tooltip="Webpack 3 Tutorial - HTML Webpack Plugin" aria-label="上一篇: Webpack 3 Tutorial - HTML Webpack Plugin">
                 
-                    <i class="fa fa-angle-left"></i>
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
@@ -461,54 +474,56 @@
                     <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
     </nav>
     <ul class="post-actions post-action-share">
         <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Diesen Beitrag teilen">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
         </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-facebook-official"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-twitter"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </li>
         
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-google-plus"></i>
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/" title="分享到 Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </li>
         
         
-            <li class="post-action">
-                <a class="post-action-btn btn btn--default" href="#disqus_thread">
-                    <i class="fa fa-comment-o"></i>
-                </a>
-            </li>
+            
+                <li class="post-action">
+                    <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                        <i class="fa fa-comment-o"></i>
+                    </a>
+                </li>
+            
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
-                <i class="fa fa-list"></i>
+                <i class="fa fa-list" aria-hidden="true"></i>
             </a>
         </li>
     </ul>
@@ -524,7 +539,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>分享到 Facebook</span>
                 </a>
             </li>
         
@@ -532,7 +547,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
                 </a>
             </li>
         
@@ -540,7 +555,7 @@
             
             <li class="share-option">
                 <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://annilla.github.io/2017/06/14/Webpack/Webpack-3-Tutorial-Installation-and-Config/">
-                    <i class="fa fa-google-plus"></i><span>分享到 Google+</span>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>分享到 Google+</span>
                 </a>
             </li>
         
@@ -585,7 +600,8 @@
     </div>
 </div>
 
-        <div id="algolia-search-modal" class="modal-container">
+        
+            <div id="algolia-search-modal" class="modal-container">
     <div class="modal">
         <div class="modal-header">
             <span class="close-button"><i class="fa fa-close"></i></span>
@@ -782,6 +798,31 @@
                 <div class="media">
                     
                     <div class="media-left">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <img class="media-image" src="http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png" width="90" height="90"/>
+                        </a>
+                    </div>
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://annilla.github.io/2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/">
+                            <h3 class="media-heading">.NET Core 2.0 Debug with VScode</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    2017年12月25日
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>這次要教大家如何使用 <code>VScode</code> debug <code>.Net Core</code> 的專案喔～<br></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-left">
                         <a class="link-unstyled" href="http://annilla.github.io/3017/09/30/Resume/">
                             <img class="media-image" src="https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&amp;fit=crop&amp;w=1360&amp;h=200&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" width="90" height="90"/>
                         </a>
@@ -836,16 +877,17 @@
                 data-message-zero="沒有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 9 篇文章
+                找到 10 篇文章
             </p>
         </div>
     </div>
 </div>
 
         
+        
 <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
         <!--SCRIPTS-->
-<script src="/assets/js/script-ivwiy10zeb8fifc4swnhkwneuk64y53w2scmdmtp8thi9cqfxh31aowtroaz.min.js"></script>
+<script src="/assets/js/script-peofhqjkzcghmndknakluequy1y6owxdwpaqyju9ntl9zxnk7rdolb3rjjoj.min.js"></script>
 <!--SCRIPTS END-->
 
     
@@ -874,6 +916,7 @@
         var algoliaClient = algoliasearch('LCYI2MVFA7', '653a1c55a785578623b2c89180d87cf8');
         var algoliaIndex = algoliaClient.initIndex('Anny-Chang-blog');
     </script>
+
 
     </body>
 </html>

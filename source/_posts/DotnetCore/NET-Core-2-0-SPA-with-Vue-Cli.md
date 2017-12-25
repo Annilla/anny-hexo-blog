@@ -6,7 +6,7 @@ thumbnailImage: http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/mod
 thumbnailImagePosition: left
 coverImage: http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png
 coverMeta: out
-tags: [.NET Core, dotnet, Vue, Webpack, SPA, MVC]
+tags: [.NET Core, dotnet, Vue, Webpack, SPA, MVC, VScode]
 date: 2017/12/02
 updated: 2017/12/02
 ---
