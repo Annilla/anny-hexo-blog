@@ -21,6 +21,12 @@ My resume.
 
 * 擅用設計 `UI` 軟體（`Sketch`, `Adobe XD`, `Illustrator`, `Photoshop`）
 
+## 研討會 / 工作坊
+| 時間 | 研討會 / 工作坊 | 分享主題 |
+| --- | --- | --- |
+| 2017.08 | Kingston 2017 Mobile Team Workshop | [Use Webpack + Vue-Loader in VS2017](https://speakerdeck.com/annilla/use-webpack-plus-vue-loader-in-vs2017) |
+| 2016.11 | 前端魔法師十一月份小聚 | [Facebook Instant Articles - 測試到發布](https://speakerdeck.com/annilla/facebook-instant-articles-ce-shi-dao-fa-bu) |
+
 ## 證照
 
 | 時間 | 證書 |
@@ -93,4 +99,4 @@ My resume.
 
 * CSS / SASS(SCSS) / STYLUS / POSTCSS
 
-* JS / JQUERY / VUE / ES6 / NODE
+* JS / JQUERY / VUE / ES6
