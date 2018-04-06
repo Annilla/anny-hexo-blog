@@ -3,7 +3,7 @@ title: D3 v4 with Vue - SVG Horizontal Bar Chart
 categories:
   - D3
 thumbnailImage: http://i965.photobucket.com/albums/ae138/anny09117011/Blog/d3-vue-banner.png
-thumbnailImagePosition: bottom
+thumbnailImagePosition: left
 coverImage: http://i965.photobucket.com/albums/ae138/anny09117011/Blog/d3-vue-banner-blog.png
 coverMeta: out
 tags: [D3, Vue, SVG]
