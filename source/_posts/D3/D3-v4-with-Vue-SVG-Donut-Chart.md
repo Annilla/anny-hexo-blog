@@ -1,6 +1,6 @@
 ---
 title: D3 v4 with Vue - SVG Donut Chart
-ccategories:
+categories:
   - D3
 thumbnailImage: http://i965.photobucket.com/albums/ae138/anny09117011/Blog/d3-vue-banner.png
 thumbnailImagePosition: left
