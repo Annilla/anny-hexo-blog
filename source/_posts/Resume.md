@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2017/12/03
+updated: 2018/11/04
 ---
 
 My resume.
@@ -48,6 +48,7 @@ My resume.
 
 | 時間 | 課程 |
 | --- | --- |
+| 2018.10 | 29761 使用微軟 T-SQL 查詢資料 |
 | 2017.09 | Skilltree JavaScript 實務測試新手班 第三梯 |
 | 2017.06 | 網站測試開發 with WebdriverIO 實戰講堂 |
 | 2014.11 | 色彩溝通立即上手 |
