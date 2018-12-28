@@ -21,8 +21,18 @@ My portfolio.
 
 # Web Collection
 
-| 作品 | 分類 | 連結 |
+| 作品 | 分類 | 內容 |
 | --- | --- | --- |
+| 網頁 | 公司 | Reflow Supplement Page |
+| 系統 | 公司 | System Profile Management (Web) |
+| 系統 | 公司 | NXT (Web) |
+| 系統 | 公司 | Workflow Compliance (Web) |
+| 網頁 | 公司 | Kingston Mobile Team Portal |
+| 系統 | 公司 | B2B (Web) |
+| 系統 | 公司 | Material Requirement Planning (Web) |
+| 系統 | 公司 | Empolyee Authentication Service (Web) |
+| 系統 | 公司 | Notes SignOff APP (Mobile Web App) |
+| 系統 | 公司 | Quotation System (Web & iOS App Design) |
 | 網站 | 綜合 | [JUKSY 街星](https://www.juksy.com/) |
 | 網頁 | 展覽 | [《復仇者聯盟》世界巡迴展](https://www.juksy.com/events/avengersstation) |
 | 網頁 | 電影 | [《金剛戰士》Power Rangers GO GO！](https://www.juksy.com/events/MMPR2017) |
