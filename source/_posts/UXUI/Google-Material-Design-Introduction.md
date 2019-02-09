@@ -8,8 +8,8 @@ thumbnailImagePosition: left
 coverImage: https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1Hfurrx3NHOuac_WreNWxG-2qdKjliIx_%2Fintro-illo-metaphor.png
 coverMeta: out
 tags: [UX, UI, Material Design]
-date: 2019/02/06
-updated: 2019/02/06
+date: 2019/02/09
+updated: 2019/02/09
 ---
 
 從 2018 年 8 月開始 Material Design 進行大幅度的更新。到目前為止發展出許多豐富的資源、工具和工作流，讓設計師、工程師們合作更順利，也積極舉辦比賽、研討會並分享業界使用示例讓大家有更多互相學習的空間，最近會寫一系列關於 Google Material Design 的文章，雖然已經使用 Material Design 超過一年了，但還是想透過閱讀新文件的機會，來邊學邊分享給大家XD
