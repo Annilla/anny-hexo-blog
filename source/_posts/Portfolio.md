@@ -23,11 +23,13 @@ My portfolio.
 
 | 作品 | 分類 | 內容 |
 | --- | --- | --- |
-| 網頁 | 公司 | Reflow Supplement Page |
+| 系統 | 公司 | OPscan (Web) |
+| 網頁 | 公司 | Online User Manual (Hexo) |
+| 網頁 | 公司 | Reflow Supplement Page (Web) |
 | 系統 | 公司 | System Profile Management (Web) |
 | 系統 | 公司 | NXT (Web) |
 | 系統 | 公司 | Workflow Compliance (Web) |
-| 網頁 | 公司 | Kingston Mobile Team Portal |
+| 網頁 | 公司 | Kingston Mobile Team Portal (Hexo) |
 | 系統 | 公司 | B2B (Web) |
 | 系統 | 公司 | Material Requirement Planning (Web) |
 | 系統 | 公司 | Empolyee Authentication Service (Web) |
