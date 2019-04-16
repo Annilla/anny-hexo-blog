@@ -60,6 +60,8 @@ Reply 使用類似於其他電子郵件應用程序的產品結構：包含新�
 
 ![Reply 平板導覽列](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1tr41eJcVoKTnE7rq9vDBpaWUlVLdTlPa%2Fcasestudies-reply-railnav.png "Reply 平板導覽列")
 
+> 心得：手機底部的導覽列是我沒嘗試過的設計，因為工作上比較常做 Web 的應用，所以通常會使用上方 bar。但這樣使用下方 bar ，可以讓內容集中在上方，對於大量內容的呈現是很好的選擇。
+
 # 排版
 
 Reply 使用 12 grid system。
@@ -70,9 +72,11 @@ Reply 使用 12 grid system。
 
 Reply 使用顏色來區分不同的元件。例如，卡片容器是可見的，因為卡片具有白色表面顏色，而應用程式的背景是灰色的。
 
-由於 Reply 有時候會顯示密集的內容，因此不要使用陰影會降低視覺的複雜性。他還允許項目之間有較小的間距，從而為內容流出更多的空間。
+由於 Reply 有時候會顯示密集的內容，因此將陰影移除會降低視覺的複雜性。並將項目的間距拉小，從而為內容流出更多的空間。
 
 ![視覺層級](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1EmDZJ6SLz0CwwbxPiaYXqkTDbt2n_FKI%2Fcasestudies-reply-elevation.png "視覺層級")
+
+> 心得：利用小間距和去除陰影來顯示密集的內容，這點我在工作上也常常用到，最近剛做產線人員掃條碼顯示 64 條資料要同時呈現在一個畫面上，光是設計就佔了很重要的角色，畢竟在寫程式之前可以先有個底，才不用花費大量時間在調整版面上。
 
 # 顏色
 
@@ -83,6 +87,8 @@ Reply 的顏色主題使用一個主色調(深藍灰色)和一個輔助色(橘�
 每當使用輔助色的時候，視覺上都會產生明顯的影響。
 
 ![顏色主題](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1XUGSUZeLYqhH--JBBHWLkRnJzVmX13oR%2Fcasestudies-reply-color.png "顏色主題")
+
+> 心得：這種配色是我平常常用的方式，因為顏色少的話在配色方面比較不容易混亂，相較於上一篇介紹 [Rally](../../../../../2019/04/05/UXUI/Google-Material-Studies-Rally/) 的 6 色，Reply 就是保守派。
 
 # 文字與圖示
 
@@ -101,9 +107,44 @@ Reply 的 icon 具有細微的風格，表達品牌也同時專注於 icon 識�
 
 元件根據大小使用不同的形狀類型，將形狀做分類可以讓螢幕一次放多個元件，分類包含：
 
-1. 小元件 (S)：延伸的FAB(floating action button)。圓角 50%。
-2. 中元件 (M)：。
-3. 大元件 (L)：。
+1. 小元件 (S)：延伸的 FAB (floating action button)。圓角 50%。
+2. 中元件 (M)：卡片 (Cards)。圓角 0。
+3. 大元件 (L)：底部清單 (Bottom sheets)。圓角 12dp 12dp 0 0。
+
+![形狀分類](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1Zv545CazM0c_SvUuZqnUg6hE7Dv-S3m0%2Freply-shape.png "形狀分類")
+
+![形狀元件](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1J8hIuMxjeCb-xIkot0krL8abdBIIIqfw%2Freply-shape-b.png "形狀元件")
+
+# 元件
+
+### 浮動動作按鈕 (Floating action button)
+
+在手機上， Reply 在底部嵌入自定義的 FAB (Floating action button)。
+
+![手機自定義的 FAB](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1GhRm29BQNQHyLVPO0q_JdgYN4G82YjUS%2Fcasestudies-reply-nestedfab.png "手機自定義的 FAB")
+
+在桌機上， Reply 使用自定義的 FAB 延伸，和抽屜式導覽做搭配。
+
+![桌機自定義的 FAB](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1wNWnttN_BLCzr5bi2w-8VDEbCTV8sh66%2Fcasestudies-reply-extendedfab.png "桌機自定義的 FAB")
+
+### 底部 bar, 底部清單
+
+在手機，Reply 使用客制的底部 bar 和動作按鈕。
+
+1. 預設的底部 bar
+2. Reply 的底部 bar 使用客制的 icon, 顏色和形狀。Reply logo 做為選單功能 icon 被包含在元件中。客制形狀的底部 bar 包含浮動動作按鈕。
+
+![底部 bar](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1jTk6oF1ib0k1wIhXnjTLn0kgEZxNznl5%2Fcasestudies-reply-bottombar-compare.png "底部 bar")
+
+在手機，底部 bar 是切換導覽和進行動作的主要方式。
+當使用者選取多個進行動作時，底部 bar 會變成內文動作 bar。
+
+![內文動作 bar](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1a-17T_B8F7nlrJc9pJ6opEdFG-cuccmZ%2Fcasestudies-reply-contextualactionbar.png "內文動作 bar")
+
+當使用者滑動頁面的時候，底部 bar 會從螢幕消失，只剩下 FAB 按鈕。
+
+![滑動頁面剩下 FAB](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1I1RcG9mNZYJgCPZu9u_wsYBaiHxNIJ8Q%2Fcasestudies-reply-floatingfab.png "滑動頁面剩下 FAB")
+
 
 
 ## 參考資料
