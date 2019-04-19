@@ -145,7 +145,47 @@ Reply 的 icon 具有細微的風格，表達品牌也同時專注於 icon 識�
 
 ![滑動頁面剩下 FAB](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1I1RcG9mNZYJgCPZu9u_wsYBaiHxNIJ8Q%2Fcasestudies-reply-floatingfab.png "滑動頁面剩下 FAB")
 
+### 卡片
 
+Reply 將郵件呈現在客制的方角卡片上。每張卡片的間距非常小，因為顏色代表每張卡片的邊界(沒有使用任何陰影)。小間距讓更多內容可以呈現在螢幕上。
+
+當卡片往右邊滑時，會出現對郵件標示星號的動作按鈕。
+
+![卡片往右滑](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1FJEijR5c1uTkUcHsUUU0GHLuupehX39-%2Fcasestudies-reply-cards-1.png "卡片往右滑")
+
+當卡片往左邊滑時，會出現對郵件刪除的動作按鈕。
+
+![卡片往左滑](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1WZlOkz0ZWCN4BhIWrvM7H4NsvlNxt5OI%2Fcasestudies-reply-cards-2.png "卡片往左滑")
+
+### 小標籤 (Chips)
+
+Reply 的小標籤 (Chips) 使用客制的文字、顏色和圖像大小。在視覺上和品牌相吻合。
+
+![小標籤](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1bQe04HeiZ4CLLKEVXGs_B-yYd4mc_Ztx%2Fcasestudies-reply-chips-alt.png "小標籤")
+
+> 心得：此專案對許多 material components 做客製化的樣式修改，礙於工作要同時做設計和開發的時間限制下，我比較沒有對這方面下過功夫，或許下次我可以從微調一些元件樣式來增加對品牌的塑造。
+
+# 交互動作
+
+Reply logo 的動畫其描繪靈感來自捲曲紙張路徑。
+
+<video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1CmJcj6oa4Qwo_i8KkNaruAtMOCNnnpfw%2F01-launch.mp4" autoplay loop style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>
+
+Reply 使用較短的動畫時間來加強動作效率。
+
+<video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1MfIr9GSQ4iAfUNoAtKIUKX0lP6Kxt8kC%2F02-reply-navtransitions.mp4" autoplay loop style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>
+
+插圖動畫在用戶使用的關鍵點出現，例如完成收件夾中每個項目的存檔後，觸發了一個慶祝動畫。
+
+<video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1SapnI_EXJwjkvMb87hWWakpTMLIKoxiQ%2F03-reply-inboxzero.mp4" autoplay loop style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>
+
+當使用者將頁面往下拉重新整理時， Reply 的 logo 動畫會出現在上方。
+
+<video src="https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F120IhHIDr-BHTPrTmFnXpEHfsOJEdVsg8%2F04-reply-pulltorefresh.mp4" autoplay loop style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">your browser does not support the video tag</video>
+
+> 心得：logo 動畫二次使用在 Refresh 頁面上，我覺得這點非常不錯，除了讓畫面生動起來也可以節省設計時間。
+
+總結：Reply 讓我學到更多對 material component 做更細微設計的靈感，希望之後有機會多做一點有趣的元件設計提升品牌形象。
 
 ## 參考資料
 
