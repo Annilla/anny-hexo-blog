@@ -22,7 +22,16 @@ Shrine APP 是一個線上市場，透過推播標籤 (promoted labels) 來表�
 
 ## 極簡美學
 
-Shrine 採用極簡主義美學創造了一種體驗，此體驗為内容和行動成為用户體驗的最前線。Shrine 的品牌扮演着重要的角色，作為展示各種產品和品牌核心的统一架構。
+Shrine 的極簡主義將使用者體驗著重在產品内容和 APP 互動。作為展示各種產品和品牌核心的统一架構，Shrine 的品牌扮演着重要的角色。
+
+## 視覺主題
+
+Shrine 的視覺主題採用去角的剪裁設計，應用在各種組件和元素上。這些元素代表 Shrine logo 的形狀，且為 Shrine 品牌的延伸設計。
+
+![Shrine 去角的剪裁設計](https://storage.googleapis.com/spec-host-backup/mio-design%2Fassets%2F1KZq-VRhEx9j2HydlT4ZW9H7tR-WoOZAe%2Fcasestudies-shrine-logo-alt.png "Shrine 去角的剪裁設計")
+
+Shrine 的互動模型是由三個重疊的圖層組成。最下層為導航和品牌元素，中間層為主要內容，最上層為購物車。
+
 
 ## 參考資料
 
