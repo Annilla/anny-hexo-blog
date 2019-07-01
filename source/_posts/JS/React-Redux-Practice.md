@@ -71,7 +71,7 @@ yarn start
 
 ### createStore
 
-教程在 index.js 先創建了簡易的 store。[Git](...)
+教程在 index.js 先創建了簡易的 store。[Git#1](...)
 
 ```js
 ...
@@ -113,7 +113,7 @@ console.log(store.getState());
 
 ### combineReducers
 
-[Git](...)
+當有兩個以上的 Reducers 時，在 index.js 做合併。 [Git#2](...)
 
 ```js
 ...
@@ -146,7 +146,7 @@ const store = createStore(
     user: 'Anny Chang'
   },
   // 開啟 devTool
-  window.devToolsExtension && window.devToolsExtension()
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 // 定義動作
@@ -159,5 +159,122 @@ const updateUserAction = {
 
 // 將動作帶入 reducer 中，進而更新 store 中的 state
 store.dispatch(updateUserAction);
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 ...
 ```
+
+## Reducers and Actions
+
+將 Reducers 和 Actions 從 index.js 中抽離。[Git#3](...)
+
+### Actions
+
+在 `src/acitons/` 新增 `user-actions.js` 和 `products-actions.js`。
+
+user-actions.js
+
+```js
+// 將 type 名稱輸出供 Reducer 共用
+export const UPDATE_USER = 'users:updateUser';
+
+export function updateUser (newUser) {
+  return {
+    type: UPDATE_USER,
+    payload: {
+      user: newUser
+    }
+  }
+}
+```
+
+### Reducers
+
+在 `src/reducers/` 新增 `user-reducer.js` 和 `products-reducer.js`。
+
+user-reducer.js
+
+```js
+// 從 Action 那裡取得動作名稱
+import { UPDATE_USER } from '../actions/user-actions'
+
+export default function userReducer(state = '', {type, payload}) {
+  switch (type) {
+    case UPDATE_USER:
+      return payload.user;
+    default:
+      return state;
+  }
+}
+```
+
+### View
+
+App.js
+
+```js
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { connect } from 'react-redux';
+import { updateUser } from './actions/user-actions'
+
+class App extends Component {
+  constructor(props) {
+    // Using super in classes
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super#Using_super_in_classes
+    // super() 將父類的構建項目傳到子項目
+    super(props);
+    // 將 onUpdateUser(event) 綁定 component 本身 = this
+    this.onUpdateUser = this.onUpdateUser.bind(this);
+  }
+
+  onUpdateUser(event) {
+    // this = component 本身
+    // 將輸入框的文字丟給 Redux Action
+    this.props.onUpdateUser(event.target.value);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <p>Practice by Anny Chang</p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+          <h1>
+            <input onChange={this.onUpdateUser}></input>
+            <br/>
+            {this.props.user}
+          </h1>
+        </header>
+      </div>
+    );
+  }
+}
+
+// 將 Redux State 丟到此 component 的 prop
+const mapStateToProps = state => ({
+  products: state.products,
+  user: state.user
+});
+
+// 將 Redux Action 丟到此 component 的 prop
+const mapActionsToProps = {
+  onUpdateUser: updateUser
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(App);
+
+```
+
