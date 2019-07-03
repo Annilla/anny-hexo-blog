@@ -8,8 +8,8 @@ thumbnailImagePosition: left
 coverImage: https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png
 coverMeta: out
 tags: [JS, React, Redux]
-date: 2019/07/01
-updated: 2019/07/01
+date: 2019/07/03
+updated: 2019/07/03
 ---
 
 最近朋友問我關於 Redux 的問題，但我已經有兩年沒碰 React 了。所以藉此機會找了 youtube 上的[教程](https://youtu.be/OSSpVLpuVWA)，好好複習一次。
@@ -71,7 +71,7 @@ yarn start
 
 ### createStore
 
-教程在 index.js 先創建了簡易的 store。[Git#1](...)
+教程在 index.js 先創建了簡易的 store。[Git#1](https://github.com/Annilla/react-redux-practice/tree/V1)
 
 ```js
 ...
@@ -113,7 +113,7 @@ console.log(store.getState());
 
 ### combineReducers
 
-當有兩個以上的 Reducers 時，在 index.js 做合併。 [Git#2](...)
+當有兩個以上的 Reducers 時，在 index.js 做合併。 [Git#2](https://github.com/Annilla/react-redux-practice/tree/V2)
 
 ```js
 ...
@@ -166,7 +166,7 @@ ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementB
 
 ## Reducers and Actions
 
-將 Reducers 和 Actions 從 index.js 中抽離。[Git#3](...)
+將 Reducers 和 Actions 從 index.js 中抽離。[Git#3](https://github.com/Annilla/react-redux-practice/tree/V3)
 
 ### Actions
 
@@ -278,3 +278,210 @@ export default connect(mapStateToProps, mapActionsToProps)(App);
 
 ```
 
+## Redux-thunk
+
+當我們在接取 API 非同步的請求時，就需要 Redux-thunk 這個 middleware，幫助 Promise 回傳過後可以在 dispatch 其他的 Action。[Git#4](https://github.com/Annilla/react-redux-practice/tree/V4)
+
+安裝 redux-thunk。
+
+```
+yarn add redux-thunk
+```
+
+在 index.js 引用 thunk。
+
+```js
+...
+import thunk from 'redux-thunk';
+import { applyMiddleware, compose, createStore, combineReducers } from 'redux';
+...
+
+// 使用 applyMiddleware 將 thunk 帶進去改變原生 dispatch 行為
+// Thunk 是一個以 action 為本的包裹器
+// 在 Redux 中藉由 Redux-Thunk 這個 Redux Middleware 讓我們可以在使用時不去區分 pure action creator 還是 thunk action creator
+const allStoreEnhancers = compose (
+  applyMiddleware(thunk),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+const store = createStore(
+  allReducers,
+  {
+    products: [{ name: 'iPhone' }],
+    user: 'Anny Chang'
+  },
+  allStoreEnhancers
+);
+
+...
+```
+
+### Actions
+
+user-actions.js
+
+```js
+import axios from 'axios';
+
+...
+export const SHOW_ERROR = 'users:showError';
+
+...
+
+export function showError () {
+  return {
+    type: SHOW_ERROR,
+    payload: {
+      user: 'ERROR!!'
+    }
+  }
+}
+
+export function apiRequest() {
+  return dispatch => {
+    // 使用 axios 接取 API Promise
+    // 這邊網址因為有 CORS，所以必定 ERROR
+    axios({
+      method: 'GET',
+      url: 'http://google.com'
+    }).then(response => {
+      // 成功的話會 dispatch updateUser Action
+      console.log('SUCCESS');
+      dispatch(updateUser(response.newUser));
+    }).catch(response => {
+      // 失敗的話會 dispatch showError Action
+      console.log('ERROR');
+      dispatch(showError());
+    })
+  }
+}
+```
+
+### Reducers
+
+user-reducer.js
+
+```js
+import { UPDATE_USER, SHOW_ERROR } from '../actions/user-actions'
+
+export default function userReducer(state = '', {type, payload}) {
+  switch (type) {
+    case UPDATE_USER:
+      return payload.user;
+    case SHOW_ERROR:
+      return payload.user;
+    default:
+      return state;
+  }
+}
+```
+
+### View
+
+App.js
+
+```js
+...
+import { updateUser, apiRequest } from './actions/user-actions'
+
+class App extends Component {
+  constructor(props) {
+    ...
+  }
+
+  // 在 component 出現的時候進行 API request
+  componentDidMount () {
+    this.props.onApiRequest();
+  }
+
+  ...
+
+  render() {
+    ...
+  }
+}
+
+...
+
+// 將 apiRequest 放到此 component 的 props
+const mapActionsToProps = {
+  onUpdateUser: updateUser,
+  onApiRequest: apiRequest
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(App);
+```
+
+## Reselect
+
+使用者每次都會透過 action 去做 dispatch 進而改變 state 的值。那麼，問題來了，如果需要的計算量比較大，每次更新的重新計算就會造成性能的問題。為了避免不必要的計算，Reselect 就是來解決此問題。[Git#5](https://github.com/Annilla/react-redux-practice/tree/V5)
+
+> 如果有用過 Vue 的話，就類似 computed 的功能。
+
+Selectors 的特點為：
+
+* Selectors 可以用來計算延伸的資料，允許 Redux 去儲存最低限度的 state。也就是說，state 只儲存原始的基本資料，中間延伸的計算透過 Selector 呈現即可。
+
+* Selectors 很有效率。一個 selector 只會在與他相關的變數有改變的時候才會重新計算。
+
+* Selectors 可以多個組合。可被其他的 selectors 當作變數來運用。
+
+這邊解釋就不用影片中的範例，因為我覺得官方提供的 example 解釋更為貼切。
+
+```js
+import { createSelector } from 'reselect'
+
+// 把 shop 裡面的 items 抓出來
+const shopItemsSelector = state => state.shop.items
+// 把 shop 裡面的 taxPercent 抓出來
+const taxPercentSelector = state => state.shop.taxPercent
+
+// 把 items 的 value 做總和
+const subtotalSelector = createSelector(
+  shopItemsSelector,
+  items => items.reduce((acc, item) => acc + item.value, 0)
+)
+
+// 用 subtotal 和 taxPercent 計算總稅額
+const taxSelector = createSelector(
+  subtotalSelector,
+  taxPercentSelector,
+  (subtotal, taxPercent) => subtotal * (taxPercent / 100)
+)
+
+// 用 subtotal 和 tax 計算加稅後的總金額
+export const totalSelector = createSelector(
+  subtotalSelector,
+  taxSelector,
+  (subtotal, tax) => ({ total: subtotal + tax })
+)
+
+let exampleState = {
+  shop: {
+    taxPercent: 8,
+    items: [
+      { name: 'apple', value: 1.20 },
+      { name: 'orange', value: 0.95 },
+    ]
+  }
+}
+
+console.log(subtotalSelector(exampleState)) // 2.15
+console.log(taxSelector(exampleState))      // 0.172
+console.log(totalSelector(exampleState))    // { total: 2.322 }
+```
+
+## Smart VS Dumb Component
+
+你不可能把每個子 component 都跟 Store 做聯繫，這樣很累且是過度使用。所以我們就會有一個專門和 Store 做聯繫的 Component，也就是 Smart Component。他接到資料後會往下傳給只吃 prop 的 Dumb Component。如此一來我們就能保持只有少數 Smart Component 控制 Store，而底下的 Dumb Component 因為只吃 prop 傳進來的值，所以也可安心的重複使用。
+
+> Smart VS Dumb Component 的概念是通用的理論，並不是 React 獨有。所以同樣的概念也適用在 Vue 和 Angular 等框架上。
+
+![Smart VS Dumb Component](https://huzidaha.github.io/static/assets/img/posts/25608378-BE07-4050-88B1-72025085875A.png "Smart VS Dumb Component")
+
+## 參考資料
+
+* [Redux Middleware大略架構](https://medium.com/@WendellLiu/redux-middleware%E5%A4%A7%E7%95%A5%E6%9E%B6%E6%A7%8B-ace7e646c929)
+* [讓你的Action能作更多 — Redux-Thunk](https://medium.com/frochu/%E9%80%81%E8%AE%93%E4%BD%A0%E7%9A%84action%E8%83%BD%E4%BD%9C%E6%9B%B4%E5%A4%9A-redux-thunk-c07bc5488e48)
+* [react-redux性能优化之reselect](https://www.jianshu.com/p/1fcef4c892ba)
+* [Smart 组件 vs Dumb 组件](http://huziketang.mangojuice.top/books/react/lesson43)
