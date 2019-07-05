@@ -67,7 +67,7 @@ npm run prod
 
 執行完打開 `dist` 資料夾 `index.html` 就可以看到我們更改的草綠色背景囉！
 
-![網頁更改成草綠色背景囉](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-07-30_0936.png "dist/index.html")
+![網頁更改成草綠色背景囉](https://lh3.googleusercontent.com/Yud96AyoVHTNk3AoQLHcsrj3QGZe6u-IV-qlmk49isZQDtDdwi9R5SrU2Yp8nx839a45eZLrD5UxXIfoGtPAKJFJHf6yChSVv2NjV0CX5Jf-6Cob9_R4Ym28v9Y7Y96ihj1hWTC8MY0U7p03o_juLIhQEOWaOpYbVkfYLPSEAIqMrj6keOv2rml5PYdFjoq5vokc_xLkCis3o3Oz8RHdYqueX9N3KMVNGjJTbE9a0SwJg94H6Lzg803ARceJKTzuUiGKmH-0_ibiflMAxKKuOBOhGraH3VtiMNv9RYtzaudsdTrAfMVmpXtM1_HPiK8ZMoYCQlW_x2ewHuhWbE1tGNBeNlHbCcqPsLb8ZZRGEWdE9BHmnMakyKZax_EwSYUUYudPPRXd9BQTGtToM8elBoIMD07HuHZ1pr_UxKFlabSjmUXZIF-BcdpptH8CuU9C-lgD41pO1eF__8mVie_tVyMVP0lq0fpBtT0JxwMElHaUhXLDRUns-261ZANHPD4DU2jOMmRf8JV4hXdgGDITv9LvQps-WNqTEPXr6E9DIwr7kpD_yxsJ9eCcfCmM52QbkhClMU9Kds1Ps4t5QWQ-E49LMs8hNBLG_y6zTGHT01-ssMgsj7Aqvf9OTju8y7159z6S6Ld3x2X-BH2rjqItCsgU79hUIMG0=w1024-h616-no "dist/index.html")
 
 到這裡我們完成引入 `CSS` 的動作，接下來要來試試引入 `SASS`。
 
@@ -129,7 +129,7 @@ npm run prod
 
 執行完打開 `dist` 資料夾 `index.html` 就可以看到我們更改的標題顏色囉！
 
-![網頁更改標題顏色](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-07-30_1001.png "dist/index.html")
+![網頁更改標題顏色](https://lh3.googleusercontent.com/esJm0PM-vvgr8BgLGh2mbvPKhQ2pFMMqhi74QE_2aUnd13kOesjp17hImNoFQ-JTjAHRg2oxKYsbHqKRKPeXl0g8qqfZzE5YHyKvH7hUb7TUvqN_6BSrH5tbuinT8OzcQoCAit6kwSjgjbgiEs7lxLi5ERDTt4G1X0UhtDANV5UjNhDupDYtgDxEa9SLn-wJIgHaVQ9gFJ0zpEPzxx050LgEmR2KU_fTcPV2stWSpBOcP33j_cUZ1RGVyXRpwOyjrviTsr5-zzfZbJBVBsgdyzL9S6tlzD-gPOtuebIGQJ1bzaMYgU11mTylzE9QkUF1Tisffxya1zb9OIv__DPesB33FIwWVrtq5ql1rr-7q7e2AUdTbBxFqQhlzzb1YmSht4lRUOV_g2p6LYzRp5bqNb37clADys_NOxhmar3PjutbShblwfoeGzkBt_qd46JXn_6XlfcbIHVGeyjZAhaTJVoeVt-5xkVMKuAu6qgnP7AAWh1eMSgCjoWwFqHtSB3iTnoZMHqD6zr3ZGqVR2GzWh3Rv0--2t8VbuMUaAAuPzjR98uy6DS9KZiKHOCknhtOUnU-cIKP9PVZh9m1q8Y89G97FvV_LTgdycx_h4GmL09yc2ntJSGLWD7n73jGt3SzTZaf8AVo0T-bKBHBztjCjANZoKw5tf9g=w1024-h616-no "dist/index.html")
 
 `SASS` 引入完成！！大家有發現網頁上的 `css` 怎麼都是跑到 `head` 裡面啦？接下來要教怎麼輸出成一隻 `css` 用 `link` 的方式引入到頁面上。
 

@@ -30,7 +30,7 @@ dotnet new 'ASP.NET Core Web App (Model-View-Controller)'
 
 因為我們是 `SPA` 不需要用到 MVC 其他頁面的功能，所以將多餘的頁面和樣式去除。參考如下的資料夾結構。
 
-![刪除多餘頁面和樣式後的檔案](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1006.png "資料夾結構")
+![刪除多餘頁面和樣式後的檔案](https://lh3.googleusercontent.com/SS8p9bPMBScLwOK1WgnN62PV1W2Tzw2B7KHNgVD9hs2BNQdweBgEZ2ryH8b_X24hUSPNbY52hcdlEeblEfWOjKdXFbZW_ZnZ44yftNz9fbfcuhy8BF8BrlMmmF_PBFJhB7AcOXA4o36r24UcqHbMZQcoAnkCxflijNMA7bZhNhWPXTgqXl4N_ePy8CghldoBBFzDgxtrRgPFS5Xm4cjxl69szT3g1yCmQs0goeNWTFOR12nIsnkbUQN1Cru5V6d6Emfbv9zJE8vsMzde_uFU0VyV0OgGd994-sQs-jORDQ1qijU1O3O3Ycb1Ns8ZM6In9ibZmukZ4GBtNV6SW6dj83Ley2Xo4J_4L-jt__9kRBsVvANhIEonZ-R68GcPqE0KhstaAbvu30u4qtWJJBmuRmfbcEA_1w4qdEkDJ4WJlA4PIbqketu_tLSswyN0U5MDSi0DF0PGHjQA8mXsuYhktGhoJzwEZ8HLa0ENNsIkqgKR4enL2EZWJJVcH-Zc5nqus7A-VYiNfIBv90xzV_DXyN9JVtyEuvpY0H85v65J-uRgTnkJv3JE1Oy2c3nwNcbDWVt67WYwmgr_jNheePATkguwF8zRzmp6Y5vbIGcv4O02vqVBobVZmdtycobJ9E_OT_fFwkUxzA9YCJvuwf7zJFibPpyONXOd=w492-h1024-no "資料夾結構")
 
 * `HomeController.cs` 刪除多餘的 Controller，只保留 `Index` 和 `Error`
 
@@ -113,7 +113,7 @@ dotnet run
 
 用瀏覽器看 `http://localhost:5000` 就會跑出剛剛在 `Index.cshtml` 改寫的 TEST 字樣囉～
 
-![http://localhost:5000](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1011.png "首頁")
+![http://localhost:5000](https://lh3.googleusercontent.com/jx-O61iOA94K7jY7sjjT1cnBGOG5cuJGlUIqGe96uJOEjZr4gbqFXfb3aD_NWUjP-fsO0pQT8FyHi_WfqN8OvYAijsFrPKfz1eZewo5RDj10Cey0BaWbcPx-fINI8QOSESlq_s-7_NLbC6P5K4n75NztGHc3k1PQybqcZTr7ECKIdjnHvZ7tUgtp0YBOblYyEyUX88rTpLHw40Lhh7LPuSIuQZAXIvUE0q6o0_u7AdfR5wBEfBPMf7TdRVb62uHJzsATQQ9BsAupE4uGj0azfDSiMgassf92umZymj9oLTO7hqZpYT526HkbUSxp8fPkahFvk64wSrClyNFrUltLA0oVXa_YCe1sZ-rS1S5cHxRNNgLDQeUHm8pMWwylXEFTGkszYXe5FVgdxJ-ShYNCOTfj1GU2aAKADKocU_Q2h4jcrX0YyRM8sOiiyI84nEG4ojOS5cAY54IXdT5d_RuAtgZNwh3qnk8MUefgImbnQZQIJnZb45xagVaHqaY3E8L4g7uVBIISo76khvDEW0mgAaCJCmUY-opy5RyFeDFEXJNPbyMfcSgfnMlpzkA_xCJhyhpIqtepveU_QIQqFepAXThCbOGbFX8JP30-seCSQMwFYpFzuTtD6QTwVfHRCDSv9r71dEM-I-EN7MUylDXaRX7MpNKj4UH3=w1024-h670-no "首頁")
 
 ## 安裝 `vue-cli` 模板
 
@@ -131,7 +131,7 @@ vue init webpack-simple
 
 按照 `vue-cli` 的指示回覆操作如下圖。
 
-![vue-cli](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1018.png "vue-cli")
+![vue-cli](https://lh3.googleusercontent.com/7ZcKoLrotMFeNr2e41u_n_BRCQaMGoBjMQdX5_c1QH0kZycDBNJxLMz0JbnP4SU7Gb70QFSzVcNFWT4EO2qW5ThZCO1lDUhIW_2-4wPR2t02qbBHdlqYaOwAjuJhPioCY_rAFy6y9u9kPZ5rt8hEqfvHYYc76puVmwrv7r-KV9rT6RN5tdQfJzMhwnCCwMZEfysY_g-zWr49MtT2uf3q5jEKpmR3xbQ2P4QajWQ1g5lEjA-hiOQnbJXkfKl9z6tqzBxyNBQTZISlV0C7DIf4pzFTRk0IFLPW9CfnNtDNDIdT3VyTvONjMoxH6tql-qYwb59Qmg4ExG53WKIrw4YlUfVgR0jtNKnpkxQULSzRPG9xeuOdN0KLyDQ8v_Dvy4JsZLrKSPZVhWHmMyge_Kg_BHITk7Rkfu3g4wNWtZXo2keGXtTlX0_0hXdrAfQtX2lWB92lzc7TknYtrT3WwnEs5-2xKyHUh195Re2x-GdrkzbhsctuIFlw4fHHZIIq8NniKT84GZpTRXVPww9n3AqKcy9dOEdkDy_JvmEhOiLuAM3f5HRUp-8qWpo6bue5ItlRI51PgU4LuuralE9R8SgbnynfBHmkI4a_bdFXWTIUj4BJgEEvExRFhjqwpsbDlQT6MK8xd7-D1H7K6fYamrAaVdP8QYzXQwCu=w1024-h579-no "vue-cli")
 
 執行
 
@@ -147,7 +147,7 @@ npm run dev
 
 用瀏覽器看 `http://localhost:8080` 如果有成功出現如下面畫面就是安裝成功 `vue` 的專案囉～
 
-![http://localhost:8080](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1024.png "首頁")
+![http://localhost:8080](https://lh3.googleusercontent.com/WTK7IxK_nr3qmzCqevVgFhFZQXnkW0t4QPpng4VkfYOWOQSvFL7eHZbDEvfPqDwEjAazw49geCW3opNOVcz45uRoDcIKjPFmnoL8lL8v5Jppc2MrkEF5OvuDb912EfiapEkmNpw-DxzLcb_S3NKzsjnGs3wiuhUaMep1iSiz2Ctt6Nie9pYoV4ucqhvwJ_J4G9IOZ809FBWn7rcr7yit7K-vGQ3__3mJEv4npj123wb6RhkNcXvAswKA4VeCuaRehdCn13U94F5R0WRFFOJam5VNM_klgKWATfZsPcXMgGbQ2-M9KXmXmbZsQRBok5-qDxi9MNtKS5iEBSwgEVZipKafLl-5eqUxe5jiNSyLrHae7KeYsueMDrodFSQdnCjpPaCBjs6rUIrpsncyZGs3G56E3uMYNAfEpIYD9bzpm77m7_SBNcq8WkxbRYhDgpLsiCjiNFLl9FOXMi7ALPM5pWP5QoTi07vUJJFFU6V-pvwRoFUaOjVWb7B9o3j7RXm9hvRWo35lQ1dIQv-q0Wv-KYgrLySLS_WJtVmkdjs6T8iPAxUl0wTuMx1d99q7tgH_W3gFjuFqNL5mpd9b0T8QMMzDimpsEVCjUmzeza_HddnzVLW08caAEISY8IDdSq6CmO0q_msw-qEgUzRMhry4Bs6fzPmxFIVd=w1024-h670-no "首頁")
 
 > 誒～你有沒有注意到奇怪的地方啊?!我們跑 `vue` 的時候是用 `node server` 執行，但是真正專案要在 `.NET server` 執行。所以怎麼把這兩者結合呢？主要原理就是：在 `Development` 時把 `node server` 當作是前端產生靜態資源 (`JS`, `Css`, `images`...) 的工具; `Production` 的部分就把產出過後的靜態資源給 `.NET server` 使用。廢話不多說，我們就來趕緊試試看吧。
 
@@ -247,7 +247,7 @@ dotnet run
 
 成功就會出現之前一樣的畫面囉～
 
-![http://localhost:5000](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1110.png "首頁")
+![http://localhost:5000](https://lh3.googleusercontent.com/WTK7IxK_nr3qmzCqevVgFhFZQXnkW0t4QPpng4VkfYOWOQSvFL7eHZbDEvfPqDwEjAazw49geCW3opNOVcz45uRoDcIKjPFmnoL8lL8v5Jppc2MrkEF5OvuDb912EfiapEkmNpw-DxzLcb_S3NKzsjnGs3wiuhUaMep1iSiz2Ctt6Nie9pYoV4ucqhvwJ_J4G9IOZ809FBWn7rcr7yit7K-vGQ3__3mJEv4npj123wb6RhkNcXvAswKA4VeCuaRehdCn13U94F5R0WRFFOJam5VNM_klgKWATfZsPcXMgGbQ2-M9KXmXmbZsQRBok5-qDxi9MNtKS5iEBSwgEVZipKafLl-5eqUxe5jiNSyLrHae7KeYsueMDrodFSQdnCjpPaCBjs6rUIrpsncyZGs3G56E3uMYNAfEpIYD9bzpm77m7_SBNcq8WkxbRYhDgpLsiCjiNFLl9FOXMi7ALPM5pWP5QoTi07vUJJFFU6V-pvwRoFUaOjVWb7B9o3j7RXm9hvRWo35lQ1dIQv-q0Wv-KYgrLySLS_WJtVmkdjs6T8iPAxUl0wTuMx1d99q7tgH_W3gFjuFqNL5mpd9b0T8QMMzDimpsEVCjUmzeza_HddnzVLW08caAEISY8IDdSq6CmO0q_msw-qEgUzRMhry4Bs6fzPmxFIVd=w1024-h670-no "首頁")
 
 ## 設定 `HMR` 和 `vue router` 的 fallback
 
@@ -327,7 +327,7 @@ npm run hmr
 
 成功的話就會從 `Chrome` 開發者工具看到 `HMR` 連結成功囉～
 
-![http://localhost:5000](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-12-02_1249.png "首頁")
+![http://localhost:5000](https://lh3.googleusercontent.com/teS4z4xS0BE6CsIMEuUgrFU5cEQE_naAsDJb_O-6aYc-WeCvmduiHEyRQJPaBzbMQmOImdXcfv1E9VmDRitocPemHDsPCuk-njpIeDdPItuP4kdMfI_cqaJNnrSO9k8NpJC_0NwQj5L8NgHSIH7amFlGYZwNk9JsyxhgMkOCc67_dbYE48P8gTTr0qbqutjyrm14fdsNJjyUJsAPn8xji47-Asj55hOQv8ilN3-3pNNeXAMybVAdNRoCKZk8MnMJea_qTuoiEMzltk_LHP07K6jbamM7--uqYimHhmW2ZtZ89z9GrW5mc9zR4G9X2oosIEByxrB7tlrHPyDm_JDPQ30cVBaqaed0XwYLwYyemd9IDDQb3e5UvfAbih1KB9UK6poAkEuwAaEXvFlkZRC5_rN16EVSzUoHFH5sTQ2_7xVo4YAP0U_gpP4K1gQdVUVM2yFvOBWpf8V0bJQWIv5QV9vxihQ5nZp5Mk58dK8XhAQPMxCQKDc6VdVBQ-5B5VT1_s_OATXA6masol_u--aruB29iWQPemdwa-iGpYdkWmGkAVVXTcyPqqUZ_uZDkoVo5EPhQ-fYZtlrupwtNXy84xiVmbSQSDUr7kFb4ns7e7RQ2oZChZO7bC72UuvqyMTKWH91j1htEDPQJzjHNFJKaKYmd0xg-9R6=w1024-h670-no "首頁")
 
 今天的範例在 [github](https://github.com/Annilla/dotnet-core-vue-cli/tree/v1.0.0)，下回見～
 

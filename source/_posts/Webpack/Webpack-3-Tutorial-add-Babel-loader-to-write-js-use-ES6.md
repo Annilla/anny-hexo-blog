@@ -85,7 +85,7 @@ console.log(`Test ES6 Distance: ${Point.distance(p1, p2)}`);
 
 執行 `npm run dev`，就可以看到 `console` 出現計算後的兩點長度囉。
 
-![執行 npm run dev 後畫面](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-09-30_1546.png "dist/index.html")
+![執行 npm run dev 後畫面](https://lh3.googleusercontent.com/5S_HyO4HXOk9lkTzktk7Nbv93MPlzlh-NwBtwVLHeRStleqxkbU32GXOlJMb6S-jyRLu22Sficg3jtn2PhmUbA_1BxVKqMhLWXHs8mZDRS-dxA9haBSgCzGi4I1xAODh8qeWbPpCgJCSXIEki7h18ADIx_cotpCTD6vqUt8q8xPQoKqCYqufERPzQXwZVYO-GXwUmb7edUGFUi-iCUi9dwqdwPyOpQMmy42bVioArD7DV536i66AOfgYFo1LWQFh3EOVYa3eufssJJaZ_C-e31Xsv2vOrxYiZXCngeL9ZiFm6TOYbyDBIWn6DsFNEmQFHILVoiSCYnURTbZEAAL_5OyVG5dSsc7FpV26p_F9yUPofNay_JbZzDRMuQ870u2c7eBwy5Im9nRLC4ItKnEssvS2ylDWt5NPA3NZV5EFsx9LTR4DFGdQbLj1GIh5fmLdWQXv0AsU-AB2tuaB1mgxzRmkVWUDiPff2OXl2CXHsF2UeJTFtrxKPX9fHblEiO30NXZYjDhcsw_v1JGx9TtGF4QmPCkC3H5aeXyUvpUBnAVXpMmXhrH9FkXZIhaIXl7mdaiEEQR_7nwkhnVzZdSVL0EJq7TfUlQHz5HeRTjEjYfaU0mf7CNgt_KM3o0ReospKxGdl2Ml1hPfTv56QFuyNAl1NKfZiRvw=w1024-h589-no "dist/index.html")
 
 更多 `babel-preset-env` 的配置選項可參考[官網](http://babeljs.io/docs/plugins/preset-env/#top)，有空也可以來試試 ES7 的 `async`, `await` 喔，我們下次見！
 

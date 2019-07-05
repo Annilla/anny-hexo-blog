@@ -55,7 +55,7 @@ npm run dev
 
 就會自動開啟瀏覽器看到預覽的畫面囉！
 
-![執行 npm run dev](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-09-02_0927.png "dist/index.html")
+![執行 npm run dev](https://lh3.googleusercontent.com/HnOhEhOGSinuEBswiyrJIX8iZ1Czq0EWpKZTRk-BE3mIM50Jri0t-zxbikMgvR4QBDbdM2fNjOeDhhz_4r4VPKxg2XiWMvgI3SBXgmd-d3N_d614PmJT0sKQ5ceBzkbzIlDNgI7GnWwqyTu-H6ZS_4X1Uuz-waQu8e5P2RC29snSMCqLNX5u8GGBJ2JVfS7kTMTfdkAfDnqa09uGuBocmq3Map-Fw8BdArobD_UBU_2cXFb3jMUzPWh0Ze_WUe3PZTcP_8srjAbxV3qu1S_O6GWH5BXT3-tOD9khFUhfcEUo5POBzep225XQr7_kfPeXGDC0dKftE821ZMkerSh994xOMi8pFkkX9BZBnO1zLZQOyJcVjIavFFSGbIBlFO-PQkYT4dA5pOuj9_PVAmmO3UXsbZEcozoqiNuI95lUdAsJ6zw_uJg7khL8iUUkXOo61jHqsOw7l9McIG5O5Vrwq-945YYTYlwSfGmdSzB7ruOMWC9_geJveziVfxV167JqBiONuAAFPgTF9D-1BF3_efshXRPOs35A9HG4GcllYarb-uRbCBF1GMNlQ8I-xPala9qsomjEqcbk5iLAiQ9ZAVYx57B32XqooBBUUX16EucFLvatq2XoZn-7hxep2ucS6DOsjJBMSa5Ys3wq_ioGy5B0pWxPL9Jt=w1024-h681-no "dist/index.html")
 
 疑？內容的文字怎麼好像被切掉了。我們趕緊來試試看修改 `css` 的部分，順便看看  `Hot Reload` 的威力吧～
 
@@ -77,7 +77,7 @@ body {
 
 結果 `webpack-dev-server` 就幫我們即時打包並刷新瀏覽器頁面，所以我們就可以專心的寫code，畫面就會即時的自動更新囉，是不是超方便的啊？
 
-![Hot Reload](http://i965.photobucket.com/albums/ae138/anny09117011/Blog/2017-09-02_0928.png "dist/index.html")
+![Hot Reload](https://lh3.googleusercontent.com/dd1uIE9abHa17DxC19VyS2ejCk-ZLVe5y3PCnUu2HubhUCPvkwyjcUBPm70yP-eqtpsS6n7vJyeH4MjVviE4mCXJ6lwUVDeUUJ6w4pTKBQEWwtLEqa8Seojv2FPPHs70DJxZsZF9_8g2sURtQdUxFBG7H1zy6yd-fLbPB4LUi6Gw2Un9HZ0yrLx6s-8wgp8539AOi8gtlNJDZaoEpRkeEMbmTX4LWe67rKKCVGHFplKxl_u_zYWIVQU94yS1nwgSGgcNK5ZX2sVFUZ2bXc04D2GcC3JREt9WlmvdjGe4Fgs7-ohZgDyi2MJTw16HEhvEa3Yl-n0osdmvF_2cRv8oDbOPqwNL9TFgEdkmv3o9omQhmMg7rBT4_LkRC9vm0i8L-Cisr9eu7Js69IQUUqCkiMz1ZQWw_YIEVk20NbaIKZQRJZAAOnq1_h0N7vR5vnOMgaTWJ5KaucE1sieklCmkci0lLjIutitLXhtGNWYm0R0BKPlgiu8dAPlbfnNB95ReX4QI7bsMHm6tuPSVLkPpWddqMcChszAV6x_9KSieqz8CGlaOhuoAb2yRgR8ZW3oP9PfNT4rPBSx3eiuNalPFBX4xyBNGvMqfUJjioJRTc7F9pGsI-qBeJocby_CFAjY-OnKze75-NRfprp-iZL7dbE3X6o-FelJX=w1024-h681-no "dist/index.html")
 
 今天的範例程式檔[github](https://github.com/Annilla/webpack_practice/tree/v1.3.0)，感謝收看。
 
