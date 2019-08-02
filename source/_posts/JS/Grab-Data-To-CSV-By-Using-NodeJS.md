@@ -120,12 +120,16 @@ function writeFile(data, fileName) {
 function saveFile() {
   try {
     // 將 json 轉 csv
-    const parser = new Parser();
-    const csvHead = parser.parse(head);
-    const csvFeeder = parser.parse(feeder);
-    const csvNozzle = parser.parse(nozzle);
+    const fieldsHead = [columnA, ...];
+    const fieldsFeeder = [columnA, ...];
+    const fieldsNozzle = [columnA, ...];
+    const parserHead = new Parser({ fieldsHead });
+    const parserFeeder = new Parser({ fieldsFeeder });
+    const parserNozzle = new Parser({ fieldsNozzle });
+    const csvFeeder = parserFeeder.parse(feeder);
+    const csvHead = parserHead.parse(head);
+    const csvNozzle = parserNozzle.parse(nozzle);
 
-    // 寫檔案
     console.log(`----- SAVE FILES -----`);
     writeFile(csvHead, 'Head.csv');
     writeFile(csvFeeder, 'Feeder.csv');
@@ -164,4 +168,4 @@ node getData.js
 
 ![跑起來吧](https://lh3.googleusercontent.com/j9w9EiGilWwL1E7atc2_7zYqgVhaihr6BfYRaV5yI_7Zqsm35HHQq-PJB16FVphVx-NG13pmNYy6lSX9OCHF_awYWCscNoCuHxWl8S9dVYtbK6cIFPZVlOk2nlHuPWYZ75c4TrgpM3lOYW3SAwF0QGa38s58WuDPHyxBdZDK-JLJgR7IY-ovFu6YZ2I37ciPf93Mvc24Bg9tJJSj7zdYtfwirxPeFXIVL0guofpoTEBAR29_4BsLnEAtsY6pK5KEXNYcjhwjZ7GuUjNfueF2Qe0abLvsorMFWE1JY5ems-ZOVm0Bw-BmXVqkGNknDNd5aIoILBJ5fAyRLmbV7hVCQpzS79jPBdWDicXsTu8c7qQbGqyU1hyB56MJajIEVViQCoEKMDHnuCWuD67a09wBI8zOQoRIYJmkFf1EPZ93bgVt-KPrgOeQIgaEEIerHPmp56OslVqyOsVi_N4iZ5xROgSit4I4wzfQgZYYbdkLkX4H0fV1VX2zpufoKrx0cz6ZMzTxczYtQErozIMQ5nYZDD1I3xAwN9Gxkr79V2gWHZgICAZ_o1N-MHcM-Sdk690fheubq0PwpekkxP_FIxrJCRaLRYYByMybeyt6z6Y1U713nSO05whp-jMXVNkf459UBi-n8I2Zu8LUktni-ZnJ8GacoOoZM6xV=w1173-h812-no "跑起來吧")
 
-> 後記：其實 User 一直不停的找我手動抓資料，等我有時間寫好這隻程式的時候，User 已經核對完成了 ＯＲＺ。不過，我覺得這是一個很有趣的項目。
+> 後記：其實 User 一直不停的找我手動抓資料，一開始邊寫程式還要先手動抓資料很阿砸，但後來工具完成後，變成非常順手，覺得幸好有寫這隻小工具的感覺XD
