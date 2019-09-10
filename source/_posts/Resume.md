@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2018/11/04
+updated: 2019/09/10
 ---
 
 My resume.
@@ -24,6 +24,7 @@ My resume.
 ## 研討會 / 工作坊
 | 時間 | 研討會 / 工作坊 | 分享主題 |
 | --- | --- | --- |
+| 2019.09 | Kingston 2019 內訓 | [Why Vue.js](https://www.canva.com/design/DADkDdvRR9A/JzfYMOKl6_2DLqeFH-BOww/view?utm_content=DADkDdvRR9A&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) |
 | 2017.08 | Kingston 2017 Mobile Team Workshop | [Use Webpack + Vue-Loader in VS2017](https://speakerdeck.com/annilla/use-webpack-plus-vue-loader-in-vs2017) |
 | 2016.11 | 前端魔法師十一月份小聚 | [Facebook Instant Articles - 測試到發布](https://speakerdeck.com/annilla/facebook-instant-articles-ce-shi-dao-fa-bu) |
 
