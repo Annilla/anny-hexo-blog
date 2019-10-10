@@ -8,7 +8,7 @@ coverImage: https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=fo
 coverMeta: out
 tags: [Portfolio, 作品集]
 date: 3017/12/01
-updated: 2017/12/03
+updated: 2019/10/10
 ---
 
 My portfolio.
@@ -23,6 +23,7 @@ My portfolio.
 
 | 作品 | 分類 | 內容 |
 | --- | --- | --- |
+| 系統 | 公司 | Depanel (Web) |
 | 系統 | 公司 | IND4 (Web) |
 | 系統 | 公司 | SSO (Web) |
 | 系統 | 公司 | OPscan (Web) |
