@@ -61,6 +61,34 @@
   </entry>
   
   <entry>
+    <title>Deep Learning by Python - Setup Environment</title>
+    <link href="http://annilla.github.io/2020/02/15/Python/Deep-Learning-by-Python-Setup-Environment/"/>
+    <id>http://annilla.github.io/2020/02/15/Python/Deep-Learning-by-Python-Setup-Environment/</id>
+    <published>2020-02-14T16:00:00.000Z</published>
+    <updated>2020-02-14T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>深度學習(Deep Learning)將以數篇呈現，先簡要介紹以開源機器學習平台Tensorflow與神經網絡API Keras 在Python實作 Deep Learning。</p><a id="more"></a><ol><li><p>開源機器學習平台Tensorflow，TensorFlow是一個開源軟件庫，在維基上提到用於各種感知和語言理解任務的機器學習。如語音識別，Gmail，Google相簿和搜尋。TensorFlow提供了一個Python API，以及C++、Haskell、Java、Go和Rust API。第三方包可用於 C#、.NET Core、Julia、R和Scala。TensorFlow的底層核心引擎由C++實現，通過gRPC實現網路互訪、分散式執行。雖然它的Python/C++/Java API共享了大部分執行代碼，但是有關於反向傳播梯度計算的部分需要在不同語言單獨實現。目前只有Python API較為豐富。</p></li><li><p>Keras 是一個快速實現深度神經網路用Python編寫的開源神經網路庫，包含許多常用神經網路構建塊的實現，來簡單處理圖像和文字資料。能夠配合TensorFlow，Microsoft Cognitive Toolkit，Theano或PlaidML之上執行，其代碼代管在GitHub上，社區支援論壇包括GitHub的問題頁面和Slack通道。</p></li></ol><p>環境設置：原本按照《深度學習入門教室》一書安裝步驟發現遇到許多問題，python版本與Anaconda的適配問題，以及一些tensorflow相關問題。<br>在安裝與環境設定過程常卡住，以下提及安裝需注意的適配版本。<br>以下安裝範例為Python 3.7.4+Anaconda+tensorflow2.0<br>安裝Anaconda：有分python3.7與python2.7版本。</p><p><img src="https://miro.medium.com/max/2880/0*svhqy8xjtu21TnE9" alt="Python" title="Python"></p><p>安装Tensorflow ：<br>輸入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tensorflow python=3.7</span><br></pre></td></tr></table></figure></p><p><img src="https://miro.medium.com/max/3200/0*DZi-3SBgonasZeH4" alt="Tensorflow" title="Tensorflow"></p><ol><li><p>安装tensorflow：<br>輸入命令<code>pip install tensorflow==2.0.0 -i</code><br><a href="https://pypi.tuna.tsinghua.edu.cn/simple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a><br>激活tensorflow：輸入命令<code>conda activate tensorflow</code></p></li><li><p>安装Keras：輸入命令<code>sudo pip install keras</code><br>測試執行：表示安裝成功</p></li></ol><p><img src="https://miro.medium.com/max/1650/0*peFE1lqO8w65CN3W" alt="Keras" title="Keras"></p><p>確認安裝環境：輸入命令python</p><p><img src="https://miro.medium.com/max/2944/0*gRcC0khdnxuynJI8" alt="python" title="python"></p><p>測試執行：<br>輸入命令<code>import tensorflow as tf</code><br>輸入命令<code>hello=tf.constant(&#39;123&#39;)</code><br>輸入命令<code>sess=tf.Session()</code></p><p><img src="https://miro.medium.com/max/2912/0*k7tyXMt7OpeznOiE" alt="測試執行python" title="測試執行python"></p><p>會錯誤！<br>原因：在於TF 2.0不使用<code>tf.Session</code>，若要繼續使用，需改為<code>sess=tf.compat.v1.Session()</code></p><p>這裡我先備註以後會需要的資料</p><ol><li><p>tensorflow 指令說明網址 <a href="https://www.tensorflow.org/api_docs/python/tf/compat/v1/Session#graph" target="_blank" rel="noopener">https://www.tensorflow.org/api_docs/python/tf/compat/v1/Session#graph</a></p></li><li><p>待研究將TensorFlow 1.X的代碼轉換為TensorFlow2.0代碼<br><a href="https://blog.csdn.net/xovee/article/details/93402172" target="_blank" rel="noopener">https://blog.csdn.net/xovee/article/details/93402172</a></p></li></ol><p>接著<br>輸入命令<code>print(sess.run(hello))</code></p><p>會發現錯誤！</p><p><img src="https://miro.medium.com/max/2884/0*5JslrazdBViiv0ek" alt="測試執行python" title="測試執行python"></p><p>原因：<br>使用<code>tf.compat.v1.Session()</code>雖可執行，但是，然而TF 1.X的的API 使用 Graph Execution，但是TF 2.0 默認使用 eager execution，要解決這個問題有兩種方式一種辦法先定義數據向量圖形，或是使用<code>tf.compat.v1.disable_eager_execution()</code> ，在tensorflow 指令說明裡提這個指令被使用在TF1.X代碼至TF2.0代碼的轉換(It can be used at the beginning of the program for complex migration projects from TensorFlow 1.x to 2.x.)</p><p>因此，最後如下暫時解決，確認是可執行的。<br>測試執行：</p><p><img src="https://miro.medium.com/max/2214/0*MApZjmF_L-69z5Kn" alt="測試執行python" title="測試執行python"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;深度學習(Deep Learning)將以數篇呈現，先簡要介紹以開源機器學習平台Tensorflow與神經網絡API Keras 在Python實作 Deep Learning。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://annilla.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://annilla.github.io/tags/Python/"/>
+    
+      <category term="Deep Learning" scheme="http://annilla.github.io/tags/Deep-Learning/"/>
+    
+      <category term="Keras" scheme="http://annilla.github.io/tags/Keras/"/>
+    
+      <category term="TensorFlow" scheme="http://annilla.github.io/tags/TensorFlow/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Use Cypress with Cucumber for UI Testing</title>
     <link href="http://annilla.github.io/2020/01/04/Testing/Use-Cypress-ui-testing/"/>
     <id>http://annilla.github.io/2020/01/04/Testing/Use-Cypress-ui-testing/</id>
@@ -541,36 +569,6 @@
       <category term="UX" scheme="http://annilla.github.io/tags/UX/"/>
     
       <category term="UI" scheme="http://annilla.github.io/tags/UI/"/>
-    
-      <category term="Abstract" scheme="http://annilla.github.io/tags/Abstract/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UX/UI Workflow Tool in 2018</title>
-    <link href="http://annilla.github.io/2018/09/13/UXUI/UX-UI-Workflow-Tool-in-2018/"/>
-    <id>http://annilla.github.io/2018/09/13/UXUI/UX-UI-Workflow-Tool-in-2018/</id>
-    <published>2018-09-12T16:00:00.000Z</published>
-    <updated>2018-09-12T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>這篇要和大家分享平時設計 UX/UI 的時候我會用到的工具。以及在一堆爆炸的工作量中，要怎麼運用工具存活下來的故事 XD 。那我們就趕快開始吧。</p><a id="more"></a><p>這邊主要先介紹平常會用到的 Tool “粗略簡介”，中間會附註其他類似的工具，最後說明我的設計工作流。比較技術性的使用方式要等後續再慢慢出一些專門的文章。</p><hr><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p><img src="https://lh3.googleusercontent.com/B9jMSu2y8oF5JWE25zqlLeLdnXeFKu8VlAQGjGo7E-naFUVL0Q_svrwfEJc4wfyFGn_YGv7jdo2A8nL_qK2W0_7cy-8rMJZnc3PGERoQ7Yh8yRnxLFw28LW6u_1tqhGYH7cf9nIA5ymIS0-wMQB4jnZ07RdOUVrwhdSMvYhOfdPbs-lBESJPdIfRMA1uJgZt9-moEUPEAHwGV5H9EjDRgACHqJYSj3AVLL05WR3wxW1L0tC2R1bLCH5qfpAwVmD6jiBkwrs1rJEIHYBEMYWT5jPnXTzL1_GF4wo7QRR2hSrucL_88HEz0HPMhl_erd3NbQMykciPwCt9qleYapfcPhFb0IUndhW0YNWZaStiT-e1qK1gqYOtfi7NBuvzX8V9fvT3IyGUXA1R_TZcB0tdYNVe_xFogGYlWFmcs4Kf-M03ffDmIwBe-wAl2FXR2T3dAk0kyBngWTDVgCT7bHzpIeJUQ0wXOgd3G5ULCpnSwGmb-QgXssU3zfGnQPyCZz1YJ4j60m3XXc3D63gcMvVJtec3TzQrhm9z32LeSvtH3xLXftaCJvpu4OAt8qIPN3ccjQZvHVB_wFTcC327qTH8fZzDXc2_76PjyOM5mnRSzYTZWcmyemJiTJZECdSCsCXFh0tAltqbpSlAo5h5lXV7eA6VXf3GJOVf=w1000-h648-no" alt="Abstract" title="Abstract"></p><p><a href="https://www.goabstract.com/" target="_blank" rel="noopener">Abstract</a> 是針對 Sketch 的版本控制工具。</p><blockquote><p>“One place to version, manage, and collaborate on your Sketch files.” </p></blockquote><p>就如同使用 git 一般，所有的修改異動都會以 commit 的方式在雲端。再也不用像以往使用 adobe 系列狂複製做檔案備份的動作，使用 Abstract 就可以隨時查看要的版本，設計師再也不用害怕老闆說：“還是第一個版本好”(ＱＱ～心在淌血)。如果多人修改也可以開不同的分支(branch)，最後將確認的版本 merge 到 Master 即可。這簡直是設計師的救星啊～太多專案真的記不清之前做了什麼事，人也是會老的啊～(誤)</p><blockquote><p>其他類似的工具：<a href="https://plantapp.io/" target="_blank" rel="noopener">Plant</a>, <a href="https://kactus.io/" target="_blank" rel="noopener">Kactus</a>，網路上也有蠻多比較文章，可參考<a href="https://blog.prototypr.io/abstract-vs-kactus-vs-plant-a-guide-of-version-control-solutions-for-sketch-7da0a8ab5105" target="_blank" rel="noopener">這篇</a></p></blockquote><hr><h2 id="Sketch"><a href="#Sketch" class="headerlink" title="Sketch"></a>Sketch</h2><p><img src="https://lh3.googleusercontent.com/p8yHNZixT2X4KUTqi9yWP37AOStxEdS76FbW7-zGuPezghV337s75z3sUnxU-hqp9Nla_daY9xJMdc7fvGZ1QyiRBdI-Lk_FtvL6N_dIW9Szg__ZILi8MxIHzHtHMUe_8A2ICXIswUVtQlg0id5pP5IN6zoiw6uN10jKR_yofIwlH1Gy7GSlwR1Cwxlr3r-FcvvVg2FTZ5U1oUW-HD013ja9hGRhDhW2dkq0B5TiMtSEiNtWGx1oxIZ6YebTtMguiG2JEfur0Kd0Soerl-1DtKrWUmiwWhTYyU4CCWATsgqWLz1WSIi0AZmCCuOEZpELDpiq7McO3U_hUhdltH8ciGSf53BsLnsAi6VDP6w56Y_RhP7JkptmTRytB6_JrwQr34ZBfPlGvtwj9b7egeZ0q76srWyHVzNK_92T4wRFTzztlIeCluignUWrz5ObBOZiVrfHJpJ2DlVyz9NpMPYj_tJY-XTB7QqC8w0Guznx9-GxMcAEkFesDYULzWxQKSt-gKECfrEFJhmtPzPUm7Rf1Y9Fm6zjddvhz3lyYyEbZK8kHzpUTCUDAlDxU2upuEVbIv5-BGpyNsrOMG8Ivb1T87fpy7FLuMcz8Z67hwwh-jav9DqNI9_jpqwNuNeImgehSmeA_5CJ_n-4IUQkYnk-LTACH8P-U77n=w1024-h612-no" alt="Sketch" title="Sketch"></p><p><a href="https://www.sketchapp.com/" target="_blank" rel="noopener">Sketch</a> 設計 UI 的工具，我想他的大名鼎鼎幾乎每位介面設計師都聽過吧。其實我第一次接觸他的契機是因為我需要 “加快” 我的產出速度，為什麼這樣說呢？是設計師的話一定用過 Adobe 的 Illustrator, Photoshop，假設要你設計一個簡單的聯絡人清單介面，用 Adobe 系列做是非常手工的一件事情。但透過 Sketch 大量的外部 plugin 支援，只要引用幾個簡單的 plugin ，就可以快速產出假的聯絡人名稱、假照片、固定的間距(padding)。除此之外，還可以透過 plugin 輸出 spec 給工程師參考，再也不用自己拼命測量、打色碼，告訴工程師要怎麼切版了。為了要在團隊裡同時支撐大量專案的設計，如何在同樣高品質下，提升速度才是能讓自己存活的關鍵。</p><blockquote><p>其他類似的工具：<a href="https://www.adobe.com/tw/products/xd.html" target="_blank" rel="noopener">Adobe XD</a></p></blockquote><hr><h2 id="Adobe-XD"><a href="#Adobe-XD" class="headerlink" title="Adobe XD"></a>Adobe XD</h2><p><img src="https://lh3.googleusercontent.com/oN9oos92ac2EMe_33VCHYJKZpxFT0fE2NwTPMj5LQtPwN0pSFK5VXjktls7Xod7-K4XbRE2ZUXQQ_t6x3Omxl6lKZp3mM8Lpge8YHfHuWTAkodiDHD7zuzGRLm9vfDGzQQLBTehvt1-1hWByIHf8X33vXqer0DQcz-PqYkh_vJ3O4yTbY-XaZGJCY_39VkCUgVD_tMDNMqwK8mkUv_RDFEHK_WHoVrwXYYgvmSS21jTkb8pZdn4XKESnnASPVfodGiSAnPZjVOE_2XBdNMNhbQgXZN7QJMxseCB_erd1NYNb-k3Fox2WG9pxjfj-0zmYB3f1coj1aV9khiz4rlJmGQGjvz2ghfe94OR_gg0rIi4XYfrTKzIW1EjdbzrgHwAxJwyJbVGg_8ZMEd8hYGBYWMeN8p2rCinI9ixu44uZyCUT9hFsFgCmSHgivJhavxdNoPzSwqyMUVTDWccQCaR55IjmKYVtDKhpGmo8jFtxgrRW06ASGP-HCPeFFWcL9x4Ud33O7xugtcGG1GfFivnxD1ZC___vARwrfffz1-M8eTFDrDKAsh4G2bnWmFj4WN4HPHllpcDo4lsx4mjN2KG2aP4mPpJalHdYTxGU_RQkeBxRxP3q7JOtnMTcl8tTwEKhXWl_LJNfkO-70M190n8PFJFtG6J7Laqt=w720-h520-no" alt="Adobe XD" title="Adobe XD"></p><p>誒～～等等，剛剛不是說你是用 Sketch，<a href="https://www.adobe.com/tw/products/xd.html" target="_blank" rel="noopener">Adobe XD</a> 是相似的工具，那你相似的工具怎麼一次就用了兩款了呢？你以為我這麼愛搞死自己啊～還不是因為兩者的出發利基點不同，各有優缺點，所以只好截長補短囉。用 Sketch 主要還是因為有版控的關係，畢竟是以存活為優先啊。而 XD 的優勢呢主要是在他的 prototype ，可以很直覺的拉一拉，就可以輸出 URL 提供 user 使用測試，不用寫程式也可以先收集反饋，不然等到寫好程式又被打槍設計就會進入輪迴地獄了。但近期 XD 和 Sketch 兩者的功能越來越相像， Sketch 新增了 prototype 功能(但還有些小 bug)，而 XD 也在著手開發 plugin 生態，這兩個目前還是不分軒輊。目前本人還是偏向可搭版控功能的 Sketch 為主，而 XD 為輔的狀態。</p><blockquote><p>其他類似的工具：<a href="https://www.invisionapp.com/" target="_blank" rel="noopener">inVision</a>，inVision 除了可以線上做 prototype 之外，還主打模擬過場互動動畫，這款做動畫的威力可說是相當強大，有可能未來會強勢殺出。但目前主要是追求速度的提升，製作互動動畫的部分就沒多重琢磨，可能往後比較有空閒的時間再多加研究。</p></blockquote><hr><h2 id="設計工作流"><a href="#設計工作流" class="headerlink" title="設計工作流"></a>設計工作流</h2><p>我的設計流程大約是這樣的：</p><ol><li>接到需求</li><li>打開版控軟體 Abstract 創立新專案 (既有舊專案則同步檔案至最新)</li><li>用 Abstract 開 new branch</li><li>從 Abstract branch 打開 Sketch 設計 UI</li><li>設計一段落，建立 commit 上 Abstract</li><li>從 Sketch 檔案輸出靜態圖片</li><li>使用 Adobe XD 建立 prototype</li><li>輸出 prototype 網址給使用者測試</li><li>得到使用者回饋後，再決定 Abstract 是否要 merge 此 branch 到 Master 或是繼續新增 commit。最差的可能是全部被打槍，只好從 Master 再另開 branch 來做。</li></ol><p>上面的步驟依據使用者回饋多寡做多次的循環至 OK 為止。</p><p>以上是我到目前為止採用的 design workflow，提供給大家參考。之後會寫一系列關於 UX, UI 的工具使用技巧或介紹大咖的 design pattern 如何幫助我有效率的產出，敬請期待～</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;這篇要和大家分享平時設計 UX/UI 的時候我會用到的工具。以及在一堆爆炸的工作量中，要怎麼運用工具存活下來的故事 XD 。那我們就趕快開始吧。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="UXUI" scheme="http://annilla.github.io/categories/UXUI/"/>
-    
-    
-      <category term="Sketch" scheme="http://annilla.github.io/tags/Sketch/"/>
-    
-      <category term="UX" scheme="http://annilla.github.io/tags/UX/"/>
-    
-      <category term="UI" scheme="http://annilla.github.io/tags/UI/"/>
-    
-      <category term="Adobe XD" scheme="http://annilla.github.io/tags/Adobe-XD/"/>
     
       <category term="Abstract" scheme="http://annilla.github.io/tags/Abstract/"/>
     
