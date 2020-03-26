@@ -30,8 +30,11 @@ My resume.
 
 ## 證照
 
+### [Microsoft & Adobe Badges (國際 Microsoft & ACA 認證獎章)](https://www.youracclaim.com/users/chiao-ni-chang)
+
 | 時間 | 證書 |
 | --- | --- |
+| 2020.03 | 國際 Microsoft Certified: Azure Fundamentals |
 | 2017.03 | 國際 TOEIC 藍色證書 765分 |
 | 2015.11 | 國家技術士網頁設計丙級證照 |
 | 2014.12 | 國際 ACA Illustrator CS6 證照 |
@@ -43,7 +46,7 @@ My resume.
 | 2011.12 | Adobe Digital Graphic Design Courses 證書 |
 | 高中 | 全民英檢中級 證書 |
 
-### [Adobe Badges (國際ACA認證獎章)](https://www.youracclaim.com/users/chiao-ni-chang)
+
 
 ## 受訓
 
