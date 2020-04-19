@@ -1,0 +1,93 @@
+---
+title: Naver Study Case - Table Order APP
+categories:
+  - UXUI
+  - Naver
+thumbnailImage: https://lh3.googleusercontent.com/Kbu0747Cx3rpzHcSbtM1zDriGFG74zVbtkPmVnOKpmLCS59l7IuKD5M3MKbaq_nEaZM
+thumbnailImagePosition: left
+coverImage: https://scontent.ftpe7-2.fna.fbcdn.net/v/t31.0-8/23334132_1176106459189674_1239481400149826057_o.png?_nc_cat=111&_nc_sid=6e5ad9&_nc_ohc=kCux1p2xeGoAX8klr-t&_nc_ht=scontent.ftpe7-2.fna&oh=513d1104549da6cc9be7b37179371911&oe=5EC05781
+coverMeta: out
+tags: [UX, UI, Naver]
+date: 2020/04/19
+updated: 2020/04/19
+---
+
+Naver 是韓國最大網際網路服務公司，台灣人比較熟悉的 Line 通訊軟體就是他旗下經營的子公司。最近發現 Naver 有一個設計部落格，裡面內容介紹各種旗下軟體的 UIUX，所以就挖了一篇出來多學習看看。
+
+<!--more-->
+
+我找了一個有介紹後台的點餐 APP（後面簡稱 Table Order），畢竟目前主要工作還是對 B2B 的設計。
+
+![Table Order APP](https://postfiles.pstatic.net/MjAxOTEwMDJfMjA3/MDAxNTY5OTk2NDUxMTc3.t0jjb0H8pA-NomQ3PoaID4my9Z5ZGSaMbV9vfIty4DMg.4KqGIx2ctNJy2WegVX21-QqKwqvCjfbnLzsUtehWisQg.PNG.nvr_design/01.png?type=w966)
+
+<iframe src='https://tv.naver.com/embed/9822927?autoPlay=true' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='740' HEIGHT='416' allow='autoplay' allowfullscreen></iframe>
+
+# 拍攝 QRcode > 建立訂單 > 付款
+
+Table Order 服務是一種智能訂購服務，可讓使用者點餐並通過商店中的QR碼完成付款。以下是用戶和老闆在過去幾個月進行的 Beta 測試中留下的部分評論。
+
+> 用戶：“可以不用等店員來點菜，食物就出來了！”
+
+> 老闆：“我不喜歡點菜或服務，但我可以專心做飯。”
+
+![點餐流程](https://lh3.googleusercontent.com/3NC-L_SEbMTSRi6xUVcJ8pDfjJYWJGyD7rcoHsPWxPIU-hzd-oQ4Z85GdA1DwboM92eyz2x_yQO3DbOF9mC2THs3ntjo_5FIrUYU5s8BF-zaxCbW92e4S4284Y4KTJHFqNrGVioS373QtXTMxjGmxIcxHb9wlq_k8MqSXZ6YMy5xDlsggls1TaISTCCS9qRFM6auxEV2Po8BVP9aD8vKOyTZsL1L1EBkpMM7vdMXLGmRV7fZbRDF7S4OQgFKxXsvggTdqTdnA-LLQEdmVFCl7ELVyWSbOXwo2b8tLv62HHVfcjluzrJSF44Gczq1n0Yt4rosWJLrFx397nAbjNjm5zzLGVWkXU54WpEo5-GlvWGAWoA3tnrRqB_O7BtkPJ8w-7nsL02-5y5l6YHK65LzmsWs_hO0j24CAXWqSLibbMOSRpRD8V4x3P64igatKVeiT30wxjJOWBiMYw224NqO9ig_xptpi_tz_7BUuzRO2dfDNfTSrVWfzhqWaSeQmAQrmzxl3aoeArhQEoi09fbeVzfjcYembDJhuKcfU-ewalWQwG42asweXzhHIc4NCTxxpqaEP0cccCgF7jfRVuxy6gdflEIDYfF9B2ZOF-1giXFBaOICgsJfLHzxhzOS7ho5d1hQw7PgYOevl1SRZ0MK-OFm67JQwRzlAECWUmfM4EV-4-1Ms5acOOTNMOhVuy8U5HBUkklEsBRtGcJgyBP5l0VMZjnuqdd5OZdmTshQjTxWvfugi_rV1ZI6=w966-h329-no)
+
+# 線上菜單的優勢是紙張菜單無法做到的
+
+你是不是覺得去餐廳看菜單是一種無趣而令人擔憂的體驗嗎？ Table Order 的菜單易於選擇，因為它顯示了新菜單，老闆推薦的菜單以及在屏幕上已訂購的菜單。 從老闆的角度來看，這是一個很好的參考，因為使用者可以一目了然地看到訂單數據，例如哪個菜單受歡迎。此外，即使有一個菜單因價格波動要改變，也不用重新印紙本菜單或用黑筆劃掉，線上菜單可高度自營編輯也是一大優勢。
+
+> 中餐廳與意大利餐廳，菜單導航方式是否相同？
+
+回顧系統在餐廳點餐時的經歷，系統可以看到每種菜單的提供方式都大不相同。在某些商店中，菜單說明很重要，照片很重要，某些商店則可以快速瀏覽整個菜單。因此，用戶將有權力選擇要怎麼瀏覽這些商店的菜單導航體驗。
+
+Table Order 的菜單順序設計，以能均勻儲存各商店的菜單信息為考量。另外，未來將以各種觀看方法（例如圖像的類型或描述的類型）添加客制的菜單，進一步考慮模板設計。
+
+![菜單導航](https://lh3.googleusercontent.com/-fsfcXAcyh5ddOQfHj867nTtdyOyNtVWOEr2lL-7JN7yyOyknGGQn-GWbCodQtVVTxXBfnBcI1qZCxwv86o0bZgWWsSuTuH5HyQlOdQ7Ec4IhaQqRVlSlToYXjrar8HlxSvTSg0zyWRD8eEBIzmZNB9QKTaX_sEG9DRC0j651W2EAVDQGIj7qwsvQjKc2zn3fVv30O0_0f-ND0Q7jWmbrUDhMsP7LdX1wC1YRXvs2nnmVX2rg2N0uqsoxXW9Jn_201XH7Z9JQh7nZS3rRpYi4M1eRP21KfZvs1n-7tkTThPYkvdMteak7eyOreqykBayRzMpu9Z0YUmj24q6dDZopbOLj8qye4HmQmvp8259nZrgdwR4MuW_Xf_ORVJo7cO0_lIQIqaZx4allA55TrTSpJ_vaq1sFpbPvlBi5IMhiCHy94RritJxZQrTwYyqECjDra9MXfboTd-nPnaOU0as2kLcDUB5myUtGne1aE4mV6DaSp-F06UjznHO-DR_a19SAxoY31BoRC16FE4iiSo0pcCcCsAREshaw5E8w0J7_MNQDg2OUQHxqr5fa8ULb-Fs3Gk28NfDdbMtv4gbQT74lm9IJqtKb56mpNl72rrvFm_UfZt2eWCj0mYXyCjtfyJDxo6XJznW9HNl2d8CPcje975Quzx-TbEo8ft5TK3Z7uTyHZ0fFb__hPkcr0nYYmA2hWm8DB20Xr2UjxEKZLtZU8MXbww9H7iND6vz2rLZtoPL05-VJvG3uDvk=w656-h1280-no)
+
+# 別人覺得這個菜單如何？
+
+選擇餐館或咖啡館時最重要的事情之一就是評論。商店的評論是非常有用的信息，可通過他人的意見提供客觀信息。Table Order 提供了在菜單的基礎上查看用戶照片，評分，評論等的功能，而不是全面的商店體驗，因此使用者可以更詳細地查看評論 。同樣，可以通過自然滾動瀏覽評論照片，就像使用社群軟體瀏覽貼文一樣。
+
+為了使這些審閱平台提供更多信息和更高質量，來自多個用戶的良好審閱至關重要。系統正在設計一種審查方法，該方法可以包含諸如食物量，味道和辣味等詳細信息，以便於編寫關鍵內容。
+
+![菜單評論](https://postfiles.pstatic.net/MjAxOTEwMDJfMjAx/MDAxNTY5OTk3OTQ3OTMw.8w_LpC1-aeEcKTeo_QZb8EfT08bwQVXe-QDzWWrLxMcg.gvhxUxN26aYk5KMbyElny6UOGik5DE3XhtFH3AB07bsg.PNG.nvr_design/03.png?type=w966)
+
+# 我的訂單進度，一目了然
+
+了解我的訂單進度以及何時下達包裹訂單也很重要。Table Order 上的訂單會提供狀態的通知，例如準備/烹飪/服務已完成以及帶有步驟的事故單，以便可以快速共享狀態。
+
+另一方面，使用者可以隨時發出有關訂單狀態的回覆，但是什麼時候是寫回覆的最佳時間呢？如果太晚了，我記不清了，或者太快了，可能是在我吃完飯之前。根據 Naver 過往資料統計和 beta 測試中累積的統計信息，會依據每個公司的情況和特徵，對 Table Order 進行分類和應用，目前仍在測試最合適的模型。
+
+![我的訂單](https://lh3.googleusercontent.com/BMQIcFt9651Rrd-9lzZn7tO9hNQNp6Do-RtyVlIBzHmcgNB3eELlccCeYEGVomRplhdME13vMPVeLezOZ-e3Nock63Rp65FqV_wbFEZ11qBRTgygORafgyNqRImMDIzQKVVuQjGhPtyj-BOiRA6nca6Ts2lwusweIo2DX6R6IxNcu3BDR0qKGZGnsnsmjwuF2bzWrduYmErABF4WfUYQYMxACZZuoyoDrhsbS3qYPrK3OrftJMLWRAVcpT1hQerhIy3RArBddk3U4ewufgVjcsI84eo6qkW7v7ooXueTaZ3YU-iFAhSAV9rLzuPDDcBbZjuxEfZCdbUneLd0w6R9ci-wf8r10jB-SMKD2qzhiP5KrltnmdH-cVg0IuqAvRDFFuRIRN_FI_WHRTtRVITqKDLbnkNdRAv8_kjn9O5igNZyoNwkdgvKQOudAmAoxWxePXK1QNpMK9slBPKcZKVaejVDeS5-qvF2WMIotc0bg61hPLOUHS1Z_0XQ57zXneKn2dcGpaba-9STslBY7Q8KDD9urUlzj8ORaBQLO-WRDh71WFrWb0rVQNMhPTuSI0KtNkgaKMT5htaxCsagFN1MPdUBIGp9rx4G88XKfzRnW7f1TnMCTDbOmtzOOLygc1j-2yXvOMIuD5_dRRdvhjZEDXJnfj57cJ0ve7Xv7ZktPq8fNnnIgqCfNCVbtXsg9iv9K-2jws63ER1iU4clVrakABfsPkquulMgZbSyE_NO81Y2m6o_JGeraypw=w966-h1269-no)
+
+# 成為常客的捷徑，老闆提供的優惠券
+
+除了立即累積的 NaverPay Point 優惠外，系統還帶來了一些概念，例如使用者在外面看到的集點卷。家裡只有一張集點卷忘了帶出門嗎？如果使用者使用的是可自行集點的 Table Order，則不必擔心，當使用者獲得獎勵時會收到通知。另外，為每個商店收集優惠券和集點並立即查看它們很方便。將來會添加各種優惠券類型，因此請使用它們。
+
+![集點 & 優惠券](https://postfiles.pstatic.net/MjAxOTEwMDJfNzEg/MDAxNTY5OTk3OTg0NzQ2.yRRr4vOHg5a0NoG6uEWQvdM0XvI1Ezw4iL2OCvYi-uYg.xctPcbCBZ9kxckzQoo-tCK6PvVVNUzEGg7bBPCMkr30g.PNG.nvr_design/05.png?type=w966)
+
+# 智能商店管理
+
+系統還透過合作夥伴後台創建了 Table Order 管理工具，以便老闆可以輕鬆地創建和操作上述各種功能。老闆可以通過設置“使用者操作時間”連接“菜單”來建立午餐、晚餐、工作日和周末等不同的菜單。
+
+在工作時間內，老闆可以根據桌數或擁擠情況，選擇地操作餐桌座位兩種類型的 Card 視圖和 Table 視圖。通過此操作，老闆可以立即檢查商店的狀態，因此不必走到大廳，老闆可以專注於烹飪和操作。
+
+![智能商店管理](https://lh3.googleusercontent.com/HOZkhxmM_T3rUOzmXb8NUBYRIqPEcH9oQe9ReHKeGIwZlUZ1MDa1yKKo-balld5tBADi0YYh4D-LevCXRIJl79I0DNEYjHeQAgPHvqs9HlwPfAQAUKdQcTVNArHsIUWM5xOVbc_8cb6trQGSTdd-H_e_yd8quPuUOLZ9mIxCG4HHL6SndTEJjjTc3E7zy_uJKnkN87EsTjNMi2u5K4vGjK03TKxVlGBStLSfkghwN0DnhqAPoSNmdBjasfWAJSigYsH4_p8mMn1pnIBTk-Q_R6sesoybsBhj2eXdYmRFi-eQtdZipOpq2n2s25mQHolf5hZ9D_9paAe1sg-vv82MvOtrghERbUVhtuLh1SMWmyqR2JIVdqIy9lIUYBTRCMmR8wejvm-6P6VAHJxMqWYEzGHgtyaqCVG_txrWTseRg4ekf2HIIjdm46zwBOyA2fXHZAKm0V4ICG_fKnZuSRcR8OGpQ7P2E-o4SQz__4AyEQUFirpC5WGN4z4EFDChb5p4fdqdH5YV3keQd3eUe9Y0JrjvAllaGpUUcpNr9Odr4D8wecrmxHjvXm_ukM77330a_hJpSo-iWvrD9FoGqGNHMn_pFNevW7yuhb6b7FndHUa3u4FW2kuCK3LZAoLn0x8t2029mrfXjrsxUcaysbeQ0yAR-KltuGi9YWt-iEPil46xQCYySYODDniWKmb31hG5zwrNdod347Xq7rCKEoPsEfqdDOSR4CoYVFeCam6dKrOT-jNw8tZv-6jd=w622-h1280-no)
+
+# 線下品牌設計
+
+提供老闆各式線下品牌宣傳設計，包含海報、名片、立牌等等。
+
+![線下品牌設計](https://postfiles.pstatic.net/MjAxOTEwMDJfMTI2/MDAxNTY5OTk4MDAxNzUw.QqJ0MubtSO8B-e7rmS2GxLQ107yHk9tmafv7-McbCTkg.X8trsK0wVjDqKl_ntmleQQhM63qbo59Xwcj0P2HT-ZMg.PNG.nvr_design/07.png?type=w966)
+
+# 總結
+
+下圖為使用者 & 老闆在 Table Order 中得到的優勢圖。
+
+![使用者 & 老闆互惠](https://lh3.googleusercontent.com/dYB97w9E6EjZQmRoxE8LOGOqjM9C2KTOR73CeQt1C_8aj7TaQnMeqAUqnrOAAjiNDGyapNhM9cyjI4Ru7-AopcO10DLh_gSG87u1XDQrX7hbUd98iuuKqOabhWbAqNop1pd0QswoREPurXvzk3aDn4vbBW7Ko--xPATdisNbkVW9VccA41cGAoPRKoDKjXNu275F32w5zV71qtIF81FcsQNnW-di0CyL9GSxbVnUHXjfV65vujoPgKIobvcy8vsf9hZbrVzf0RoUQv6-zyeD93poFiSO7VmDxMsxLisAbXfDz175gxzn3AdPr9A8UAd7-xaZNiszrKtXv-G-E405SRUIxeoyRze4mULQmYdDauIadxU7CgUlKRbSR0GDNCVBlkxBWVaB0s4j6VZuDj5rRRezK3rRXnmZXhzH41K9aG7T6OhWtrh0QPoDwSTxvroD-v1ayI0IcRSQ1AG9oDst6uNGZNxlTFw_lEK3etpjbqDUVplxt-Ct10jgoAgMfFMI8MoMi8KhYCbtzHsqcLZMsdzp9c18g0_85fY72Sux9y5NLFmL6bws6BjFtAovPw2paxaWGivTdnnVffjLIRsbjGX33jAESJmq3b2HIpmapF08z2eeH5PMs-zWC-RjJ0p7gOSurC--efBJP8OJvqAoekj6EIC8OLGeRjtMCBOD6SoZNoP6K8_HUnFuYjd0ye0sR0A558hnTefdj67GAuKFPlwbZrZM2OqFU-PTTpiRyTYsqeXpklBgnd1X=w966-h516-no)
+
+> 心得：看完後覺得能讓老闆自行設計不同時間顯示不同的客制菜單是很不容易的一件事，當中又要把操作簡易化，設計模板是很重要的一環。這些模板（自己常吃、新口味、老闆推薦、受歡迎的菜單...）雖然設計簡單卻能把大量想表達的訊息清楚地展示出來，非常值得學習。後台部分讓老闆自行選擇用 Card 或是 Table 模式瀏覽餐廳狀況也很清楚，方便隨時根據現場資訊做判斷處理。未來如果 Real-Time 生產有不同的方式可以切換瀏覽或許對控場人員來說更好。
+
+# Reference
+
+* [네이버 '테이블주문'을 소개합니다.](https://blog.naver.com/nvr_design/221668077330)
