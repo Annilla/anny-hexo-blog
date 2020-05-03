@@ -8,8 +8,8 @@ thumbnailImagePosition: left
 coverImage: https://scontent.ftpe7-2.fna.fbcdn.net/v/t31.0-8/23334132_1176106459189674_1239481400149826057_o.png?_nc_cat=111&_nc_sid=6e5ad9&_nc_ohc=kCux1p2xeGoAX8klr-t&_nc_ht=scontent.ftpe7-2.fna&oh=513d1104549da6cc9be7b37179371911&oe=5EC05781
 coverMeta: out
 tags: [UX, UI, Naver]
-date: 2020/05/19
-updated: 2020/05/19
+date: 2020/05/04
+updated: 2020/05/04
 ---
 
 繼上次分享 Naver study case 訂餐 APP 後感覺意猶未盡，剛好看到一個是關於第21屆國民議會選舉特別頁面的設計，覺得很有興趣，我們就來一起看看吧～
