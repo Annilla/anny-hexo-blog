@@ -19,12 +19,12 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"},"articleBody":"Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。\n\n影片網址： https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/\n接下來會針對目前 Vue 2 的限制解釋並提出 Vue 3 的解決方式。\n影片中提出當我們的專案越來越大/醜時，三個 Vue 2 的限制：\n\nReadability as components grow：當組件越來越複雜時，程式變得越不容易閱讀。\nCode reuse patterns have drawbacks：程式片段重複使用的方式有缺點。\nLimited typescript support：typescript 支援上有限制。\n\n比較大的組件會變得越來越難閱讀和維護影片當中以搜尋組件(search.vue)為例。當我們搜尋組件想要寫兩個功能：一個功能是搜尋關鍵字結果(Search)；另一個功能是對搜尋結果做排序(Sorting)。在 Vue 2 的作法，我們可能把同一個 Search/Sorting 的功能將邏輯散佈在各個程式區塊，有可能在 components, props, data, computed, methods, lifecycle methods等。當其他開發者想要閱讀時沒辦法一眼看到功能的所有邏輯，而是需要掃描散佈在各片段的程式碼才能了解特定功能的邏輯。所以 Vue 3 要解決的是如何把同一功能的邏輯統一放在一個地方，讓閱讀上更容易。\nVue 2 將功能邏輯散佈在多個程式碼片段\nVue 3 的解決方式就是推出 composition API ，將兩種功能的程式碼片段先集中成兩個區塊，放在 setup 函式中，且他完全是選擇性的。第一次看到可能會想說：這樣是否表示我們會產生一個超巨大的程式碼在 setup 函式中嗎？答案是，不。我們接下來看看他是如何解釋的。\n我們可以把兩個功能先寫出來各自的函式，並在setup 函式 return 出來。（這裡為了方便解釋寫在同一頁，實際上會另外寫出來 js 檔案，要用的時候再引入）\n現在，程式碼片段變得更符合邏輯閱讀，但這不代表組合函式會取代組件父子關係，我們還是會先將組件父子關係區分出來，各組件的功能再以組合函式來表示。\n找不到完美的方式能在不同組件中重複使用相同邏輯影片中提到在 Vue 2 有三種方式可以在不同組件中重複使用相同邏輯。\n\nMixin：第一種是分別拉出來 Search/Sorting 各自的mixin，並在搜尋組件中引用 mixins 加入。\n\n優點：\nOrganized by feature：優點是可以依據功能組織各自邏輯。\n\n\n缺點：\nConflict prone：因為有各自的data等屬性，容易發生衝突。\nUnclear relationship：不清楚兩者 mixin 關係是否會互相影響。\nNot easy reuseble：不容易重複使用。\n\n\n\n\nMixin Factories: 第二種方式是使用客製版本的mixin傳入對應的config。\n\n優點\nEasily reusable：容易重複使用。\nClearer relationships：將兩者關係釐清楚。\n\n\n缺點\nWeak namespace：命名方式不嚴謹。\nImplicit property additions：內部添加隱藏的屬性。\nNo Instance access at runtime：Vue 運行時並不會動態生成。\n\n\n\n\nScope slots：第三種是將 Search/Sorting 分成兩個 Vue 組件，並用 slot 的方式做巢狀使用。\n\n優點\n解決 mixin 的問題\n\n\n缺點\nIncreases indentation：增加縮排。\nLots of configuration ：更多的設定值。\nLess flexible ：彈性變小。\nLess performance ：性能變差。\n\n\n\n\n\n這三種都有他的缺點，所以影片提到 composition API 使用上可以解決上述問題。就是將 Search/Sorting 兩個 composition function 各自分出 js 將邏輯寫出來。在 Vue 組件設定變數將其各自做引用函式並設定所需要的參數。\n\n優點\n程式碼精簡\n和平常的 js 使用差不多\n使用上非常有彈性\n友善的使用方式\n\n\n缺點\n要熟悉新的程式使用寫法\n\n\n\n整體來說，composition API 都是大大提升組件的邏輯組織寫法，讓開發者能更快進入狀況，用更輕鬆精簡的方式達到開發目的，我個人是非常看好且開心的，畢竟一個工程師要面對的專案實在太多，要省時省力才有效率。\n參考資料\nComposition API RFC\nWhy the Composition API\n\n","dateCreated":"2020-06-27T00:00:00+08:00","dateModified":"2020-06-27T00:00:00+08:00","datePublished":"2020-06-27T00:00:00+08:00","description":"Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。","headline":"Vue 3 Studies - Why the composition API","image":["https://vuejs.org/images/logo.png","https://cythilya.github.io/assets/vue/2017-05-21-vue-logo.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"},"publisher":{"@type":"Organization","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"}},"url":"http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/","keywords":"Vue","thumbnailUrl":"https://vuejs.org/images/logo.png"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"},"articleBody":"Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。\n\n影片網址： https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/\n接下來會針對目前 Vue 2 的限制解釋並提出 Vue 3 的解決方式。\n影片中提出當我們的專案越來越大/醜時，三個 Vue 2 的限制：\n\nReadability as components grow：當組件越來越複雜時，程式變得越不容易閱讀。\nCode reuse patterns have drawbacks：程式片段重複使用的方式有缺點。\nLimited typescript support：typescript 支援上有限制。\n\n比較大的組件會變得越來越難閱讀和維護影片當中以搜尋組件(search.vue)為例。當我們搜尋組件想要寫兩個功能：一個功能是搜尋關鍵字結果(Search)；另一個功能是對搜尋結果做排序(Sorting)。在 Vue 2 的作法，我們可能把同一個 Search/Sorting 的功能將邏輯散佈在各個程式區塊，有可能在 components, props, data, computed, methods, lifecycle methods等。當其他開發者想要閱讀時沒辦法一眼看到功能的所有邏輯，而是需要掃描散佈在各片段的程式碼才能了解特定功能的邏輯。所以 Vue 3 要解決的是如何把同一功能的邏輯統一放在一個地方，讓閱讀上更容易。\nVue 2 將功能邏輯散佈在多個程式碼片段\nVue 3 的解決方式就是推出 composition API ，將兩種功能的程式碼片段先集中成兩個區塊，放在 setup 函式中，且他完全是選擇性的。第一次看到可能會想說：這樣是否表示我們會產生一個超巨大的程式碼在 setup 函式中嗎？答案是，不。我們接下來看看他是如何解釋的。\n我們可以把兩個功能先寫出來各自的函式，並在setup 函式 return 出來。（這裡為了方便解釋寫在同一頁，實際上會另外寫出來 js 檔案，要用的時候再引入）\n現在，程式碼片段變得更符合邏輯閱讀，但這不代表組合函式會取代組件父子關係，我們還是會先將組件父子關係區分出來，各組件的功能再以組合函式來表示。\n找不到完美的方式能在不同組件中重複使用相同邏輯影片中提到在 Vue 2 有三種方式可以在不同組件中重複使用相同邏輯。\n\nMixin：第一種是分別拉出來 Search/Sorting 各自的mixin，並在搜尋組件中引用 mixins 加入。\n\n優點：\nOrganized by feature：優點是可以依據功能組織各自邏輯。\n\n\n缺點：\nConflict prone：因為有各自的data等屬性，容易發生衝突。\nUnclear relationship：不清楚兩者 mixin 關係是否會互相影響。\nNot easy reuseble：不容易重複使用。\n\n\n\n\nMixin Factories: 第二種方式是使用客製版本的mixin傳入對應的config。\n\n優點\nEasily reusable：容易重複使用。\nClearer relationships：將兩者關係釐清楚。\n\n\n缺點\nWeak namespace：命名方式不嚴謹。\nImplicit property additions：內部添加隱藏的屬性。\nNo Instance access at runtime：Vue 運行時並不會動態生成。\n\n\n\n\nScope slots：第三種是將 Search/Sorting 分成兩個 Vue 組件，並用 slot 的方式做巢狀使用。\n\n優點\n解決 mixin 的問題\n\n\n缺點\nIncreases indentation：增加縮排。\nLots of configuration ：更多的設定值。\nLess flexible ：彈性變小。\nLess performance ：性能變差。\n\n\n\n\n\n這三種都有他的缺點，所以影片提到 composition API 使用上可以解決上述問題。就是將 Search/Sorting 兩個 composition function 各自分出 js 將邏輯寫出來。在 Vue 組件設定變數將其各自做引用函式並設定所需要的參數。\n\n優點\n程式碼精簡\n和平常的 js 使用差不多\n使用上非常有彈性\n友善的使用方式\n\n\n缺點\n要熟悉新的程式使用寫法\n\n\n\n整體來說，composition API 都是大大提升組件的邏輯組織寫法，讓開發者能更快進入狀況，用更輕鬆精簡的方式達到開發目的，我個人是非常看好且開心的，畢竟一個工程師要面對的專案實在太多，要省時省力才有效率。\n參考資料\nComposition API RFC\nWhy the Composition API\n\n","dateCreated":"2020-06-27T00:00:00+08:00","dateModified":"2020-06-27T00:00:00+08:00","datePublished":"2020-06-27T00:00:00+08:00","description":"Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。","headline":"Vue 3 Studies - Why the composition API","image":["https://vuejs.org/images/logo.png","https://cythilya.github.io/assets/vue/2017-05-21-vue-logo.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"},"publisher":{"@type":"Organization","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"}},"url":"http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/","keywords":"Vue","thumbnailUrl":"https://vuejs.org/images/logo.png"}</script>
     <meta name="description" content="Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Vue 3 Studies - Why the composition API">
-<meta property="og:url" content="http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/index.html">
+<meta property="og:url" content="http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/index.html">
 <meta property="og:site_name" content="Anny Chang - F2E &amp; UI Designer">
 <meta property="og:description" content="Vue 3 雖然還沒出正式版，但蠻多人對新的 composition API 有所好評。剛好官網有完整的影片介紹，所以想趁這個機會開始學習。">
 <meta property="og:locale" content="zh-tw">
@@ -403,7 +403,7 @@
 </li>
 </ul>
 <p>整體來說，composition API 都是大大提升組件的邏輯組織寫法，讓開發者能更快進入狀況，用更輕鬆精簡的方式達到開發目的，我個人是非常看好且開心的，畢竟一個工程師要面對的專案實在太多，要省時省力才有效率。</p>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><ul>
 <li><a href="https://composition-api.vuejs.org/" target="_blank" rel="noopener">Composition API RFC</a></li>
 <li><a href="https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/" target="_blank" rel="noopener">Why the Composition API</a></li>
 </ul>
@@ -431,9 +431,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/3017/12/01/Portfolio/"
-                    data-tooltip="Anny Chang&#39;s Portfolio - 作品集"
-                    aria-label="上一篇: Anny Chang&#39;s Portfolio - 作品集"
+                    href="/2020/07/20/Vue/Vue-3-Studies-Setup-Reactive-References/"
+                    data-tooltip="Vue 3 Studies - Setup &amp; Reactive References"
+                    aria-label="上一篇: Vue 3 Studies - Setup &amp; Reactive References"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -461,7 +461,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -472,7 +472,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -485,7 +485,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -499,7 +499,7 @@
                     <a
                         class="post-action-btn btn btn--default"
                         href="#disqus_thread"
-                        aria-label="Leave a comment"
+                        aria-label="Kommentieren"
                     >
                         <i class="fa fa-comment"></i>
                     </a>
@@ -508,7 +508,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -547,9 +547,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/3017/12/01/Portfolio/"
-                    data-tooltip="Anny Chang&#39;s Portfolio - 作品集"
-                    aria-label="上一篇: Anny Chang&#39;s Portfolio - 作品集"
+                    href="/2020/07/20/Vue/Vue-3-Studies-Setup-Reactive-References/"
+                    data-tooltip="Vue 3 Studies - Setup &amp; Reactive References"
+                    aria-label="上一篇: Vue 3 Studies - Setup &amp; Reactive References"
                 >
                     
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
@@ -577,7 +577,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -588,7 +588,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -601,7 +601,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -615,7 +615,7 @@
                     <a
                         class="post-action-btn btn btn--default"
                         href="#disqus_thread"
-                        aria-label="Leave a comment"
+                        aria-label="Kommentieren"
                     >
                         <i class="fa fa-comment"></i>
                     </a>
@@ -624,7 +624,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -645,7 +645,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                         aria-label="分享到 Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>分享到 Facebook</span>
@@ -658,7 +658,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/"
+                        href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/"
                         aria-label="分享到 Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
@@ -1064,7 +1064,7 @@
                 data-message-zero="沒有找到文章"
                 data-message-one="找到 1 篇文章"
                 data-message-other="找到 {n} 篇文章">
-                找到 42 篇文章
+                找到 43 篇文章
             </p>
         </div>
     </div>
@@ -1081,9 +1081,9 @@
     
         <script>
           var disqus_config = function() {
-            this.page.url = 'http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/';
+            this.page.url = 'http://annilla.github.io/2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/';
               
-            this.page.identifier = '2020/06/27/Vue/Vue-3-Studies - Why-the-composition-API/';
+            this.page.identifier = '2020/06/27/Vue/Vue-3-Studies-Why-the-composition-API/';
               
           };
           (function() {
