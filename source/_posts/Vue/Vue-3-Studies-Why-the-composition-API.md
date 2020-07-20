@@ -85,7 +85,7 @@ Vue 3 的解決方式就是推出 composition API ，將兩種功能的程式碼
 
 整體來說，composition API 都是大大提升組件的邏輯組織寫法，讓開發者能更快進入狀況，用更輕鬆精簡的方式達到開發目的，我個人是非常看好且開心的，畢竟一個工程師要面對的專案實在太多，要省時省力才有效率。
 
-## 參考資料
+# 參考資料
 
 * [Composition API RFC](https://composition-api.vuejs.org/)
 * [Why the Composition API](https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/)
