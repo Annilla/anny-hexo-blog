@@ -19,12 +19,12 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"},"articleBody":"因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。\n\n影片網址： https://www.vuemastery.com/courses/vue-3-essentials/lifecycle-hooks\nVue 2 對應 Vue 3 lifecycle composition api 用法我們先看官網有一個對照清單如下：\n\nbeforeCreate -&gt; use setup()         \ncreated -&gt; use setup()         \nbeforeMount -&gt; onBeforeMount\nmounted -&gt; onMounted\nbeforeUpdate -&gt; onBeforeUpdate\nupdated -&gt; onUpdated\nbeforeDestroy -&gt; onBeforeUnmount\ndestroyed -&gt; onUnmounted\nactivated -&gt; onActivated\ndeactivated -&gt; onDeactivated\nerrorCaptured -&gt; onErrorCaptured\n\n左邊是原本 Vue 2 的用法，右邊是在 Vue 3 composition api 的用法。基本上就是把原來的名稱前面加上 on 就可以使用。\n\n那為什麼前面兩個 beforeCreate, created 被劃掉了呢？因為這兩個要執行的事件其實直接寫在 setup 裡面是一樣的意思。下面有流程圖解釋 beforeCreate 相當於在 setup 之前，created 相當於在 setup 之後，那麼就直接照順序寫在 setup 裡面就可以了，所以 composition api 才不需要 beforeCreate, created。\n\n另外有兩個 lifecycle 在 Vue 3 更換了名稱，分別是 beforeDestroy, destroyed 換成 onBeforeUnmount, onUnmounted。影片老師有特別詢問 Evan You 為什麼要更名，作者的回答是為了讓命名更符合實際情形。因為 Vue 的動作就是不斷將組件做 mount, unmount。\n\nVue 3 composition api 新增的 lifecycleVue 3 composition api 另外新增了兩個可以幫助開發者 debug 的 lifecycle。\n\nonRenderTracked: 當此組件第一次 render 後的每次 render 都會追蹤。可以觀察有哪些動作造成此組件 render。\n\nonRenderTrigger: 當此組件重新 render 會觸發。可以觀察是哪些動作促使此組件重新 rendor。\n\n\n\n為了實際了解這兩個新增的 lifecycle ，我們在 github 開個測試範例來試試。\n因為 Vue 3 尚未 release，所以先安裝 next 版的 vue cli (@vue/cli@4.5.2)。\n1npm install -g @vue/cli@next\n安裝完後執行\n1vue create &lt;你的專案名稱&gt;\n選擇第二個選項 Default (Vue 3 Preview)。\n\n預設專案會產生一個主要的 App.vue 裡面包含一個子組件 HellowWorld.vue，為了觀察新 lifecycle 的變化，我們將 App.vue, HellowWorld.vue 修改如下。\n目標是在 App.vue 加一顆按鈕，當使用者點擊按鈕後，按鈕上顯示被點擊的次數會加一，並將HellowWorld 傳入的 msg 後面也加上被點擊的次數。藉此觀察 lifecycle 被觸發的情況。\nApp.vue\n1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;template&gt;  &lt;div id=\"app\"&gt;    &lt;img alt=\"Vue logo\" src=\"./assets/logo.png\"&gt;    &lt;div&gt;      &lt;button @click=\"addcount\"&gt;Re-render App &#123;&#123; count &#125;&#125; times&lt;/button&gt;    &lt;/div&gt;    &lt;HelloWorld :msg=\"`Welcome to Your Vue.js App $&#123;count&#125;`\"/&gt;  &lt;/div&gt;&lt;/template&gt;&lt;script&gt;import &#123; ref, onMounted, onRenderTracked, onRenderTriggered &#125; from 'vue'import HelloWorld from './components/HelloWorld.vue'export default &#123;  name: 'App',  components: &#123;    HelloWorld  &#125;,  setup() &#123;    const count = ref(0);    let addcount = () =&gt; &#123;      console.log('---------------------------------');      console.log(`Click button $&#123;count.value +1&#125; times`);      console.log('---------------------------------');      count.value++;    &#125;;    console.log('---------------------------------');    console.log(`Setup function start`);    console.log('---------------------------------');    onMounted(() =&gt; &#123;      console.log('App.vue mounted!')    &#125;);    onRenderTracked((e) =&gt; &#123;      console.log('App.vue onRenderTracked!', e)    &#125;);    onRenderTriggered((e) =&gt; &#123;      console.log('App.vue onRenderTriggered!', e)    &#125;);    return &#123; count, addcount &#125;;  &#125;&#125;&lt;/script&gt;&lt;style&gt;...&lt;/style&gt;\nHellowWorld.vue\n123456789101112131415161718192021222324252627282930&lt;template&gt;  ...&lt;/template&gt;&lt;script&gt;import &#123; onMounted, onRenderTracked, onRenderTriggered &#125; from 'vue'export default &#123;  name: 'HelloWorld',  props: &#123;    msg: String  &#125;,  setup() &#123;    onMounted(() =&gt; &#123;      console.log('HelloWorld.vue mounted!')    &#125;)    onRenderTracked((e) =&gt; &#123;      console.log('HelloWorld.vue onRenderTracked!', e)    &#125;)    onRenderTriggered((e) =&gt; &#123;      console.log('HelloWorld.vue onRenderTriggered!', e)    &#125;)  &#125;&#125;&lt;/script&gt;&lt;!-- Add \"scoped\" attribute to limit CSS to this component only --&gt;&lt;style scoped&gt;...&lt;/style&gt;\n當我們啟動應用後可以看到一開始的 console 如下。\nlifecycle 觸發順序為：\n\nSetup function start -&gt; 執行 setup()\nApp.vue onRenderTracked! -&gt; App 開始 Render\nHelloWorld.vue onRenderTracked! -&gt; HelloWorld 開始 Render\nHelloWorld.vue mounted! -&gt; HelloWorld DOM 生成完畢\nApp.vue mounted! -&gt; App DOM 生成完畢\n\n\n當我們點擊按鈕後，lifecycle 觸發順序為：\n\nClick button 1 times -&gt; 點擊 button 觸發 addcount()\nApp.vue onRenderTriggered! -&gt; App 被觸發 Re-render\nApp.vue onRenderTracked! -&gt; App 開始 Re-render\nHelloWorld.vue onRenderTracked! -&gt; HelloWorld 開始 Re-render\n\n\n從上述的實驗可以觀察出父子組件是如何觸發 onRenderTracked, onRenderTriggered 的，未來使用上應該有助於開發者了解組件 render 的過程，實測下來感覺還蠻有趣的。\n參考資料\nComposition API RFC\nLifecycle Hooks\n\n","dateCreated":"2020-08-16T00:00:00+08:00","dateModified":"2020-08-16T00:00:00+08:00","datePublished":"2020-08-16T00:00:00+08:00","description":"因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。","headline":"Vue 3 Studies - Lifecycle Hooks","image":["https://vuejs.org/images/logo.png","https://cythilya.github.io/assets/vue/2017-05-21-vue-logo.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"},"publisher":{"@type":"Organization","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"}},"url":"http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/","keywords":"Vue","thumbnailUrl":"https://vuejs.org/images/logo.png"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"},"articleBody":"因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。\n\n影片網址： https://www.vuemastery.com/courses/vue-3-essentials/lifecycle-hooks\nVue 2 對應 Vue 3 lifecycle composition api 用法我們先看官網有一個對照清單如下：\n\nbeforeCreate -&gt; use setup()         \ncreated -&gt; use setup()         \nbeforeMount -&gt; onBeforeMount\nmounted -&gt; onMounted\nbeforeUpdate -&gt; onBeforeUpdate\nupdated -&gt; onUpdated\nbeforeDestroy -&gt; onBeforeUnmount\ndestroyed -&gt; onUnmounted\nactivated -&gt; onActivated\ndeactivated -&gt; onDeactivated\nerrorCaptured -&gt; onErrorCaptured\n\n左邊是原本 Vue 2 的用法，右邊是在 Vue 3 composition api 的用法。基本上就是把原來的名稱前面加上 on 就可以使用。\n\n那為什麼前面兩個 beforeCreate, created 被劃掉了呢？因為這兩個要執行的事件其實直接寫在 setup 裡面是一樣的意思。下面有流程圖解釋 beforeCreate 相當於在 setup 之前，created 相當於在 setup 之後，那麼就直接照順序寫在 setup 裡面就可以了，所以 composition api 才不需要 beforeCreate, created。\n\n另外有兩個 lifecycle 在 Vue 3 更換了名稱，分別是 beforeDestroy, destroyed 換成 onBeforeUnmount, onUnmounted。影片老師有特別詢問 Evan You 為什麼要更名，作者的回答是為了讓命名更符合實際情形。因為 Vue 的動作就是不斷將組件做 mount, unmount。\n\nVue 3 composition api 新增的 lifecycleVue 3 composition api 另外新增了兩個可以幫助開發者 debug 的 lifecycle。\n\nonRenderTracked: 當此組件第一次 render 後的每次 render 都會追蹤。可以觀察有哪些動作造成此組件 render。\n\nonRenderTrigger: 當此組件重新 render 會觸發。可以觀察是哪些動作促使此組件重新 rendor。\n\n\n\n為了實際了解這兩個新增的 lifecycle ，我們在 github 開個測試範例來試試。\n因為 Vue 3 尚未 release，所以先安裝 next 版的 vue cli (@vue/cli@4.5.2)。\n1npm install -g @vue/cli@next\n安裝完後執行\n1vue create &lt;你的專案名稱&gt;\n選擇第二個選項 Default (Vue 3 Preview)。\n\n預設專案會產生一個主要的 App.vue 裡面包含一個子組件 HellowWorld.vue，為了觀察新 lifecycle 的變化，我們將 App.vue, HellowWorld.vue 修改如下。\n目標是在 App.vue 加一顆按鈕，當使用者點擊按鈕後，按鈕上顯示被點擊的次數會加一，並將HellowWorld 傳入的 msg 後面也加上被點擊的次數。藉此觀察 lifecycle 被觸發的情況。\nApp.vue\n1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;template&gt;  &lt;div id=\"app\"&gt;    &lt;img alt=\"Vue logo\" src=\"./assets/logo.png\"&gt;    &lt;div&gt;      &lt;button @click=\"addcount\"&gt;Re-render App &#123;&#123; count &#125;&#125; times&lt;/button&gt;    &lt;/div&gt;    &lt;HelloWorld :msg=\"`Welcome to Your Vue.js App $&#123;count&#125;`\"/&gt;  &lt;/div&gt;&lt;/template&gt;&lt;script&gt;import &#123; ref, onMounted, onRenderTracked, onRenderTriggered &#125; from 'vue'import HelloWorld from './components/HelloWorld.vue'export default &#123;  name: 'App',  components: &#123;    HelloWorld  &#125;,  setup() &#123;    const count = ref(0);    let addcount = () =&gt; &#123;      console.log('---------------------------------');      console.log(`Click button $&#123;count.value +1&#125; times`);      console.log('---------------------------------');      count.value++;    &#125;;    console.log('---------------------------------');    console.log(`Setup function start`);    console.log('---------------------------------');    onMounted(() =&gt; &#123;      console.log('App.vue mounted!')    &#125;);    onRenderTracked((e) =&gt; &#123;      console.log('App.vue onRenderTracked!', e)    &#125;);    onRenderTriggered((e) =&gt; &#123;      console.log('App.vue onRenderTriggered!', e)    &#125;);    return &#123; count, addcount &#125;;  &#125;&#125;&lt;/script&gt;&lt;style&gt;...&lt;/style&gt;\nHellowWorld.vue\n123456789101112131415161718192021222324252627282930&lt;template&gt;  ...&lt;/template&gt;&lt;script&gt;import &#123; onMounted, onRenderTracked, onRenderTriggered &#125; from 'vue'export default &#123;  name: 'HelloWorld',  props: &#123;    msg: String  &#125;,  setup() &#123;    onMounted(() =&gt; &#123;      console.log('HelloWorld.vue mounted!')    &#125;)    onRenderTracked((e) =&gt; &#123;      console.log('HelloWorld.vue onRenderTracked!', e)    &#125;)    onRenderTriggered((e) =&gt; &#123;      console.log('HelloWorld.vue onRenderTriggered!', e)    &#125;)  &#125;&#125;&lt;/script&gt;&lt;!-- Add \"scoped\" attribute to limit CSS to this component only --&gt;&lt;style scoped&gt;...&lt;/style&gt;\n當我們啟動應用後可以看到一開始的 console 如下。\nlifecycle 觸發順序為：\n\nSetup function start -&gt; 執行 setup()\nApp.vue onRenderTracked! -&gt; App 開始 Render\nHelloWorld.vue onRenderTracked! -&gt; HelloWorld 開始 Render\nHelloWorld.vue mounted! -&gt; HelloWorld DOM 生成完畢\nApp.vue mounted! -&gt; App DOM 生成完畢\n\n\n當我們點擊按鈕後，lifecycle 觸發順序為：\n\nClick button 1 times -&gt; 點擊 button 觸發 addcount()\nApp.vue onRenderTriggered! -&gt; App 被觸發 Re-render\nApp.vue onRenderTracked! -&gt; App 開始 Re-render\nHelloWorld.vue onRenderTracked! -&gt; HelloWorld 開始 Re-render\n\n\n從上述的實驗可以觀察出父子組件是如何觸發 onRenderTracked, onRenderTriggered 的，未來使用上應該有助於開發者了解組件 render 的過程，實測下來感覺還蠻有趣的。\n參考資料\nComposition API RFC\nLifecycle Hooks\n\n","dateCreated":"2020-08-16T00:00:00+08:00","dateModified":"2020-08-16T00:00:00+08:00","datePublished":"2020-08-16T00:00:00+08:00","description":"因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。","headline":"Vue 3 Studies - Lifecycle Hooks","image":["https://vuejs.org/images/logo.png","https://cythilya.github.io/assets/vue/2017-05-21-vue-logo.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"},"publisher":{"@type":"Organization","name":"Anny Chang","sameAs":["https://github.com/Annilla","https://www.facebook.com/profile.php?id=100002453201106"],"image":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/374893f797cb60493c52ee173d81808f"}},"url":"http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/","keywords":"Vue","thumbnailUrl":"https://vuejs.org/images/logo.png"}</script>
     <meta name="description" content="因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。">
 <meta name="keywords" content="Vue">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Vue 3 Studies - Lifecycle Hooks">
-<meta property="og:url" content="http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/index.html">
+<meta property="og:url" content="http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/index.html">
 <meta property="og:site_name" content="Anny Chang - F2E &amp; UI Designer">
 <meta property="og:description" content="因為上一篇課程後連續四個影片都要付費觀看，所以我們這篇先跳著寫 lifecycle 的部分，等之後有其他免費的學習資源再來補上。">
 <meta property="og:locale" content="zh-tw">
@@ -446,7 +446,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -457,7 +457,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -470,7 +470,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -484,7 +484,7 @@
                     <a
                         class="post-action-btn btn btn--default"
                         href="#disqus_thread"
-                        aria-label="Leave a comment"
+                        aria-label="Kommentieren"
                     >
                         <i class="fa fa-comment"></i>
                     </a>
@@ -493,7 +493,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -562,7 +562,7 @@
             <a
                 class="post-action-btn btn btn--default btn-open-shareoptions"
                 href="#btn-open-shareoptions"
-                aria-label="Share this post"
+                aria-label="Diesen Beitrag teilen"
             >
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
             </a>
@@ -573,7 +573,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -586,7 +586,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                    target="new" href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -600,7 +600,7 @@
                     <a
                         class="post-action-btn btn btn--default"
                         href="#disqus_thread"
-                        aria-label="Leave a comment"
+                        aria-label="Kommentieren"
                     >
                         <i class="fa fa-comment"></i>
                     </a>
@@ -609,7 +609,7 @@
         
         <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Nach oben">
             
                 <i class="fa fa-list" aria-hidden="true"></i>
             </a>
@@ -630,7 +630,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                         aria-label="分享到 Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>分享到 Facebook</span>
@@ -643,7 +643,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/"
+                        href="https://twitter.com/intent/tweet?text=http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/"
                         aria-label="分享到 Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
@@ -1066,9 +1066,9 @@
     
         <script>
           var disqus_config = function() {
-            this.page.url = 'http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/';
+            this.page.url = 'http://annilla.github.io/2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/';
               
-            this.page.identifier = '2020/08/16/Vue/Vue-3-Studies-Setup-Lifecycle-Hooks/';
+            this.page.identifier = '2020/08/16/Vue/Vue-3-Studies-Lifecycle-Hooks/';
               
           };
           (function() {
