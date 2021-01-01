@@ -35,4 +35,22 @@ updated: 2021/01/01
 
 ![Circle Progress Bar](https://downloads.intercomcdn.com/i/o/82641775/21030eb185c81c44338bc2ee/Arc+Closed+Ring.gif)
 
-# 
+# 出現重複 Symbol 的 bug
+
+有時候 Sketch 檔案匯入 Figma 後，會出現兩個一樣的 Symbol 的 bug? 目前不確定為什麼會這樣，可能跟檔案版本有關？ 我解決的辦法是用 [Figma Plugin - Locator](https://www.figma.com/community/plugin/741935812012883481/Locator) 先去確定哪個 Symbol 是有確實用到的，如果兩個 Symbol 用到的地方都一模一樣，就勇敢的把其中一個刪除吧！另外，也可以用 [Figma Plugin - Component Replacer](https://www.figma.com/community/plugin/748545064462894895/Component-Replacer) 把不是 symbol 的 component 補上，就是順便檢查一下，讓設計更完整。
+
+![Figma Plugin - Locator](https://www.figma.com/community/plugin/741935812012883481/thumbnail)
+
+![Figma Plugin - Component Replace](https://www.figma.com/community/plugin/748545064462894895/thumbnail)
+
+# Design System
+
+Figma 有個很不錯的功能是可以將 Design System 共享給各專案使用，但免費版僅限於分享 Color Style 的部分， component 則不給發布，所以這部分要注意的事項，待之後升級到訂閱版，我在把要注意的細節另外寫一篇～
+
+![Design System](https://images.ctfassets.net/1khq4uysbvty/4XYc5Z5siLdaAgidhT2ym/0f916d11a615efaa0776f5fc33b2446f/DS_03.gif?&w=785)
+
+
+# Reference
+
+* [Figma Plugin - Locator](https://www.figma.com/community/plugin/741935812012883481/Locator)
+* [Figma Plugin - Component Replacer](https://www.figma.com/community/plugin/748545064462894895/Component-Replacer)
