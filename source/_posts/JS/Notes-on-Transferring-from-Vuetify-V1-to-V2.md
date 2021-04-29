@@ -8,7 +8,7 @@ coverImage: https://i.morioh.com/2019/11/01/47e709b4198f.jpg
 coverMeta: out
 tags: [JS]
 date: 2021/02/07
-updated: 2021/02/07
+updated: 2021/04/29
 ---
 
 此篇記錄 Vuetify 從 v1 升級到 v2 所要注意的事情。
@@ -103,7 +103,7 @@ new Vue({
 
 # v-btn 預設樣式改變
 
-在改成 V2 後，原本預設按鈕的陰影都會消失，若要加陰影就要另外下 depressed 和 elevation 才會變得跟原本設計一致。另外， flat 屬性改為 text。
+flat 屬性改為 text。
 
 # v-data-table
 
