@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2019/10/10
+updated: 2021/04/29
 ---
 
 My resume.
@@ -19,11 +19,13 @@ My resume.
 
 * 設計 `UI` 介面、 `RWD` 網頁製作、 `SPA` 程式撰寫
 
-* 擅用設計 `UI` 軟體（`Sketch`, `Adobe XD`, `Illustrator`, `Photoshop`）
+* 擅用設計 `UI` 軟體（`Figma`, `Sketch`, `Adobe XD`, `Illustrator`, `Photoshop`）
 
 ## 研討會 / 工作坊
 | 時間 | 研討會 / 工作坊 | 分享主題 |
 | --- | --- | --- |
+| 2019.11 | Kingston 2019 內訓 | [使用 Hexo 做線上說明文件](https://www.canva.com/design/DADpqbMNvJk/kFNwFdNo0_4FFcrbAj53HA/view?utm_content=DADpqbMNvJk&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) |
+| 2019.11 | Kingston 2019 內訓 | [Start our journey with vue](https://www.canva.com/design/DADqB4aQEns/_iyVg0rxO38YU409MwbKIA/view?utm_content=DADqB4aQEns&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) |
 | 2019.09 | Kingston 2019 內訓 | [Why Vue.js](https://www.canva.com/design/DADkDdvRR9A/JzfYMOKl6_2DLqeFH-BOww/view?utm_content=DADkDdvRR9A&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) |
 | 2017.08 | Kingston 2017 Mobile Team Workshop | [Use Webpack + Vue-Loader in VS2017](https://speakerdeck.com/annilla/use-webpack-plus-vue-loader-in-vs2017) |
 | 2016.11 | 前端魔法師十一月份小聚 | [Facebook Instant Articles - 測試到發布](https://speakerdeck.com/annilla/facebook-instant-articles-ce-shi-dao-fa-bu) |
@@ -52,6 +54,7 @@ My resume.
 
 | 時間 | 課程 |
 | --- | --- |
+| 2021.04 | TOC管理思維與方法課程 |
 | 2019.09 | 台灣微軟技術中心 Microsoft DevOps Workshop |
 | 2018.10 | 29761 使用微軟 T-SQL 查詢資料 |
 | 2017.09 | Skilltree JavaScript 實務測試新手班 第三梯 |
@@ -81,6 +84,8 @@ My resume.
 
 # Skills
 
+* FIGMA
+
 * SKETCH
 
 * ADOBE XD
@@ -89,9 +94,9 @@ My resume.
 
 * ILLUSTRATOR
 
-* VSCODE / VS2017
+* VSCODE / VS2019
 
-* GITHUB
+* GITHUB / AZURE DEVOPS
 
 * SOURCETREE
 
