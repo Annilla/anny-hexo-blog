@@ -11,7 +11,7 @@ date: 2019/12/07
 updated: 2019/12/07
 ---
 
-上一篇寫過 [.NET core 3 + Vue-cli 3 的起手式](../../../../../2019/12/07/DotnetCore/NET-Core-3-SPA-with-Vue-Cli-3-make-nuget-template/)，這次我們要把做好的專案寫成 dotnet new 的範本，這樣以後就不用做這麼多繁瑣的步驟啦！
+上一篇寫過 [.NET core 3 + Vue-cli 3 的起手式](../../../../../2019/12/07/Dotnet/NET-Core-3-SPA-with-Vue-Cli-3-make-nuget-template/)，這次我們要把做好的專案寫成 dotnet new 的範本，這樣以後就不用做這麼多繁瑣的步驟啦！
 
 <!--more-->
 

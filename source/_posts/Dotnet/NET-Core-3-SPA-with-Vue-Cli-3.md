@@ -11,7 +11,7 @@ date: 2019/10/10
 updated: 2019/10/10
 ---
 
-之前有寫過一篇 [.NET core 2 + Vue-cli 2 的起手式](../../../../../2017/12/02/DotnetCore/NET-Core-2-0-SPA-with-Vue-Cli/)，到了2019，兩者也紛紛出版本3。這次，我們將說明如何用 .NET Core 3 + Vue-cli 3 起一個新專案，附贈最新 [Vuetify 2](https://vuetifyjs.com/en/) 的 Material Design 框架。
+之前有寫過一篇 [.NET core 2 + Vue-cli 2 的起手式](../../../../../2017/12/02/Dotnet/NET-Core-2-0-SPA-with-Vue-Cli/)，到了2019，兩者也紛紛出版本3。這次，我們將說明如何用 .NET Core 3 + Vue-cli 3 起一個新專案，附贈最新 [Vuetify 2](https://vuetifyjs.com/en/) 的 Material Design 框架。
 
 <!--more-->
 
@@ -281,7 +281,7 @@ npm install -D cross-env
 }
 ```
 
-執行如下 npm 指令或使用之前寫的另一篇文章方式 [vscode task](../../../../../2017/12/25/DotnetCore/NET-Core-2-0-Debug-with-VScode/) 來啟動專案。
+執行如下 npm 指令或使用之前寫的另一篇文章方式 [vscode task](../../../../../2017/12/25/Dotnet/NET-Core-2-0-Debug-with-VScode/) 來啟動專案。
 
 ```npm
 npm run hmr
