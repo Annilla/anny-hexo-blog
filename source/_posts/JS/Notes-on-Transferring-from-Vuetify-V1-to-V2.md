@@ -8,7 +8,7 @@ coverImage: https://i.morioh.com/2019/11/01/47e709b4198f.jpg
 coverMeta: out
 tags: [JS]
 date: 2021/02/07
-updated: 2021/04/29
+updated: 2021/06/11ß
 ---
 
 此篇記錄 Vuetify 從 v1 升級到 v2 所要注意的事情。
@@ -116,3 +116,7 @@ flat 屬性改為 text。
 # text-xs-(align) to text-(align)
 
 `text-xs-center` 名稱在 V2 變成 `text-center`，以此類推。
+
+# v-chip
+
+原本監聽 close  的 `@input` 屬性改成 `@click:close`。
