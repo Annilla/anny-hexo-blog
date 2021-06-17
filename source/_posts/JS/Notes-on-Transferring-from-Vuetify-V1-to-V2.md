@@ -83,9 +83,16 @@ new Vue({
 * `v-app-bar` 可下 app 屬性，代表整個應用程式的最上層功能。
 * 選單 icon `v-toolbar-side-icon` 名稱改為 `v-app-bar-nav-icon`。
 
+# v-navigation
+
+屬性 `mobile-break-point` 更名為 `mobile-breakpoint` 。
+
 # v-list
 
 只要是 `v-list-tile` 名稱在 V2 變成 `v-list-item`。比較常用到的地方是 Navigation 和 Menu 組件。
+
+* `v-list-tile-sub-title`更名為`v-list-item-subtitle`。
+* `v-list-item` 的屬性 `avator` 已被移除。
 
 # v-tooltip
 
@@ -105,14 +112,6 @@ new Vue({
 
 flat 屬性改為 text。
 
-# v-data-table
-
-`v-data-table` 改的地方蠻多的，描述如下。
-
-* `hide-actions` 改為 `hide-default-footer`
-* 需要下 `items-per-page` 設置每頁資料筆數
-* 每格資料改為使用 template v-slot 的方式做覆蓋，例如對資料使用 filter。參閱 [Item](https://vuetifyjs.com/en/components/data-tables/#item)。
-
 # text-xs-(align) to text-(align)
 
 `text-xs-center` 名稱在 V2 變成 `text-center`，以此類推。
@@ -120,3 +119,13 @@ flat 屬性改為 text。
 # v-chip
 
 原本監聽 close  的 `@input` 屬性改成 `@click:close`。
+
+# v-data-table
+
+`v-data-table` 改的地方蠻多的，描述如下。
+
+* `hide-actions` 改為 `hide-default-footer`
+* `pagination.sync` 改為 `page.sync`
+* `select-all` 改為 `show-select`
+* 需要下 `items-per-page` 設置每頁資料筆數
+* 每格資料改為使用 template v-slot 的方式做覆蓋，例如對資料使用 filter。參閱 [Item](https://vuetifyjs.com/en/components/data-tables/#item)。
