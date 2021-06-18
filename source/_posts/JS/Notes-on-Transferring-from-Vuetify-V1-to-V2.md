@@ -94,6 +94,10 @@ new Vue({
 * `v-list-tile-sub-title`更名為`v-list-item-subtitle`。
 * `v-list-item` 的屬性 `avator` 已被移除。
 
+# v-dialog
+
+原本可在 `v-dialog` 下 `slot="activator"`，改為一定要另外在內部開一個 `template` 下 slot 語法才行。可參閱 [Dialogs](https://vuetifyjs.com/en/components/dialogs/)。
+
 # v-tooltip
 
 原本可在 `v-tooltip` 下 `slot="activator"`，改為一定要另外在內部開一個 `template` 下 slot 語法才行。可參閱 [Tooltips](https://vuetifyjs.com/en/components/tooltips/)。
@@ -129,3 +133,10 @@ flat 屬性改為 text。
 * `select-all` 改為 `show-select`
 * 需要下 `items-per-page` 設置每頁資料筆數
 * 每格資料改為使用 template v-slot 的方式做覆蓋，例如對資料使用 filter。參閱 [Item](https://vuetifyjs.com/en/components/data-tables/#item)。
+
+# v-expansion-panels
+
+結構有大幅度的改變，最外層換成 `v-expansion-panels`。`v-expansion-panel` 變成內頁，屬性要移到外層。標題一定要拉到 `v-expansion-panel-header`。參閱 [Expansion Panels](https://vuetifyjs.com/en/components/expansion-panels/)。
+
+* 屬性 `expand` 改為 `mutiple`
+* v-model 陣列改為使用 index (ex: [true, false, true] => [0,2])
