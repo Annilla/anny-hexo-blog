@@ -7,8 +7,8 @@ thumbnailImagePosition: left
 coverImage: https://cythilya.github.io/assets/vue/2017-05-21-vue-logo.png
 coverMeta: out
 tags: [Vue]
-date: 2021/07/07
-updated: 2021/07/07
+date: 2021/07/09
+updated: 2021/07/09
 ---
 
 繼續看 Composition API 的 Reactive and toRefs。
@@ -94,10 +94,39 @@ export default {
 HTML 裡面每次都要使用 event.xxx 感覺很煩，在這裡我們就可以用 toRefs ，再把他拆開成個別物件。
 
 ```html
+<template>
+  <div>
+    <p>Space Left: {{ spaceLeft }} out of {{ capacity }}</p>
+    <h2>Attending</h2>
+    <ul>
+      <li v-for="(name, index) in attending" :key="index">
+        {{ name }}
+      </li>
+    </ul>
+    <button @click="increaseCapacity()">Increase Capacity</button>
+  </div>
+</template>
+<script>
+import { reactive, computed, toRefs } from "vue";
+export default {
+  setup() {
+    const event = reactive({
+      capacity: 4,
+      attending: ["Tim", "Bob", "Joe"],
+      spaceLeft: computed(() => {
+        return event.capacity - event.attending.length;
+      });
+    });
 
+    function increaseCapacity() {
+      event.capacity++;
+    }
+
+    return { toRefs(event), increaseCapacity };
+  }
+};
+</script>
 ```
-
-
 
 # 參考資料
 
