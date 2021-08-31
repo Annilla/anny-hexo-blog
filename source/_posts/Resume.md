@@ -54,6 +54,7 @@ My resume.
 
 | 時間 | 課程 |
 | --- | --- |
+| 2021.08 | Become An Awesome Team Player 神隊友打造計畫 (卡內基訓練) |
 | 2021.04 | TOC管理思維與方法課程 |
 | 2019.09 | 台灣微軟技術中心 Microsoft DevOps Workshop |
 | 2018.10 | 29761 使用微軟 T-SQL 查詢資料 |
