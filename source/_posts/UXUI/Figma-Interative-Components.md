@@ -4,11 +4,11 @@ categories:
   - UXUI
 thumbnailImage: https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/hoz3ba7owjjzrg9dxrqi
 thumbnailImagePosition: left
-coverImage: https://www.lohaslife.cc/wp-content/uploads/2020/10/figma.png
+coverImage: https://miro.medium.com/max/1400/1*BfTmRqrzxB90_e9i1-cj2g.png
 coverMeta: out
 tags: [Figma, UX, UI]
-date: 2021/11/02
-updated: 2021/11/02
+date: 2021/11/05
+updated: 2021/11/05
 ---
 
 最近 10 月份 Figma 團隊出的 Interative Components Youtube 教學影片，讓我對這個新功能感到很興奮。簡單來說，就是 Checkbox, Radio, Switch... 等元件，可以製作獨立的動畫，讓 user 透過互動看到切換狀態的過程。話不多說，立刻就來試試看。
@@ -27,7 +27,7 @@ Switch 的做法差不多，只是 Animation 選擇 Smart animate (Onclick/Chang
 ![Switch](https://lh3.googleusercontent.com/pw/AM-JKLVGQdknSE70a2Zjfr6J091KiFjWDWxXXFDQbi5cntP6rzQ9u1gFTPxikC85qHJdaBJ4ce7lCJHBOASzPthPMKHluWtLWnE9V-zoa-xvuqk6V-SjGgNhBByczLxlegxLCzoD5d3YRpBDmi9barNT_CrLHw=w1920-h937-no?authuser=0)
 
 完成後，就可以執行 prototype，對元件做點選的動作，可以看到互動的效果優~
-<iframe src='https://capture.dropbox.com/oMIXKTN9A4opyRqs' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='740' HEIGHT='416' allow='autoplay' allowfullscreen></iframe>
+[互動效果影片連結在此](https://capture.dropbox.com/oMIXKTN9A4opyRqs)
 
 # Progress Bar & Progress Circle
 
@@ -40,7 +40,7 @@ Switch 的做法差不多，只是 Animation 選擇 Smart animate (Onclick/Chang
 進度圈圈的部分比較複雜，我是參考 Figma Community 的人分享作法 [Progress Bar Animations](https://www.figma.com/community/file/826647128105027386)。
 
 最後附上 progress 完成的樣子，動畫看起來很順暢呢~
-<iframe src='https://capture.dropbox.com/58G1NI28rLLtZ3Vw' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' WIDTH='740' HEIGHT='416' allow='autoplay' allowfullscreen></iframe>
+[progress 完成影片連結在此](https://capture.dropbox.com/58G1NI28rLLtZ3Vw)
 
 # Reference
 

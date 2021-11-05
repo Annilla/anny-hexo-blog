@@ -4,7 +4,7 @@ categories:
   - UXUI
 thumbnailImage: https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/hoz3ba7owjjzrg9dxrqi
 thumbnailImagePosition: left
-coverImage: https://www.lohaslife.cc/wp-content/uploads/2020/10/figma.png
+coverImage: https://miro.medium.com/max/1400/1*BfTmRqrzxB90_e9i1-cj2g.png
 coverMeta: out
 tags: [Sketch, Figma, UX, UI]
 date: 2021/01/01
