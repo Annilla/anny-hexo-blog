@@ -17,7 +17,9 @@ updated: 2021/10/04
 
 # 手動安裝 cypress
 
-## 1. [Git](https://github.com/cypress-io/cypress) 下載 zip 檔案
+## 1. 下載 zip 檔案
+
+ex: https://download.cypress.io/desktop/6.8.0，不同 version 的話就替換最後面數字版本。
 
 ## 2. 找到電腦的 cypress cache 資料夾
 
@@ -33,5 +35,5 @@ updated: 2021/10/04
 
 # Reference
 
-* [Cypress Github](https://github.com/cypress-io/cypress)
+* [Cypress Direct-download](https://docs.cypress.io/guides/getting-started/installing-cypress#Direct-download)
 * [Cypress Cache](https://docs.cypress.io/guides/getting-started/installing-cypress#Binary-cache)
