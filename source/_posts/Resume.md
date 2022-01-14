@@ -95,7 +95,7 @@ My resume.
 
 * ILLUSTRATOR
 
-* VSCODE / VS2019
+* VSCODE / VS
 
 * GITHUB / AZURE DEVOPS
 
