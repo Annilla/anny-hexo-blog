@@ -6,7 +6,7 @@ thumbnailImage: https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yL
 thumbnailImagePosition: left
 coverImage: https://cdn-images-1.medium.com/max/1200/1*H-25KB7EbSHjv70HXrdl6w.png
 coverMeta: out
-tags: [JS]
+tags: [JS, SVG]
 date: 2022/02/14
 updated: 2022/02/14
 ---
