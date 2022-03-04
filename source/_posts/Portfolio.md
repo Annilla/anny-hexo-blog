@@ -23,9 +23,10 @@ My portfolio.
 
 | 作品 | 分類 | 內容 |
 | --- | --- | --- |
+| 系統 | 公司 | IC Backend Manufacturing Operations (Web) |
 | 系統 | 公司 | Workflow CN (Web) |
 | 系統 | 公司 | Depanel Monitor (Web) |
-| 系統 | 公司 | IND4 (Web) |
+| 系統 | 公司 | Smart Factory (Web) |
 | 系統 | 公司 | SSO (Web) |
 | 系統 | 公司 | OPscan (Web) |
 | 網頁 | 公司 | Online User Manual (Hexo) |
