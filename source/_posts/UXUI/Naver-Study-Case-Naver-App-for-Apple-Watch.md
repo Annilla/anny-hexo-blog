@@ -3,7 +3,7 @@ title: Naver Study Case - Naver App for Apple Watch
 categories:
   - UXUI
   - Naver
-thumbnailImage: https://lh3.googleusercontent.com/Kbu0747Cx3rpzHcSbtM1zDriGFG74zVbtkPmVnOKpmLCS59l7IuKD5M3MKbaq_nEaZM
+thumbnailImage: https://lh3.googleusercontent.com/pw/AM-JKLW_gPz40j-P9yIOQ6wZLG2U-ze9VIhURA0SDuGKr5ia0iTlmsu-eKigmgvlW6j_L1UcdRPDdg5YdwXBsBl-4cftMqjluBdDIdC9y7c5P6rqw6qq7p5G4NVcU0nnajJNm8DijRa0Ez_qzehd5iU4CaVptw=w1622-h910-no?authuser=0
 thumbnailImagePosition: left
 coverImage: https://scontent.ftpe7-2.fna.fbcdn.net/v/t31.0-8/23334132_1176106459189674_1239481400149826057_o.png?_nc_cat=111&_nc_sid=6e5ad9&_nc_ohc=kCux1p2xeGoAX8klr-t&_nc_ht=scontent.ftpe7-2.fna&oh=513d1104549da6cc9be7b37179371911&oe=5EC05781
 coverMeta: out
@@ -30,19 +30,19 @@ updated: 2022/06/08
 
 首頁利用卡面疊合的方式，漂亮展示了兩張主要卡片： QR Code 和 天氣預報。天氣動畫的部分利用淡入＋向左滑入+微放大，營造目前天氣的氣氛很順暢。
 
-![Naver App for Apple Watch](https://postfiles.pstatic.net/MjAyMTA0MTlfMTYz/MDAxNjE4ODI2MzU4NTU0.g9CsGRXV0KAc6CY6uJaFGwTc5zFaIQwXDNQu5Lmo0WYg.m-naKw7tE7RYoSgN1w5XWX_TWNDCi3mLR8C-TttzS8Eg.GIF.nvr_design/0413_1%ED%99%88_900.gif?type=w966)
+![Naver App for Apple Watch](https://lh3.googleusercontent.com/pw/AM-JKLVtx-e3oLW0zWuO4bDCyz7chtzO0VFKF89L9ngnNj8-dflWSDX3Ux-pEcHLpgDWcIGkH4UUtKQmXlKoPKJydDO0en84KMSMj1lN3Uz5bE7HQLZDneudNc4r-gQEj4DYsuPTKn-BUN7gMlNeGRbj5VU_Jg=w900-h916-no?authuser=0)
 
 # QR Code
 
 點選 QR Code 卡片會有微縮小＋向上展開卡片的互動，看起來非常清楚明瞭。
 
-![QR Code](https://postfiles.pstatic.net/MjAyMTA0MTlfNSAg/MDAxNjE4ODI2MzgxNTcx.sRyuQRylSYyWUopKK5fMteJyTNYKFfl0WjrJbcLcR5Mg.zcBQ00boBSh4l_rX-D4P-gWU7CXOIFBPMCUN1bsKUZog.GIF.nvr_design/0413_2QR_900.gif?type=w966)
+![QR Code](https://lh3.googleusercontent.com/pw/AM-JKLXMzBB2fwRnJ3f4i8VJB2GH8RpqXRACLt3pnIi4olDLQ_ewYhMQZR0L_nnYj_1NnMeVIcX6ULgm-_83dmffKhL5WVTqoRTdndcG2UbOW1jVcl4uQMREwDvujMsaipQ8kcZ_ybGVluoC4v_3fqJDyQaoHA=w900-h506-no?authuser=0)
 
 # 天氣預報
 
 進入天氣預報可以看到大張主卡片，下面會顯示一小塊綠色卡片的一點點，提示使用者可以向下滑取得更多資訊，我覺得這點設計很不錯，除了提示外還帶有設計感。下面三塊小卡片，分別利用小空隙展示天氣細塵紫外線等資訊。繼續滑會有未來 24H 的天氣預報，滑到最後還會自動回到一開始的大張主卡片，我覺得這是最貼心的一點！！因為手錶若要展示很長的內容，滑到最底後，勢必還是要有回最上方的方式，他直接做了卡片迴圈這點，讓我感覺很驚艷～(可能是我還沒看過太多手錶的 APP 吧 XD)
 
-![天氣預報](https://postfiles.pstatic.net/MjAyMTA0MTlfMjcy/MDAxNjE4ODI3NjMyMzcx.7akSzzx8K2K7Rmf7kvD_wERWrC_StxyWLzcwqaDggDEg.d1rP1wI2ON2rkAB6G3gwOB32bIBGFTSqX0kiN_YLew8g.GIF.nvr_design/0407_3%EB%82%A0%EC%94%A8_cc_1000.gif?type=w966)
+![天氣預報](https://lh3.googleusercontent.com/pw/AM-JKLUuVmjTr6eY4TyhcOCnSlI1j8hMs0HrVshxjigdJwl5v820i-vBlDQ0sAK9MbT6ZmBVWUMKW3rDKkmr2wnYR4vJdkKIuLeHmPrFpPO3Cy1UwEHCx4LNXm_AdTCJnOJeHJDA79nttxmOkfrbsN6XnmGdMw=w966-h544-no?authuser=0)
 
 # Reference
 

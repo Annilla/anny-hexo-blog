@@ -3,7 +3,7 @@ title: Naver Study Case - National Assembly election special page
 categories:
   - UXUI
   - Naver
-thumbnailImage: https://lh3.googleusercontent.com/Kbu0747Cx3rpzHcSbtM1zDriGFG74zVbtkPmVnOKpmLCS59l7IuKD5M3MKbaq_nEaZM
+thumbnailImage: https://lh3.googleusercontent.com/pw/AM-JKLW_gPz40j-P9yIOQ6wZLG2U-ze9VIhURA0SDuGKr5ia0iTlmsu-eKigmgvlW6j_L1UcdRPDdg5YdwXBsBl-4cftMqjluBdDIdC9y7c5P6rqw6qq7p5G4NVcU0nnajJNm8DijRa0Ez_qzehd5iU4CaVptw=w1622-h910-no?authuser=0
 thumbnailImagePosition: left
 coverImage: https://scontent.ftpe7-2.fna.fbcdn.net/v/t31.0-8/23334132_1176106459189674_1239481400149826057_o.png?_nc_cat=111&_nc_sid=6e5ad9&_nc_ohc=kCux1p2xeGoAX8klr-t&_nc_ht=scontent.ftpe7-2.fna&oh=513d1104549da6cc9be7b37179371911&oe=5EC05781
 coverMeta: out
