@@ -36,7 +36,7 @@ My portfolio.
 | 系統 | 公司 | Workflow Compliance (Web) |
 | 網頁 | 公司 | Kingston Mobile Team Portal (Hexo) |
 | 系統 | 公司 | B2B (Web) |
-| 系統 | 公司 | Material Requirement Planning (Web) |
+| 系統 | 公司 | Material Requirement Planning (Web, VSTO) |
 | 系統 | 公司 | Empolyee Authentication Service (Web) |
 | 系統 | 公司 | Notes SignOff APP (Mobile Web App) |
 | 系統 | 公司 | Quotation System (Web & iOS App Design) |

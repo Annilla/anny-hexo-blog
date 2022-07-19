@@ -36,6 +36,7 @@ My resume.
 
 | 時間 | 證書 |
 | --- | --- |
+| 2022.07 | 國際 Microsoft Certified: Power Platform Fundamentals |
 | 2020.03 | 國際 Microsoft Certified: Azure Fundamentals |
 | 2017.03 | 國際 TOEIC 藍色證書 765分 |
 | 2015.11 | 國家技術士網頁設計丙級證照 |
@@ -54,6 +55,8 @@ My resume.
 
 | 時間 | 課程 |
 | --- | --- |
+| 2022.07 | Skilltree 精準解析 .NET Thread 執行緒 |
+| 2022.07 | Skilltree 精準解析 .NET Task 工作 |
 | 2021.08 | Become An Awesome Team Player 神隊友打造計畫 (卡內基訓練) |
 | 2021.04 | TOC管理思維與方法課程 |
 | 2019.09 | 台灣微軟技術中心 Microsoft DevOps Workshop |
