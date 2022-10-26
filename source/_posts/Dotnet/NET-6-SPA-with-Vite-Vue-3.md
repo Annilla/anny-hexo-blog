@@ -25,7 +25,7 @@ dotnet new react
 
 刪除原本的 ClientApp 資料夾。
 
-![刪除原本的 ClientApp 資料夾]()
+![刪除原本的 ClientApp 資料夾](https://lh3.googleusercontent.com/pw/AL9nZEVq6mhxqbGkTScsxRNoBg8zQ2dKwUIao8A7aOXGmDiENHyOchrOS5ufJ3TzKNsoNsii9iXxtSEGAsSBL4-ioZT75DhaldcURq9hZVjwclfOkF7WV6d4t_ND0yH3m-ZpJS4cYLsxWk4PsYEFUtjFIn5tSA=w1058-h1080-no?authuser=0)
 
 ## 用 Vite 建立 Vue 專案
 
@@ -34,7 +34,7 @@ npm create vite@latest
 ```
 
 專案名稱一樣取 ClientApp 即可，接著照步驟選擇 Vue 專案。
-![照步驟選擇 Vue 專案]()
+![照步驟選擇 Vue 專案](https://lh3.googleusercontent.com/pw/AL9nZEXGCPDqdSBVl7JYhsH-5_uSZYSQkN8DcEKhBcJXKT56VDHuzo7qP0dSYNaawCLD3AXgDDg-gUAVmFtr6LTbO4UMbE0OfzsA4Ef9kNkre6X5vn-LoLDrnGEX3esyBpV890Z3yFkDPYX_tpvyT1eVgHPOqQ=w1252-h560-no?authuser=0)
 
 ## 修改 .csproj 檔案
 
@@ -118,7 +118,7 @@ export default defineConfig({
 
 完成後，可以直接使用 VS or VScode 的專案執行按鈕就能成功啟動囉~
 
-![啟動畫面]()
+![啟動畫面](https://lh3.googleusercontent.com/pw/AL9nZEWpZD0_CrJszyUa5jnBkxTo7XFUfJrWszZJ3-jt88Qipkkt0mRQDhi45FNrso4NQkXdmF-CXJMsR_H5lsaXHoEjvFxFERuRvL7z8GOd8XalpW1LdMEBMG2XCqLRnX4qTuPLhP7nQX5KXMmVCPpb8D19dQ=w2490-h1442-no?authuser=0)
 
 今天的範例在 [github](https://github.com/Annilla/test-dotnet-vue-vite/tree/v1.0)，下回見～
 
