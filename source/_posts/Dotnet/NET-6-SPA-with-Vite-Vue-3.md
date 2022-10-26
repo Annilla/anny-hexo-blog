@@ -2,9 +2,9 @@
 title: .NET 6.0 SPA with Vite and Vue 3 - Start New Project
 categories:
   - .NET
-thumbnailImage: http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png
+thumbnailImage: https://s3-us-west-2.amazonaws.com/ca3db/pbs.twimg.com/c4bff765d9dfb3d8c6163b1de3a8e1a78cf0f9399b5a79c35695a49813821c44.jpg
 thumbnailImagePosition: left
-coverImage: http://www.dotnetcurry.com/images/dotnetcore/vuejs-templates/modernwebdev.png
+coverImage: https://vitejs.dev/og-image-announcing-vite3.png
 coverMeta: out
 tags: [.NET, dotnet, Vue, Vite, SPA, MVC, VScode]
 date: 2022/10/26
