@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2021/04/29
+updated: 2023/05/22
 ---
 
 My resume.
@@ -88,25 +88,15 @@ My resume.
 
 # Skills
 
-* FIGMA
-
-* SKETCH
-
-* ADOBE XD
-
-* PHOTOSHOP
-
-* ILLUSTRATOR
+* FIGMA / SKETCH / ADOBE XD / PHOTOSHOP / ILLUSTRATOR
 
 * VSCODE / VS
 
-* GITHUB / AZURE DEVOPS
-
-* SOURCETREE
+* GITHUB / AZURE DEVOPS / SOURCETREE
 
 * NPM
 
-* WEBPACK / GULP
+* Vite / WEBPACK / GULP
 
 # Languages
 
@@ -114,4 +104,4 @@ My resume.
 
 * CSS / SASS(SCSS) / STYLUS / POSTCSS
 
-* JS / JQUERY / VUE / ES6
+* JS / JQUERY / VUE / ES6 / SVELTE
