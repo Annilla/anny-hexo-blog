@@ -11,7 +11,7 @@ date: 2023/07/05
 updated: 2023/07/05
 ---
 
-之前已經有寫過關於用 AI 生成圖片的 [Midjourney](http://annilla.github.io/2022/09/14/UXUI/Midjourney-AI-Art/), 但是出來的圖片通常都是點陣圖。想要用在系統 UI 介面上的向量圖, 設計師通常想要的是 SVG 格式, 最近發現了一款 [Recraft.ai](Recraft.ai) 他剛好就可以生成向量 SVG 格式, 而且出來的風格很適合拿來放在 UI 介面上, 非常好用！！
+之前已經有寫過關於用 AI 生成圖片的 [Midjourney](http://annilla.github.io/2022/09/14/UXUI/Midjourney-AI-Art/), 但是出來的圖片通常都是點陣圖。想要用在系統 UI 介面上的向量圖, 設計師通常想要的是 SVG 格式, 最近發現了一款 [Recraft.ai](https://www.recraft.ai/) 他剛好就可以生成向量 SVG 格式, 而且出來的風格很適合拿來放在 UI 介面上, 非常好用！！
 
 <!--more-->
 
