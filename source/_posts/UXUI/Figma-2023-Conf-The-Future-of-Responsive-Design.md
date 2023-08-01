@@ -29,17 +29,17 @@ updated: 2023/08/01
 
 # container query
 
-這個項目是令我最興奮的了~以前都是用 media query, 用整個螢幕寬度來決定 element 的顯示變化. 但其實這樣切得很死~不夠彈性. 新的 container query 來了!! 用 container query 可以讓子元素自己感知外框的大小變化, 自己決定要變成什麼樣子~這樣就可以只設計一個 element, 然後放到不同的地方, 像是放在 aside 就會自動縮小樣式, 放在 main 就可以放大顯示更多資訊, 同一個元素就能解決~不用分開做. 能做到原子元素重複利用, 真是令人興奮!!
+這個項目是令我最興奮的了!以前都是用 media query, 用整個螢幕寬度來決定 element 的顯示變化. 但其實這樣切得很死!不夠彈性. 新的 container query 來了!! 用 container query 可以讓子元素自己感知外框的大小變化, 自己決定要變成什麼樣子!這樣就可以只設計一個 element, 然後放到不同的地方, 像是放在 aside 就會自動縮小樣式, 放在 main 就可以放大顯示更多資訊, 同一個元素就能解決!不用分開做. 能做到原子元素重複利用, 真是令人興奮!!
 
 ![container query](https://media.discordapp.net/attachments/1135775611948900472/1135782806157525042/2023-08-01_11-54-35.png?width=765&height=423)
 
 # text-wrap pretty
 
-另一個有趣的事情是文字通常很長被分段都不盡理想, 這裡有一個新概念是在 text-wrap 放 pretty, 讓他自動斷行且看起來是平衡漂亮的. 這個看起來也很威~不過還在實驗階段~希望各大瀏覽器都能支持!!XD
+另一個有趣的事情是文字通常很長被分段都不盡理想, 這裡有一個新概念是在 text-wrap 放 pretty, 讓他自動斷行且看起來是平衡漂亮的. 這個看起來也很威!不過還在實驗階段!希望各大瀏覽器都能支持!!XD
 
 ![text-wrap pretty](https://media.discordapp.net/attachments/1135775611948900472/1135785515354959993/2023-08-01_12-04-55.png?width=754&height=423)
 
-當然內容不只這幾樣啦~還有很多比較細節的小地方都很有趣~有興趣的人可以去看正片 [The future of responsive design](https://config.figma.com/video-on-demand/6329932796112)~下次見啦~
+當然內容不只這幾樣啦!還有很多比較細節的小地方都很有趣!有興趣的人可以去看正片 [The future of responsive design](https://config.figma.com/video-on-demand/6329932796112)!下次見啦!
 
 # Reference
 
