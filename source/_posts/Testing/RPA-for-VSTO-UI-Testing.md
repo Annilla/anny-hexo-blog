@@ -4,7 +4,7 @@ categories:
   - RPA
 thumbnailImage: https://picx.zhimg.com/v2-8bc8d8efe02b13b406abfd9be1256e35_l.jpg?source=172ae18b
 thumbnailImagePosition: left
-coverImage: https://www.metaage.com.tw/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWG81Y0c1MmFHdzBhV3cwYzJFd04yaGxNRGxtY1RFemJtMTNid1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUzJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SWpFMk1qQTVNamN5TVY5NGJDNXFjR2NpT3lCbWFXeGxibUZ0WlNvOVZWUkdMVGduSnpFMk1qQTVNamN5TVY5NGJDNXFjR2NHT3daVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc5cGJXRm5aUzlxY0dWbkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjMtMDktMDFUMDc6MzI6MjguOTQxWiIsInB1ciI6ImJsb2Jfa2V5In19--44c257abcaf96ebc2b9978a9a8a1915c330cc19a/162092721_xl.jpg
+coverImage: https://media.discordapp.net/attachments/1135775611948900472/1147077602658484234/162092721_xl.png?width=794&height=423
 coverMeta: out
 tags: [RPA, Testing]
 date: 2023/09/01
