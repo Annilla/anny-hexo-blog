@@ -7,8 +7,8 @@ thumbnailImagePosition: left
 coverImage: https://logonoid.com/images/python-logo.png
 coverMeta: out
 tags: [Python, ChatGPT, Anaconda]
-date: 2022/11/07
-updated: 2022/11/07
+date: 2023/11/07
+updated: 2023/11/07
 ---
 
 工作上有時會需要用到 Excel 轉 Json 的時候, 但線上工具還要先轉成 csv 非常麻煩, 想說能不能問問看 ChatGPT, 結果測試結果不錯, 他直接幫我用 Python 語言寫了程式碼, 稍微細問微調一下就能用了! 下面來說一下我是怎麼問的。
