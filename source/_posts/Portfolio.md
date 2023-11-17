@@ -8,7 +8,7 @@ coverImage: https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?auto=fo
 coverMeta: out
 tags: [Portfolio, 作品集]
 date: 3017/12/01
-updated: 2019/10/10
+updated: 2023/11/17
 ---
 
 My portfolio.
@@ -23,20 +23,22 @@ My portfolio.
 
 | 作品 | 分類 | 內容 |
 | --- | --- | --- |
+| 網頁 | 公司 | KTCFE BTIA Private GPT (Web) |
+| 網頁 | 公司 | Kingston Mail Template (Web) |
 | 系統 | 公司 | IC Backend Manufacturing Operations (Web) |
 | 系統 | 公司 | Workflow CN (Web) |
 | 系統 | 公司 | Depanel Monitor (Web) |
 | 系統 | 公司 | Smart Factory (Web) |
 | 系統 | 公司 | SSO (Web) |
 | 系統 | 公司 | OPscan (Web) |
-| 網頁 | 公司 | Online User Manual (Hexo) |
+| 網頁 | 公司 | Online User Manual (Hexo Blog Web) |
 | 網頁 | 公司 | Reflow Supplement Page (Web) |
 | 系統 | 公司 | System Profile Management (Web) |
 | 系統 | 公司 | NXT Monitor (Web) |
 | 系統 | 公司 | Workflow Compliance (Web) |
-| 網頁 | 公司 | Kingston Mobile Team Portal (Hexo) |
-| 系統 | 公司 | B2B (Web) |
-| 系統 | 公司 | Material Requirement Planning (Web, VSTO) |
+| 網頁 | 公司 | Kingston Mobile Team Portal (Hexo Blog Web) |
+| 系統 | 公司 | Kingston B2B (Web) |
+| 系統 | 公司 | Kingston Planning Platform (Web, VSTO) |
 | 系統 | 公司 | Empolyee Authentication Service (Web) |
 | 系統 | 公司 | Notes SignOff APP (Mobile Web App) |
 | 系統 | 公司 | Quotation System (Web & iOS App Design) |
