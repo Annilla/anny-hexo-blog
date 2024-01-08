@@ -138,7 +138,7 @@ function ISOToDiscordUnix(isoString) {
 
 # 設定觸發條件
 
-接這再去 UI 設定觸發條件如下圖.
+再去 UI 設定觸發條件如下圖.
 
 * 執行的 function: postEventsToChannel
 * 部屬作業: 雲端
