@@ -7,8 +7,8 @@ thumbnailImagePosition: left
 coverImage: https://vitejs.dev/og-image-announcing-vite3.png
 coverMeta: out
 tags: [.NET, dotnet, Vue, Vite, SPA, MVC, VScode]
-date: 2024/04/03
-updated: 2024/04/03
+date: 2024/04/11
+updated: 2024/04/11
 ---
 
 近期因工作的關係~需要研究 dotnet 8 template 用法, 我就連同 Vue3+Vite+Vutify 一次組裝完成, 做成模板來測試用.
