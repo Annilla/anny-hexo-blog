@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2023/05/22
+updated: 2024/05/08
 ---
 
 My resume.
@@ -24,6 +24,8 @@ My resume.
 ## 研討會 / 工作坊
 | 時間 | 研討會 / 工作坊 | 分享主題 |
 | --- | --- | --- |
+| 2024.05 | Kingston Dev Summit | Exploring Frontend Technology - Vue.js |
+| 2024.01 | Kingston Team Sharing | Production Shipping & Packing MRP |
 | 2019.11 | Kingston 2019 內訓 | [使用 Hexo 做線上說明文件](https://www.canva.com/design/DADpqbMNvJk/kFNwFdNo0_4FFcrbAj53HA/view?utm_content=DADpqbMNvJk&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) |
 | 2019.11 | Kingston 2019 內訓 | [Start our journey with vue](https://www.canva.com/design/DADqB4aQEns/_iyVg0rxO38YU409MwbKIA/view?utm_content=DADqB4aQEns&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) |
 | 2019.09 | Kingston 2019 內訓 | [Why Vue.js](https://www.canva.com/design/DADkDdvRR9A/JzfYMOKl6_2DLqeFH-BOww/view?utm_content=DADkDdvRR9A&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton) |
@@ -55,6 +57,7 @@ My resume.
 
 | 時間 | 課程 |
 | --- | --- |
+| 2024.04 | APS 先進規劃排成課程 |
 | 2022.07 | Skilltree 精準解析 .NET Thread 執行緒 |
 | 2022.07 | Skilltree 精準解析 .NET Task 工作 |
 | 2021.08 | Become An Awesome Team Player 神隊友打造計畫 (卡內基訓練) |
