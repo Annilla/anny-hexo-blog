@@ -24,6 +24,7 @@ My resume.
 ## 研討會 / 工作坊
 | 時間 | 研討會 / 工作坊 | 分享主題 |
 | --- | --- | --- |
+| 2024.07 | Kingston Team Sharing | UIUX到系統開發的協同合作 |
 | 2024.05 | Kingston Dev Summit | Exploring Frontend Technology - Vue.js |
 | 2024.01 | Kingston Team Sharing | Production Shipping & Packing MRP |
 | 2019.11 | Kingston 2019 內訓 | [使用 Hexo 做線上說明文件](https://www.canva.com/design/DADpqbMNvJk/kFNwFdNo0_4FFcrbAj53HA/view?utm_content=DADpqbMNvJk&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu) |
