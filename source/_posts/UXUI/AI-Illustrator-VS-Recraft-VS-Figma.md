@@ -7,8 +7,8 @@ thumbnailImagePosition: left
 coverImage: https://i.imgur.com/bJziC0t.png
 coverMeta: out
 tags: [Figma, Illustrator, Recraft, UX, UI, AI]
-date: 2024/11/30
-updated: 2024/11/30
+date: 2025/01/02
+updated: 2025/01/02
 ---
 
 現在各家繪圖軟體陸續推出 AI 的功能, 平常畫 UIUX 大部分用 Figma, 生成插圖會用 Recraft, 最近 Illustrator 也出 AI 功能, 來分享我最近有用過的感想。
@@ -17,7 +17,7 @@ updated: 2024/11/30
 
 # Recraft
 
-這是我第一個使用 AI 生成 SVG 圖的工具, 沒錯! 你沒聽錯! 下載的格式是 SVG 喲!! SVG 好處就是他直接是向量圖, 可以丟進去 Figma, Illustrator 都沒問題, 重新上色拉線稿都 OK. 重點是他生出的圖其實還蠻符合現在潮流的. 最近還推出 V3 版本, 但 V3 還沒辦法下載 SVG 格式, 要舊版的 20B 才能下載 SVG. 期待 V3 未來能下載 SVG 格式, 整體使用上 V3 生出來的圖非常符合潮流.
+[Recraft](https://www.recraft.ai) 是我第一個使用 AI 生成 SVG 圖的工具, 沒錯! 你沒聽錯! 下載的格式是 SVG 喲!! SVG 好處就是他直接是向量圖, 可以丟進去 Figma, Illustrator 都沒問題, 重新上色拉線稿都 OK. 重點是他生出的圖其實還蠻符合現在潮流的. 最近還推出 V3 版本, 但 V3 還沒辦法下載 SVG 格式, 要舊版的 20B 才能下載 SVG. 期待 V3 未來能下載 SVG 格式, 整體使用上 V3 生出來的圖非常符合潮流.
 
 Recraft 生圖:
 
@@ -30,6 +30,7 @@ Recraft 生圖:
 
 # Illustrator
 
+[Illustrator]()
 
 # Figma
 
