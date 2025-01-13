@@ -30,7 +30,7 @@ Recraft 生圖:
 
 # Illustrator
 
-[Illustrator]()
+[Illustrator](https://www.adobe.com/tw/products/illustrator.html) 是老牌 Adobe 繪製向量圖的應用程式, 很高興他也能有 AI 功能. 他比較有趣的是可以繪製簡單向量, 並快速填滿圖形或是生成式重新上色等功能, 可以參考[官網](https://www.adobe.com/tw/products/illustrator/ai.html).
 
 # Figma
 
