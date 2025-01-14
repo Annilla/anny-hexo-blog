@@ -7,8 +7,8 @@ thumbnailImagePosition: left
 coverImage: https://i.imgur.com/bJziC0t.png
 coverMeta: out
 tags: [Figma, Illustrator, Recraft, UX, UI, AI]
-date: 2025/01/02
-updated: 2025/01/02
+date: 2025/01/14
+updated: 2025/01/14
 ---
 
 現在各家繪圖軟體陸續推出 AI 的功能, 平常畫 UIUX 大部分用 Figma, 生成插圖會用 Recraft, 最近 Illustrator 也出 AI 功能, 來分享我最近有用過的感想。
@@ -49,13 +49,26 @@ Illustrator 生圖:
 
 [Figma](https://www.figma.com/) 是線上 RealTime 協同設計 prototype 的第一把交椅, 原本目前的專案就都轉到 Figma 了. 他出了 AI 後就很期待, 試用過覺得比前面兩個介紹的都糟糕耶XD
 
-...
+Figma 生圖:
 
+* 比例: 拉一個矩形框, 點 AI 星星按鈕選 "Make an image"
+* 顏色: 不能調整, 只能打提示文字
+* 下載格式: 點陣圖 PNG, JPG
+* 其他功能: 非生圖的其他 AI 功能可能還比較好用, Rename Layers, Remove background, Rewrite this 等等.
+
+用 Illustrator VS Recraft VS Figma 字詞產生矩形點陣圖, 看到下面如圖結果, 完全圖文不符啊!!!! 建議如果要產圖還是用上面兩個工具, Figma 如果要用 AI 功能, 可以針對文字方面像是 Rename Layers, Rewrite this, Translate 功能會比較好用.
 
 ![Figma](https://i.imgur.com/8C2UJnb.png)
 
-
 # Illustrator VS Recraft VS Figma
 
+| 工具比較 | Illustrator | Recraft | Figma |
+| :---: | :---: | :---: | :---: |
+|  | ![Illustrator](https://i.imgur.com/N5sTdXV.png) | ![Recraft](https://i.imgur.com/iJEFORw.png) | ![Figma](https://i.imgur.com/8C2UJnb.png) |
+| 文生圖 | 😀 強<br/>細節粗糙, 風格跟不上潮流 | 😍 超強<br/>切中主題, 設計風格符合現代 | 😡 不推<br/>圖文不符 |
+| 顏色 | 😍 超強, 除了設定色調, 色數, 多種預設外, 也可以指定內容類型(場景, 主體, 圖示)等更多細項設定 | 😀 強, 可設定多個背景色和前景色調, AI 會依據設定的色調生圖 | 😡 不能調整 |
+| 下載格式 | SVG, PNG, JPG | 20B 可下載 SVG 格式 <br/> V3 只能 PNG, JPG 格式 | PNG, JPG |
+| 其他功能 | 除了產生向量外, 還能快速填滿圖形, 生成式重新上色. 有自己獨有的功能 | 除了文生圖外, 還有圖生圖, 文字生圖組 Image Set, 文字加圖的生成... | 針對文字方面像是 Rename Layers, Rewrite this, Translate 功能會比較好用 |
 
-# Reference
+目前雖然 prototype 平常是在 Figma 設計, 但需要向量插圖的時候就會使用 Recraft 生圖下載 SVG 圖檔, 如果只能下載點陣圖, 也可以下載後去 Illustrator 轉成向量圖, 用 Illustrator 做更多顏色的調整變化後, 可以達到更好設計效果, 推薦給大家參考 😉
+
