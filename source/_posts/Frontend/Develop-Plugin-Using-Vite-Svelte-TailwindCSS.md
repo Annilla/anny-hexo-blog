@@ -1,7 +1,7 @@
 ---
 title: Develop Plugin Using Vite & Svelte & TailwindCSS
 categories:
-  - JS
+  - Frontend
 thumbnailImage: https://s3-us-west-2.amazonaws.com/ca3db/pbs.twimg.com/c4bff765d9dfb3d8c6163b1de3a8e1a78cf0f9399b5a79c35695a49813821c44.jpg
 thumbnailImagePosition: left
 coverImage: https://vitejs.dev/og-image-announcing-vite3.png

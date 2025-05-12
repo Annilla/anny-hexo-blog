@@ -1,7 +1,7 @@
 ---
 title: React Redux Practice
 categories:
-  - JS
+  - Frontend
   - React
 thumbnailImage: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png
 thumbnailImagePosition: left

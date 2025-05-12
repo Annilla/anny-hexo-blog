@@ -1,7 +1,7 @@
 ---
 title: Grab Data to CSV by using NodeJS
 categories:
-  - JS
+  - Frontend
 humbnailImage: https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png
 thumbnailImagePosition: left
 coverImage: https://cdn-images-1.medium.com/max/1200/1*H-25KB7EbSHjv70HXrdl6w.png
@@ -51,7 +51,7 @@ let startTime = moment().format(); // 紀錄開始時間
 let grabMiniute = 3; // 設定要抓取的分鐘數
 let endTime = moment(startTime).add(grabMiniute, 'minutes'); // 計算結束的時間
 
-// 取得 API token 
+// 取得 API token
 async function getToken() {
   let res = await axios({
     methos: 'GET',

@@ -1,7 +1,7 @@
 ---
 title: JS Retry Function
 categories:
-  - JS
+  - Frontend
 thumbnailImage: https://cdn-images-1.medium.com/max/1600/1*HP8l7LMMt7Sh5UoO1T-yLQ.png
 thumbnailImagePosition: left
 coverImage: https://cdn-images-1.medium.com/max/1200/1*H-25KB7EbSHjv70HXrdl6w.png

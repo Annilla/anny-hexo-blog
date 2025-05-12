@@ -1,7 +1,7 @@
 ---
 title: Notes on Transferring from Vuetify V1 to V2
 categories:
-  - JS
+  - Frontend
 thumbnailImage: https://styles.redditmedia.com/t5_3nu8v/styles/communityIcon_zuqnf4r5ml111.png?width=256&s=cb1e7da96a8a20995de2e1a934d07b6a0a94958e
 thumbnailImagePosition: left
 coverImage: https://i.morioh.com/2019/11/01/47e709b4198f.jpg

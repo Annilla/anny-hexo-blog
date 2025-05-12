@@ -1,7 +1,7 @@
 ---
 title: Connect Redis with NodeJS
 categories:
-  - JS
+  - Frontend
 thumbnailImage: https://microstream.one/blog/wp-content/uploads/2023/06/redis_logo-1.png
 thumbnailImagePosition: left
 coverImage: https://ps.w.org/redis-cache/assets/banner-1544x500.png?rev=2315420

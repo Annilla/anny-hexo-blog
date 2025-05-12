@@ -1,7 +1,7 @@
 ---
 title: Google Calendar To Discord Webhook
 categories:
-  - JS
+  - Frontend
 thumbnailImage: https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source
 thumbnailImagePosition: left
 coverImage: https://media.nownews.com/nn_media/thumbnail/2023/09/1695994487590-d3650fef35e74f04bf6010d0078f8fcd-1200x675.webp?unShow=false
