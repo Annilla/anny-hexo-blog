@@ -7,7 +7,7 @@
     "build": "hexo g -d"
   },
   "hexo": {
-    "version": "6.1.0"
+    "version": "3.4.4"
   },
   "dependencies": {
     "fsevents": "^1.2.9",
