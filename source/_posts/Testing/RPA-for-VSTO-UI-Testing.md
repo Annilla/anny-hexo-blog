@@ -24,11 +24,11 @@ Main 主要流程如下:
 1. 附加至執行中的 Excel: 設定開啟的 VSTO 檔案名稱. **注意! 這裡會產生變數 ExcelInstance 代表此 Excel 給下一步驟使用.**
 2. 設定使用中 Excel 工作表: 用剛剛產生的 ExcelInstance 變數, 設定啟用工作表時搭配 "名字" 並輸入要執行的 sheet 名稱.
 
-![Main 流程 - VSTO 開啟](https://media.discordapp.net/attachments/1135775611948900472/1147011739859288155/image.png)
+![Main 流程 - VSTO 開啟](https://i.imgur.com/XIFS4XL.png)
 
-![附加至執行中的 Excel](https://media.discordapp.net/attachments/1135775611948900472/1147012024975507596/image.png)
+![附加至執行中的 Excel](https://i.imgur.com/zsPmO6b.png)
 
-![設定使用中 Excel 工作表](https://media.discordapp.net/attachments/1135775611948900472/1147012324729819166/image.png)
+![設定使用中 Excel 工作表](https://i.imgur.com/lIWuJYA.png)
 
 # 技巧二 輸入資料至表格
 
@@ -44,17 +44,17 @@ Main 主要流程如下:
 4. 寫入 Excel 工作表: 將資料 FlashData 貼到欄 A 和 列 FirstFreeRow.
 5. 關閉 Excel: 複製完將 ExcelFlashData 檔案關閉. 不關的話會一直留在畫面上.
 
-![Main 流程 - 從 Excel 讀取批次貼上](https://media.discordapp.net/attachments/1135775611948900472/1147054666849468487/image.png)
+![Main 流程 - 從 Excel 讀取批次貼上](https://i.imgur.com/3e9ksPv.png)
 
-![從 Excel 工作表中取得第一個可用資料行/資料列](https://media.discordapp.net/attachments/1135775611948900472/1147057076149964840/image.png)
+![從 Excel 工作表中取得第一個可用資料行/資料列](https://i.imgur.com/D7zoaqa.png)
 
-![啟動 Excel](https://media.discordapp.net/attachments/1135775611948900472/1147057429788504094/image.png?width=483&height=423)
+![啟動 Excel](https://i.imgur.com/igja3zw.png)
 
-![讀取自 Excel 工作表](https://media.discordapp.net/attachments/1135775611948900472/1147057753844629614/image.png?width=597&height=423)
+![讀取自 Excel 工作表](https://i.imgur.com/msk8MoU.png)
 
-![寫入 Excel 工作表](https://media.discordapp.net/attachments/1135775611948900472/1147057998620012615/image.png?width=517&height=423)
+![寫入 Excel 工作表](https://i.imgur.com/T3MEBmX.png)
 
-![關閉 Excel](https://media.discordapp.net/attachments/1135775611948900472/1147058212470788136/image.png)
+![關閉 Excel](https://i.imgur.com/P1HHoeH.png)
 
 ## 輸入當天日期
 
@@ -65,11 +65,11 @@ Main 主要流程如下:
 1. 取得目前日期與時間: 將目前日期時間除存在變數 CurrentDateTime.
 2. 寫入 Excel 工作表: 可將 CurrentDateTime 拆分為年,月,日再重新組合成想要的格式貼到指定欄位中.
 
-![Main 流程 - 輸入當天日期](https://media.discordapp.net/attachments/1135775611948900472/1147059155652333698/image.png)
+![Main 流程 - 輸入當天日期](https://i.imgur.com/r7xjkLv.png)
 
-![取得目前日期與時間](https://media.discordapp.net/attachments/1135775611948900472/1147060074372661318/image.png)
+![取得目前日期與時間](https://i.imgur.com/rflsPke.png)
 
-![寫入 Excel 工作表](https://media.discordapp.net/attachments/1135775611948900472/1147060328362954752/image.png?width=509&height=423)
+![寫入 Excel 工作表](https://i.imgur.com/8Yc5k5P.png)
 
 # 技巧三 Ribbon 操作
 
@@ -82,13 +82,13 @@ Main 主要流程如下:
 1. 按一下視窗中的 UI 元素: 要先新增下拉選單的 UI 元素, 然後請 RPA 去點此元素。
 2. 傳送按鍵: **注意! 因為下拉選單是浮動選單, RPA 用內建的清單選擇會選不到, 所以這裡是用鍵盤傳送方向鍵(下->下->Enter)的方式來選擇要的下拉項目。**
 
-![Main 流程 - 下拉選單](https://media.discordapp.net/attachments/1135775611948900472/1147061566374690816/image.png)
+![Main 流程 - 下拉選單](https://i.imgur.com/Fs3uzvZ.png)
 
-![新增下拉選單的 UI 元素](https://media.discordapp.net/attachments/1135775611948900472/1147063753892974602/image.png?width=417&height=423)
+![新增下拉選單的 UI 元素](https://i.imgur.com/jLAOxX8.png)
 
-![按一下視窗中的 UI 元素](https://media.discordapp.net/attachments/1135775611948900472/1147063977449357402/image.png)
+![按一下視窗中的 UI 元素](https://i.imgur.com/dKCqWRO.png)
 
-![傳送按鍵](https://media.discordapp.net/attachments/1135775611948900472/1147064169573654538/image.png?width=460&height=423)
+![傳送按鍵](https://i.imgur.com/bEgonOp.png)
 
 ## 輸入框和按鈕
 
@@ -97,12 +97,12 @@ Main 主要流程如下:
 1. 填入視窗中的文字欄位: 要先新增輸入框的 UI 元素, 然後請 RPA 去輸入要的文字訊息。
 2. 按一下視窗中的 UI 元素: 要先新增按鈕的 UI 元素, 然後請 RPA 去點擊。
 
-![Main 流程 - 輸入框和按鈕](https://media.discordapp.net/attachments/1135775611948900472/1147066109779001364/image.png)
+![Main 流程 - 輸入框和按鈕](https://i.imgur.com/fsYbhdU.png)
 
-![新增輸入框的 UI 元素](https://media.discordapp.net/attachments/1135775611948900472/1147067256401043486/image.png?width=417&height=423)
+![新增輸入框的 UI 元素](https://i.imgur.com/O7ouE7q.png)
 
-![填入視窗中的文字欄位](https://media.discordapp.net/attachments/1135775611948900472/1147067575340113930/image.png?width=520&height=423)
+![填入視窗中的文字欄位](https://i.imgur.com/CzMozei.png)
 
-![新增按鈕的 UI 元素](https://media.discordapp.net/attachments/1135775611948900472/1147067817154330704/image.png?width=420&height=423)
+![新增按鈕的 UI 元素](https://i.imgur.com/XQxAhgM.png)
 
-![按一下視窗中的 UI 元素](https://media.discordapp.net/attachments/1135775611948900472/1147068001946959882/image.png)
+![按一下視窗中的 UI 元素](https://i.imgur.com/Tkc0B84.png)
