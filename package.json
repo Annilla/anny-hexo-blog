@@ -8,10 +8,9 @@
     "build": "hexo g -d"
   },
   "hexo": {
-    "version": "3.4.4"
+    "version": "6.3.0"
   },
   "dependencies": {
-    "fsevents": "^1.2.9",
     "hexo": "^6.0.0",
     "hexo-algoliasearch": "^0.2.1",
     "hexo-deployer-git": "^3.0.0",
