@@ -6,7 +6,7 @@ thumbnailImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?aut
 thumbnailImagePosition: bottom
 coverImage: https://images.unsplash.com/photo-1484755560615-a4c64e778a6c?auto=format&fit=crop&w=1360&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 date: 3017/12/03
-updated: 2024/05/08
+updated: 2025/08/04
 ---
 
 My resume.
@@ -24,6 +24,7 @@ My resume.
 ## 研討會 / 工作坊
 | 時間 | 研討會 / 工作坊 | 分享主題 |
 | --- | --- | --- |
+| 2025.07 | Kingston Team Sharing | AutoAssign 解謎遊戲 |
 | 2024.07 | Kingston Team Sharing | UIUX到系統開發的協同合作 |
 | 2024.05 | Kingston Dev Summit | Exploring Frontend Technology - Vue.js |
 | 2024.01 | Kingston Team Sharing | Production Shipping & Packing MRP |
