@@ -1,1 +1,3 @@
 node_modules/
+.spectra/
+docs/spectra/.vector-search.db*
