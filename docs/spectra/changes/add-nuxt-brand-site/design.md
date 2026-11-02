@@ -8,7 +8,7 @@
 
 - 首頁來源：使用者於 2026-11-02 提供的首頁設計截圖（`C:\Users\AnnyChang\AppData\Roaming\Code\agentSessionData\9d71492e-41fb-4461-8549-5f8c5539b9f0\attachments\799bd570-4ff6-4b49-9a83-14970edd5565\Pasted Image.png`），作為桌面版版面與內容順序參考。
 - Figma 原型：https://www.figma.com/proto/sLm7dhkKSGtQUxWHyEVOsY/Anny-Blog?node-id=2-2&t=pbtwOwt6CUvGG9Wv-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2（2026-11-02 檢視，可顯示首頁主視覺作為互動式視覺參考）。目前可見的是原型展示，無法讀取 Dev Mode 標註；未從連結推定精確間距、色碼或字型尺寸。
-- 規格來源：使用者於 2026-11-02 提供的色彩與字型規格圖（`C:\Users\AnnyChang\AppData\Roaming\Code\agentSessionData\9d71492e-41fb-4461-8549-5f8c5539b9f0\attachments\ecdaec20-406d-47dc-a534-2c6d02b1089e\Pasted Image.png`）；尚未提供 `.dc.html`。
+- 規格來源：使用者於 2026-11-02 提供的色彩與字型規格圖（`C:\Users\AnnyChang\AppData\Roaming\Code\agentSessionData\9d71492e-41fb-4461-8549-5f8c5539b9f0\attachments\ecdaec20-406d-47dc-a534-2c6d02b1089e\Pasted Image.png`）；本設計以現有截圖與 Figma 原型為準，不要求提供 `.dc.html`。
 - 原始素材：兩張截圖未複製至專案快取。首頁截圖為低解析度參考圖；使用者表示日後另提供正式向量圖或較高解析度檔案。
 - 色彩規格：HEX/RGB 以 8-bit 色彩通道表示；按鈕綠採使用者確認的 `#90B2AF` / `144,178,175`，取代規格圖中色票與 RGB 不一致的標示。
 
@@ -70,6 +70,8 @@ nuxt-site 使用自己的 package.json、package-lock.json、node_modules、Nuxt
 Nuxt、Nuxt Content 及已選框架正常安裝所帶入的間接依賴，不視為另外主動選用套件；若將其中套件提升為直接依賴或主動整合，仍須依上述規則處理。本規則不要求修改既有 Hexo 依賴。先前指定 TypeScript 的技術方向不代表新增其他第三方型別檢查或測試工具已獲核准。
 
 替代方案：直接採用常見社群套件可減少選型步驟，但違反使用者要求，不採用。
+
+本機驗證後的核准紀錄（2026-11-02）：Nuxt `typecheck` 需要 `vue-tsc` 才能檢查 `.vue` 元件；Nuxt Content 3.16.2 啟動時要求本機資料庫驅動。使用者已明確核准直接依賴 `vue-tsc` 3.3.14 與 `better-sqlite3` 13.0.3。`vue-tsc` 屬 Vue Language Tools，Golar 是另一個非 Nuxt 檢查器且需額外設定；`better-sqlite3` 為本機產生選用的資料庫驅動，其他 Content 資料庫驅動亦非 Nuxt 官方套件。Nuxt 官方套件或內建能力無法替代這兩項必要功能。
 
 ### 單向內容匯入與路由基準
 
@@ -159,4 +161,3 @@ Nuxt Content 集合驗證欄位。文章列表依日期降冪，同日期依網�
 - 高解析／向量版的正式視覺素材及其精確設計值：使用者表示稍後提供；在此之前以截圖作版面參考，不把低解析截圖直接用作正式素材。
 - 套件版本與中文搜尋相容：任務 1.3、3.2 先確認官方歸屬；非官方方案取得使用者核准後再實際驗證並記錄。
 - 正式帳號、儲存庫與發布權限：不阻擋本機開發，屬另行授權切換階段的必要決策。
-

@@ -1,0 +1,37 @@
+:root {
+  color-scheme: light;
+  color: #00113e;
+  background: #fff;
+  font-family: "Noto Serif TC", "Noto Serif CJK TC", serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 20rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Noto Serif TC", "Noto Serif CJK TC", serif;
+}
+
+a:focus-visible {
+  border-radius: 0.125rem;
+  outline: 3px solid #a95864;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #eaaaa4;
+  color: #00113e;
+}
