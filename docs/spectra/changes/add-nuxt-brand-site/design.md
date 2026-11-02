@@ -1,6 +1,6 @@
 ## Context
 
-使用者選擇 Nuxt 重建品牌網站，要求同一儲存庫並行開發、本機驗收後再另行授權部署。根目錄 package.json 的 build 是 hexo g -d，包含部署，不可用作本機驗證。_config.yml 設定日期式網址、允許未來文章及 atom.xml；Portfolio.md、Resume.md 的年份為 3017，不得自動改成目前年份。
+使用者選擇 Nuxt 重建品牌網站，要求同一儲存庫並行開發、本機驗收後再另行授權部署。根目錄 package.json 的 build 是 hexo g -d，包含部署，不可用作本機驗證。_config.yml 設定日期式網址、允許未來文章及 atom.xml；Portfolio.md、Resume.md 的來源日期年份為 3017；Nuxt 新版每次產生時會將這兩個品牌頁的日期年份設為當年，來源及 Hexo 不變。
 
 已核准計畫記錄盤點當時量測 source/_posts 有 83 份 Markdown；這不是公開文章數。執行時重新盤點，以來源清單和實際 Hexo 路由確認完整性，不用固定數量判定通過。必須保留現有未提交改動。
 
@@ -75,7 +75,7 @@ Nuxt、Nuxt Content 及已選框架正常安裝所帶入的間接依賴，不視
 
 Hexo 保持內容權威來源直到本機驗收。nuxt-site/scripts 提供匯入與檢查工具，產生 migration-manifest.json。每筆含 sourcePath、sourceHash、kind、legacyUrls、targetUrl、assets、published、exclusionReason；kind 為 article、project、about 或 excluded，排除須有理由，公開項目須有目標。資源區分本機與外部連結。
 
-重複匯入只更新工具擁有的內容；人工編輯衝突須回報並停止，不覆寫。來源新增、修改、刪除均須顯示差異，驗收前重新同步。`Portfolio.md` 作為作品集頁及首頁作品預覽的來源，不當作最新文章；`Resume.md` 作為 About 頁的內容來源。Nuxt 目標路由分別為 `/projects/` 與 `/about/`。`legacyUrls` 可記錄兩個來源的舊 Hexo 路徑作為遷移追溯資料，但不得據此在 Nuxt 產生舊路徑頁面或轉址；已發布文章的網址相容性另依文章規格處理。日期、時區、slug 與特殊語法必須依來源及 Hexo 實際路由處理，不依檔名推測或修正未來年份。
+重複匯入只更新工具擁有的內容；人工編輯衝突須回報並停止，不覆寫。來源新增、修改、刪除均須顯示差異，驗收前重新同步。`Portfolio.md` 作為作品集頁及首頁作品預覽的來源，不當作最新文章；`Resume.md` 作為 About 頁的內容來源。Nuxt 目標路由分別為 `/projects/` 與 `/about/`。`legacyUrls` 可記錄兩個來源的舊 Hexo 路徑作為遷移追溯資料，但不得據此在 Nuxt 產生舊路徑頁面或轉址；已發布文章的網址相容性另依文章規格處理。文章的日期、時區、slug 與特殊語法必須依來源及 Hexo 實際路由處理，不依檔名推測或修正未來年份；僅 Portfolio.md 與 Resume.md 的 Nuxt 版本在每次產生時，將來源日期年份替換為當年，來源檔案不變。
 
 需要 Hexo 基準時，先檢查主題掛鉤與外掛，以明確不部署的 generate 命令及隔離輸出取得；禁止根 build、部署或外部搜尋服務寫入。保留 Hexo 可用環境。
 
@@ -88,6 +88,14 @@ Hexo 保持內容權威來源直到本機驗收。nuxt-site/scripts 提供匯入
 Nuxt 將 `Portfolio.md` 內容呈現在 `/projects/`，將 `Resume.md` 內容呈現在 `/about/`。不在 Nuxt 靜態輸出中建立 `/3017/12/01/Portfolio/`、`/3017/12/03/Resume/` 頁面、別名或轉址，也不將這兩個來源路徑列為 Nuxt 的 canonical 或 sitemap 頁面。既有 Hexo 不因此修改；Nuxt 對已發布文章的舊網址相容性維持原規格。
 
 取捨：新版採用符合導覽語意的乾淨路徑，舊站與文章網址不受影響；直接開啟兩個舊品牌頁路徑不會由 Nuxt 提供內容或轉址。
+
+### Nuxt 品牌頁日期年份採用產生當年
+
+**Supersedes**: add-nuxt-brand-site / 單向內容匯入與路由基準（品牌頁日期年份規則）
+
+每次執行 Nuxt 靜態產生時，Portfolio.md 與 Resume.md 的 Nuxt 版本日期年份必須採用產生當下的日曆年份，月份與日期沿用來源日期。此轉換只套用於 Nuxt 產生結果，不寫回來源檔案，也不改變 Hexo。品牌頁 URL 固定為 `/projects/` 與 `/about/`，日期年份不構成路由；文章的未來日期與實際舊網址維持原樣。驗收時以固定系統日期的產生測試確認兩頁年份同步變更，來源檔案雜湊及 Hexo 設定保持不變。
+
+替代方案：沿用來源年份會讓新版品牌頁帶有 3017 年；修改來源則會改變 Hexo 行為，均不採用。
 
 ### 使用者確認品牌視覺與內容
 
@@ -129,7 +137,7 @@ Nuxt Content 集合驗證欄位。文章列表依日期降冪，同日期依網�
 - 依賴：優先 Nuxt 官方套件；非官方直接依賴與工具須先詢問並取得明確核准，包含搜尋、UI、狀態管理、型別檢查與測試工具。驗收核對新增依賴的維護歸屬及核准紀錄，不得以 Nuxt Modules 上架代替官方歸屬證據。
 - 指令：從 nuxt-site 執行 npm run dev、npm run typecheck、npm run generate、npm run preview:static、npm run content:import、npm run content:check。失敗輸出含具體來源或網址及原因，結束碼非零，不能用空內容冒充成功。
 - 清單：公開項目有 targetUrl，排除項目有 exclusionReason；缺少本機資源、大小寫不一致、重複目標路由、非法日期、不支援語法、來源未同步或人工修改衝突均阻擋驗收。
-- 內容：盤點時量測到的 83 份 Markdown 只作基準資訊，驗收以當下清單逐筆核對；保留來源內容與已發布文章的實際公開網址，不自動修正未來年份。`Portfolio.md` 與 `Resume.md` 在 Nuxt 分別使用 `/projects/`、`/about/`，其舊日期網址只作遷移追溯資料，不產生 Nuxt 頁面、別名或轉址。
+- 內容：盤點時量測到的 83 份 Markdown 只作基準資訊，驗收以當下清單逐筆核對；保留來源內容與已發布文章的實際公開網址，文章不自動修正未來年份。`Portfolio.md` 與 `Resume.md` 在 Nuxt 分別使用 `/projects/`、`/about/`；每次產生新版時，Nuxt 版本日期年份採用當年並保留來源月份、日期。舊日期網址只作遷移追溯資料，不產生 Nuxt 頁面、別名或轉址；來源檔案與 Hexo 不變。
 - 驗收：型別及靜態產生成功；無後端即可直接存取所有公開路由，核對資源、分類、標籤、彙整、分頁、RSS、sitemap 與搜尋。索引建置失敗必須讓 generate 失敗。
 - 門檻：視覺、素材或分類未確認時停止相關任務；人工審閱未通過不標完成。本機通過不代表授權部署。
 
