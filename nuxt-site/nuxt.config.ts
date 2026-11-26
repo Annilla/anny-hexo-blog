@@ -1,4 +1,5 @@
 import { transformBrandPageDate } from "./scripts/brand-page-date.mjs";
+import { projectCases } from "./data/project-cases";
 
 const generationDate = new Date();
 const brandPageDateCacheKey = `brand-page-date-${generationDate.getFullYear()}`;
@@ -46,7 +47,11 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/projects/", "/about/"],
+      routes: [
+        "/projects/",
+        "/about/",
+        ...projectCases.map(({ slug }) => `/projects/${slug}/`),
+      ],
     },
   },
 });
