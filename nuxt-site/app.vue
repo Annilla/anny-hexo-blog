@@ -31,7 +31,7 @@ watch(() => route.path, () => {
         </NuxtLink>
         <NuxtLink
           to="/about/"
-          :aria-current="route.path === '/about' ? 'page' : undefined"
+          :aria-current="route.path === '/about/' ? 'page' : undefined"
         >
           About
         </NuxtLink>
@@ -41,7 +41,12 @@ watch(() => route.path, () => {
         >
           Portfolio
         </NuxtLink>
-        <NuxtLink to="/#blog">Blog</NuxtLink>
+        <NuxtLink
+          to="/blog/"
+          :aria-current="route.path.startsWith('/blog') ? 'page' : undefined"
+        >
+          Blog
+        </NuxtLink>
       </nav>
       <button
         class="menu-toggle"

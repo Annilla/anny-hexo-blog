@@ -11,8 +11,8 @@
 - [x] 2.1 [after: 1.2, 1.3] 實作 Traceable one-way content migration 的集合與文章匯入，提供 content:import、content:check 及 migration-manifest.json，保持來源唯讀；以公開／非公開文章固定資料驗證來源雜湊、用途、目標、排除理由及重複匯入一致。
 - [x] 2.2 [after: 2.1] 實作 Explicit migration failures and synchronization，檢出來源新增／修改／刪除、非法日期、不支援語法、目標衝突與人工修改衝突；以失敗資料驗證非零結束碼、具體錯誤路徑及不覆寫來源與人工內容。
 - [x] 2.3 [after: 2.2] 實作 Published article URL and asset compatibility、New routes for migrated brand pages 與 Nuxt 品牌頁日期年份採用產生當年；將 Portfolio.md 與 Resume.md 分別輸出至 /projects/ 與 /about/，每次 Nuxt 產生時以當年取代新版品牌頁日期年份並保留來源月份、日期；以固定時鐘驗證產生值，確認來源雜湊及 Hexo 不變、兩個舊日期網址無頁面／別名／轉址，且已發布文章未來日期網址維持原路由；以缺圖、大小寫不符及重複目標資料驗證具體錯誤會阻擋驗收。
-- [ ] 2.4 [after: 2.3] 依核定視覺建立導覽、頁尾、首頁、作品列表與案例、關於我，完成 Confirmed brand pages 呈現；以桌面及手機預覽確認英文草寫姓名使用 Satisfy，並以鍵盤檢查入口可達、素材真實、無作品空狀態，不以佔位素材當完成。
-- [ ] 2.5 [after: 2.4] 建立文章列表、閱讀頁、已發布文章舊網址與新品牌頁入口，完成 Standalone static output；以一般靜態伺服器且無 SPA fallback 直接請求及重新整理文章、/projects/ 與 /about/，確認內容完整、兩個舊品牌頁日期網址及其他未知路徑回應 404，且不需 Nuxt 後端。
+- [x] 2.4 [after: 2.3] 依核定視覺建立導覽、頁尾、首頁、作品列表與案例、關於我，完成 Confirmed brand pages 呈現；以桌面及手機預覽確認英文草寫姓名使用 Satisfy，並以鍵盤檢查入口可達、素材真實、無作品空狀態，不以佔位素材當完成。
+- [x] 2.5 [after: 2.4] 建立文章列表、閱讀頁、已發布文章舊網址與新品牌頁入口，完成 Standalone static output；以一般靜態伺服器且無 SPA fallback 直接請求及重新整理文章、/projects/ 與 /about/，確認內容完整、兩個舊品牌頁日期網址及其他未知路徑回應 404，且不需 Nuxt 後端。
 
 ## 3. 文章導覽、訂閱與搜尋
 

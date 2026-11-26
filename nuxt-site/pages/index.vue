@@ -9,7 +9,14 @@ if (!latestPost) {
   throw createError({ statusCode: 500, statusMessage: "找不到首頁文章內容" });
 }
 
-const featuredPostUrl = "https://annilla.github.io/2025/08/04/Others/Excel-Power-Query-Import-Data-and-Combine-Remark-Column/";
+const articleRoutes = useRuntimeConfig().public.articleRoutes as Array<{ url: string; contentPath: string }>;
+const featuredPostRoute = articleRoutes.find((articleRoute) => articleRoute.contentPath === latestPost.path);
+
+if (!featuredPostRoute) {
+  throw createError({ statusCode: 500, statusMessage: "首頁文章沒有對應的已發布網址" });
+}
+
+const featuredPostUrl = featuredPostRoute.url;
 const skills = [
   { title: "UX Design", score: "90%", image: "/images/brand/skill-ux-design.svg" },
   { title: "Logo Design", score: "80%", image: "/images/brand/skill-logo-design.svg" },
@@ -112,15 +119,9 @@ useSeoMeta({
               <p>
                 最近工作中有同事問我，怎麼把 Excel 中欄位 Item 相同的 Remark 用逗號合併，Qty 做 Total。
               </p>
-              <a
-                class="text-link"
-                :href="featuredPostUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <NuxtLink class="text-link" :to="featuredPostUrl">
                 Read Article <span aria-hidden="true">↗</span>
-                <span class="visually-hidden">（在新分頁開啟）</span>
-              </a>
+              </NuxtLink>
             </div>
           </article>
         </div>
@@ -821,7 +822,7 @@ useSeoMeta({
   }
 
   .scroll-link {
-    bottom: -2.75rem;
+    bottom: -4.5rem;
   }
 
   .latest-posts {
